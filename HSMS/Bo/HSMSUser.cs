@@ -20,6 +20,20 @@ namespace HSMS.Bo
         {
         }
 
+        /// <summary>
+        /// Constructs a new HSMSUser object.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="loginName"></param>
+        /// <param name="password"></param>
+        /// <param name="email"></param>
+        public HSMSUser(object id, string loginName, string password, string email)
+        {
+            this.id = id;
+            this.loginName = loginName;
+            this.password = password;
+            this.email = email;
+        }
 
         public object Id
         {
