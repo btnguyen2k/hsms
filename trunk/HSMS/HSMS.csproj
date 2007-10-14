@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Bo\HSMSGroup.cs" />
     <Compile Include="Bo\HSMSUser.cs" />
+    <Compile Include="Bo\Utils.cs" />
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
