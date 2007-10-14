@@ -15,5 +15,12 @@ namespace HSMS.Bo
     /// </summary>
     public class HSMSUser
     {
+
+        /// <summary>
+        /// Constructs a new HSMSUser object.
+        /// </summary>
+        public HSMSUser()
+        {
+        }
     }
 }
