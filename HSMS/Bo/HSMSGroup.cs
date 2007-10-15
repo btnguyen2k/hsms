@@ -8,6 +8,7 @@ namespace HSMS.Bo
         private object id;
         private string name, description;
         private string prefix, suffix;
+        private bool isGod;
 
         /// <summary>
         /// Constructs a new HSMSGroup object.
@@ -50,6 +51,12 @@ namespace HSMS.Bo
         {
             get { return id; }
             set { id = value; }
+        }
+
+        public bool IsGod
+        {
+            get { return isGod;  }
+            set { isGod = value; }
         }
 
         public string Name
