@@ -2,12 +2,28 @@
 
 --    Driver Used : Microsoft Visual Studio - Microsoft Access Driver.
 --    Document    : Y:\workspace\HSMS\HSMS\Resources\DBSchema.vsd.
---    Time Created: October 15, 2007 11:46 AM.
+--    Time Created: October 16, 2007 3:26 AM.
 --    Operation   : From Visio Generate Wizard.
 --    Connected data source : HSMS
 --    Connected server      : ACCESS
 --    Connected database    : Y:\workspace\HSMS\HSMS\Resources\HSMS.mdb
 
+
+
+-- Create new table `HSMSRole`.
+-- `HSMSRole` : Table of HSMSRole
+-- 	`uid` : uid partly identifies HSMSRole
+-- 	`gid` : gid identifies HSMSRole  
+create table `HSMSRole` ( 
+	`uid` INTEGER,
+	`gid` INTEGER, constraint `HSMSRole_PK` primary key (`gid`, `uid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSRole`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSRole' :
+-- 	`uid`
+-- 	`gid`
 
 
 -- Create new table `HSMSUser`.
@@ -65,6 +81,19 @@ create unique index `idxLoginName` on `HSMSUser` (
 alter table `HSMSUser` add constraint `HSMSUser_UC2` unique (
 	`uemail`); 
 
+
+-- Add foreign key constraints to table `HSMSRole`.
+alter table `HSMSRole`
+	add constraint `HSMSGroup_HSMSRole_FK1` foreign key (
+		`gid`)
+	 references `HSMSGroup` (
+		`gid`); 
+
+alter table `HSMSRole`
+	add constraint `HSMSUser_HSMSRole_FK1` foreign key (
+		`uid`)
+	 references `HSMSUser` (
+		`uid`); 
 
 
 -- This is the end of the Microsoft Visual Studio generated SQL DDL script.
