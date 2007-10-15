@@ -35,6 +35,27 @@ namespace HSMS.Bo
             this.email = email;
         }
 
+        public void AddRole(HSMSGroup group)
+        {
+            lock (this)
+            {
+                if (roles == null)
+                {
+                    roles = new List<HSMSGroup>();
+                }
+
+                if (!roles.Contains(group))
+                {
+                    roles.Add(group);
+                }
+            }
+        }
+
+        public bool HasRole(HSMSGroup group)
+        {
+            return roles != null && roles.Contains(group);
+        }
+
         public object Id
         {
             get { return id; }
