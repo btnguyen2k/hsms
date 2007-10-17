@@ -46,7 +46,9 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bo\GroupRule.cs" />
     <Compile Include="Bo\HSMSGroup.cs" />
+    <Compile Include="Bo\HSMSPermission.cs" />
     <Compile Include="Bo\HSMSRole.cs" />
     <Compile Include="Bo\HSMSUser.cs" />
     <Compile Include="Bo\Utils.cs" />
