@@ -3,7 +3,7 @@ namespace HSMS.Bo
     /// <summary>
     /// This class represents a Group-Permission mapping.
     /// </summary>
-    public class GroupRule
+    public class HSMSGroupRule
     {
         private HSMSGroup group;
         private HSMSPermission permission;
@@ -12,7 +12,7 @@ namespace HSMS.Bo
         /// <summary>
         /// Constructs a new HSMSGroupRule object.
         /// </summary>
-        public GroupRule()
+        public HSMSGroupRule()
         {
         }
 
@@ -22,7 +22,7 @@ namespace HSMS.Bo
         /// <param name="group"></param>
         /// <param name="permission"></param>
         /// <param name="isGlobal"></param>
-        public GroupRule(HSMSGroup group, HSMSPermission permission, bool isGlobal)
+        public HSMSGroupRule(HSMSGroup group, HSMSPermission permission, bool isGlobal)
         {
             this.group = group;
             this.permission = permission;
