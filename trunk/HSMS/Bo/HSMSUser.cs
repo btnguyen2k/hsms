@@ -12,6 +12,10 @@ namespace HSMS.Bo
         private string password;
         private string email;
         private ICollection<HSMSGroup> roles;
+        private string lastName;
+        private string midName;
+        private string firstName;
+        private int dobDay, dobMonth, dobYear;
 
         /// <summary>
         /// Constructs a new HSMSUser object.
@@ -84,6 +88,42 @@ namespace HSMS.Bo
         {
             get { return roles; }
             set { roles = value; }
+        }
+
+        public string LastName
+        {
+            get { return lastName; }
+            set { lastName = value; }
+        }
+
+        public string MidName
+        {
+            get { return midName; }
+            set { midName = value; }
+        }
+
+        public string FirstName
+        {
+            get { return firstName; }
+            set { firstName = value; }
+        }
+
+        public int DobDay
+        {
+            get { return dobDay; }
+            set { dobDay = value; }
+        }
+
+        public int DobMonth
+        {
+            get { return dobMonth; }
+            set { dobMonth = value; }
+        }
+
+        public int DobYear
+        {
+            get { return dobYear; }
+            set { dobYear = value; }
         }
     }
 }
