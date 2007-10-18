@@ -54,6 +54,7 @@
     <Compile Include="Bo\HSMSRole.cs" />
     <Compile Include="Bo\HSMSTeacher.cs" />
     <Compile Include="Bo\HSMSUser.cs" />
+    <Compile Include="Bo\IHSMSUser.cs" />
     <Compile Include="Bo\Utils.cs" />
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
