@@ -5,7 +5,7 @@ namespace HSMS.Bo
     /// <summary>
     /// This class represents a user account within the system.
     /// </summary>
-    public class HSMSUser
+    public class HSMSUser : IHSMSUser
     {
         private object id;
         private string loginName;
@@ -58,6 +58,17 @@ namespace HSMS.Bo
         public bool HasRole(HSMSGroup group)
         {
             return roles != null && roles.Contains(group);
+        }
+
+        public void RemoveRole(HSMSGroup group)
+        {
+            lock ( this )
+            {
+                if ( roles != null && group != null )
+                {
+                    roles.Remove(group);
+                }
+            }
         }
 
         public object Id
