@@ -40,9 +40,16 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="content.aspx" />
+    <Content Include="enroll.aspx" />
+    <Content Include="file_docs\Nhap_hoc.html" />
+    <Content Include="Function.aspx" />
+    <Content Include="images\font.jpg" />
+    <Content Include="Main.aspx" />
+    <Content Include="main_admin.aspx" />
     <Content Include="Resources\HSMS.mdb">
     </Content>
+    <Content Include="Tittle.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -56,14 +63,49 @@
     <Compile Include="Bo\HSMSUser.cs" />
     <Compile Include="Bo\IHSMSUser.cs" />
     <Compile Include="Bo\Utils.cs" />
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="content.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
+      <DependentUpon>content.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="content.aspx.designer.cs">
+      <DependentUpon>content.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="enroll.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>enroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="enroll.aspx.designer.cs">
+      <DependentUpon>enroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Function.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Function.aspx.designer.cs">
+      <DependentUpon>Function.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main_admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>main_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="main_admin.aspx.designer.cs">
+      <DependentUpon>main_admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tittle.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Tittle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tittle.aspx.designer.cs">
+      <DependentUpon>Tittle.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\DBSchema.DDL" />
