@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="HSMS._Default" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="content.aspx.cs" Inherits="HSMS.content" Debug="true" Trace="false" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,11 +6,10 @@
 <head runat="server">
     <title>Untitled Page</title>
 </head>
-<body>
+<body background="images/font.jpg">
     <form id="form1" runat="server">
     <div>
-    
-    </div>
+        &nbsp;</div>
     </form>
 </body>
 </html>

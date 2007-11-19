@@ -11,7 +11,7 @@ using System.Web.UI.HtmlControls;
 
 namespace HSMS
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class main_admin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
