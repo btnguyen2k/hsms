@@ -7,7 +7,7 @@
     <title>Untitled Page</title>
 </head>
 
-<frameset rows="27%, *">    
+<frameset rows="30%, *">    
     <frame frameborder = "0" noresize name = "tittle" src = "Tittle.aspx">
      </body>
     <frameset cols="15%, *">

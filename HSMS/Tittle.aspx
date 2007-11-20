@@ -22,9 +22,19 @@
         <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="211px"></asp:TextBox><br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;
         <asp:Button ID="LoginProcess" runat="server" OnClick="LoginProcess_Click" Text="Đăng nhập"
-            Width="110px" /></div>
+            Width="110px" /><br />
+        <asp:RadioButtonList ID="RadioButton_Choice" runat="server" BackColor="SpringGreen"
+            BorderColor="Blue" Font-Names="Verdana" Height="31px" RepeatDirection="Horizontal"
+            Width="529px">
+            <asp:ListItem Selected="True">Admin</asp:ListItem>
+            <asp:ListItem>Gi&#225;o vi&#234;n</asp:ListItem>
+            <asp:ListItem>Học Sinh</asp:ListItem>
+            <asp:ListItem>Phụ huynh</asp:ListItem>
+        </asp:RadioButtonList></div>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     </form>
 </body>
 </html>
