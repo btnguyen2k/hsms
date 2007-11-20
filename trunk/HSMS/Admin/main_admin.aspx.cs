@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-namespace HSMS
+namespace HSMS.Admin
 {
     public partial class main_admin : System.Web.UI.Page
     {

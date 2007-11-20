@@ -23,7 +23,7 @@ namespace HSMS
         }
         protected void LoginProcess_Click(object sender, EventArgs e)
         {
-            Response.Redirect("main_admin.aspx");
+            Response.Redirect("Admin/main_admin.aspx");
         }
      
 
