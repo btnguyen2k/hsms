@@ -41,10 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\main_admin.aspx" />
-    <Content Include="App_Data\Database1.mdf">
+    <Content Include="App_Data\hsms.mdf">
     </Content>
-    <Content Include="App_Data\Database1_log.ldf">
-      <DependentUpon>Database1.mdf</DependentUpon>
+    <Content Include="App_Data\hsms_log.ldf">
+      <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
