@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="main_admin.aspx.cs" Inherits="HSMS.main_admin" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="main_admin.aspx.cs" Inherits="HSMS.Admin.main_admin" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 

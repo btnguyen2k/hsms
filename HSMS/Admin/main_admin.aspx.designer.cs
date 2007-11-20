@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HSMS {
+namespace HSMS.Admin {
     
     
     /// <summary>
