@@ -41,6 +41,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\main_admin.aspx" />
+    <Content Include="App_Data\Database1.mdf">
+    </Content>
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="file_docs\Nhap_hoc.html" />
