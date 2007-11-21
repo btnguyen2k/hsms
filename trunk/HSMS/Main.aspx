@@ -4,10 +4,15 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Untitled Page</title>
+    <title>Website ptth</title>
+    <script language="javascript" type="text/javascript">
+    if ( top != self ) {
+        top.location.href = self.location.href;
+    }
+    </script>
 </head>
 
-<frameset rows="30%, *">    
+<frameset rows="32%, *">    
     <frame frameborder = "0" noresize name = "tittle" src = "Tittle.aspx">
      </body>
     <frameset cols="15%, *">

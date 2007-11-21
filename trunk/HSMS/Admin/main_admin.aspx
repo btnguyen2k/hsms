@@ -4,14 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-    <title>Untitled Page</title>
+    <title>Admin Site</title>
     <script language="javascript" type="text/javascript">
     if ( top != self ) {
         top.location.href = self.location.href;
     }
     </script>
 </head>
-<body>
-<p>abc123</p>
-</body>
+<frameset rows="17%, *">    
+    <frame frameborder = "0" noresize name = "title_admin" src = "title_admin.aspx">
+     </body>
+    <frameset cols="15%, *">
+     <frame frameborder = "0" noresize name = "function_admin" src = "function_admin.aspx">
+     <frame frameborder = "0" noresize name = "content_admin" src = "content_admin.aspx">
+    </frameset>
+</frameset>
 </html>

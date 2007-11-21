@@ -27,7 +27,7 @@
         <asp:Button ID="LoginProcess" runat="server" OnClick="LoginProcess_Click" Text="Đăng nhập"
             Width="110px" /><br />
         <asp:RadioButtonList ID="RadioButton_Choice" runat="server" BackColor="SpringGreen"
-            BorderColor="Blue" Font-Names="Verdana" Height="31px" RepeatDirection="Horizontal"
+            BorderColor="Blue" Font-Names="Verdana" Height="26px" RepeatDirection="Horizontal"
             Width="529px">
             <asp:ListItem Selected="True">Admin</asp:ListItem>
             <asp:ListItem>Gi&#225;o vi&#234;n</asp:ListItem>
