@@ -26,6 +26,10 @@ namespace HSMS
         protected void LoginProcess_Click(object sender, EventArgs e)
         {
             int count = 0;
+            
+            // Trang thai chua login
+            Session["login_state"] = false;
+
             //String connStr =
             //    "Provider=SQLNCLI;Server=.\\SQLExpress;AttachDbFilename=C:\\Inetpub\\wwwroot\\HSMS\\App_Data\\hsms.mdf; Database=dbname;Trusted_Connection=Yes;";
             
@@ -51,6 +55,11 @@ namespace HSMS
             conn.Close();
             if (count > 0)
             {
+                // Luu trang thai login
+                Session["login_id"] = LoginName.Text;
+                Session["login_pass"] = Password.Text;
+                Session["login_state"] = true;
+
                 Response.Redirect("Admin/main_admin.aspx");
             }
             else

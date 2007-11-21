@@ -33,6 +33,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -40,7 +41,11 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\change_pass_admin.aspx" />
+    <Content Include="Admin\content_admin.aspx" />
+    <Content Include="Admin\function_admin.aspx" />
     <Content Include="Admin\main_admin.aspx" />
+    <Content Include="Admin\title_admin.aspx" />
     <Content Include="App_Data\hsms.mdf">
     </Content>
     <Content Include="App_Data\hsms_log.ldf">
@@ -58,12 +63,40 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\change_pass_admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>change_pass_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\change_pass_admin.aspx.designer.cs">
+      <DependentUpon>change_pass_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\content_admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>content_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\content_admin.aspx.designer.cs">
+      <DependentUpon>content_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\function_admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>function_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\function_admin.aspx.designer.cs">
+      <DependentUpon>function_admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\main_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>main_admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\main_admin.aspx.designer.cs">
       <DependentUpon>main_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\title_admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>title_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\title_admin.aspx.designer.cs">
+      <DependentUpon>title_admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bo\HSMSParent.cs" />
     <Compile Include="Bo\HSMSPupil.cs" />
