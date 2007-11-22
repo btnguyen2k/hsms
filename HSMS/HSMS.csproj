@@ -41,6 +41,7 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin\add_pupil.aspx" />
     <Content Include="Admin\change_pass_admin.aspx" />
     <Content Include="Admin\content_admin.aspx" />
     <Content Include="Admin\function_admin.aspx" />
@@ -64,6 +65,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\add_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>add_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_pupil.aspx.designer.cs">
+      <DependentUpon>add_pupil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\change_pass_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>change_pass_admin.aspx</DependentUpon>

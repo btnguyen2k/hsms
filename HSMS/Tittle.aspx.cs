@@ -17,7 +17,7 @@ namespace HSMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session.Timeout = 5;
         }
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace HSMS
             int count = 0;
             
             // Trang thai chua login
-            Session["login_state"] = false;
+            Session["login_state"] = "not_login";
 
             //String connStr =
             //    "Provider=SQLNCLI;Server=.\\SQLExpress;AttachDbFilename=C:\\Inetpub\\wwwroot\\HSMS\\App_Data\\hsms.mdf; Database=dbname;Trusted_Connection=Yes;";
@@ -58,8 +58,9 @@ namespace HSMS
                 // Luu trang thai login
                 Session["login_id"] = LoginName.Text;
                 Session["login_pass"] = Password.Text;
-                Session["login_state"] = true;
+                Session["login_state"] = "login";
 
+                Session.Timeout = 60;
                 Response.Redirect("Admin/main_admin.aspx");
             }
             else

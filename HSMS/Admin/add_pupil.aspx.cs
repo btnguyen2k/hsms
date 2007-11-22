@@ -11,15 +11,17 @@ using System.Web.UI.HtmlControls;
 
 namespace HSMS.Admin
 {
-    public partial class function_admin : System.Web.UI.Page
+    public partial class add_pupil : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+      
             // Check login simple
             if (Session.Timeout != 60)
             {
                 Response.Redirect("http://localhost/HSMS/main.aspx");
-            } 
+            }
+      
         }
     }
 }
