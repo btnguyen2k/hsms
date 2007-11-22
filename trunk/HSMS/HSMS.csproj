@@ -59,6 +59,7 @@
     <Content Include="Main.aspx" />
     <Content Include="Resources\HSMS.mdb">
     </Content>
+    <Content Include="testdb.aspx" />
     <Content Include="Tittle.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -107,6 +108,7 @@
     <Compile Include="Bo\HSMSTeacher.cs" />
     <Compile Include="Bo\HSMSUser.cs" />
     <Compile Include="Bo\IHSMSUser.cs" />
+    <Compile Include="Bo\UserManager.cs" />
     <Compile Include="Bo\Utils.cs" />
     <Compile Include="content.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -115,6 +117,7 @@
     <Compile Include="content.aspx.designer.cs">
       <DependentUpon>content.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Db\DbUtils.cs" />
     <Compile Include="enroll.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>enroll.aspx</DependentUpon>
@@ -137,6 +140,13 @@
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="testdb.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>testdb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testdb.aspx.designer.cs">
+      <DependentUpon>testdb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tittle.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Tittle.aspx</DependentUpon>
