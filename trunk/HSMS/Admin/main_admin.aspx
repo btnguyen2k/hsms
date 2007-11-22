@@ -12,9 +12,8 @@
     </script>
 </head>
 <frameset rows="17%, *">    
-    <frame frameborder = "0" noresize name = "title_admin" src = "title_admin.aspx">
-     </body>
-    <frameset cols="15%, *">
+    <frame frameborder = "0" noresize name = "title_admin" src = "title_admin.aspx">     
+    <frameset cols="20%, *">
      <frame frameborder = "0" noresize name = "function_admin" src = "function_admin.aspx">
      <frame frameborder = "0" noresize name = "content_admin" src = "content_admin.aspx">
     </frameset>
