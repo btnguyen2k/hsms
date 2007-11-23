@@ -5,7 +5,7 @@ using NHibernate.Cfg;
 
 namespace HSMS.Db
 {
-    public sealed class NHibernateHelper
+    public sealed class NHibernateHelper : IHttpModule
     {
         private const string CurrentSessionKey = "nhibernate.current_session";
         private static readonly ISessionFactory sessionFactory;
@@ -50,12 +50,19 @@ namespace HSMS.Db
             }
             try
             {
-                currentSession.Close();    
+                try
+                {
+                    currentSession.Flush();
+                }
+                finally
+                {
+                    currentSession.Close();
+                }
             }
             finally
             {
-                context.Items.Remove(CurrentSessionKey);    
-            }            
+                context.Items.Remove(CurrentSessionKey);
+            }
         }
 
         /// <summary>
@@ -67,6 +74,25 @@ namespace HSMS.Db
             {
                 sessionFactory.Close();
             }
+        }
+
+        /* IHttpModule's methods */
+
+        public void Init(HttpApplication context)
+        {
+            context.EndRequest += Context_EndRequest;
+        }
+
+        public void Dispose()
+        {
+            //empty
+        }
+
+        /* IHttpModule's methods */
+
+        private static void Context_EndRequest(object sender, EventArgs e)
+        {
+            CloseSession();
         }
     }
 }
