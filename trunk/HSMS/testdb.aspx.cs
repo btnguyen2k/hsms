@@ -22,7 +22,7 @@ namespace HSMS
             ISession session = NHibernateHelper.GetCurrentSession();
             try
             {
-                HSMSGroup group = (HSMSGroup)session.Load(typeof (HSMSGroup), 1);
+                HSMSGroup group = (HSMSGroup)session.Get(typeof (HSMSGroup), 1);
                 labelTestDb.Text = group != null ? group.ToString() : "NULL";
             }
             finally
