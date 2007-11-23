@@ -12,12 +12,12 @@ namespace HSMS.Admin {
     
     
     /// <summary>
-    /// function_admin class.
+    /// del_pupil class.
     /// </summary>
     /// <remarks>
     /// Auto-generated class.
     /// </remarks>
-    public partial class function_admin {
+    public partial class del_pupil {
         
         /// <summary>
         /// form1 control.
@@ -27,15 +27,6 @@ namespace HSMS.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        /// <summary>
-        /// ChangePass control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink ChangePass;
         
         /// <summary>
         /// Label1 control.
@@ -56,30 +47,30 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// AddPupil control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink AddPupil;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
         
         /// <summary>
-        /// Label3 control.
+        /// FinPupil control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Button FinPupil;
         
         /// <summary>
-        /// HyperLink1 control.
+        /// Find_Result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.Label Find_Result;
     }
 }

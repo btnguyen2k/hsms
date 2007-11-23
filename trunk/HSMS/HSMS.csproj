@@ -188,6 +188,7 @@
     <Content Include="Admin\add_pupil.aspx" />
     <Content Include="Admin\change_pass_admin.aspx" />
     <Content Include="Admin\content_admin.aspx" />
+    <Content Include="Admin\edit_del_pupil.aspx" />
     <Content Include="Admin\function_admin.aspx" />
     <Content Include="Admin\main_admin.aspx" />
     <Content Include="Admin\title_admin.aspx" />
@@ -196,7 +197,11 @@
     <Content Include="App_Data\hsms_log.ldf">
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
-    <EmbeddedResource Include="Bo\HSMSGroup.hbm.xml" />
+    <Content Include="App_Data\temp.mdf">
+    </Content>
+    <Content Include="App_Data\temp_log.ldf">
+      <DependentUpon>temp.mdf</DependentUpon>
+    </Content>    
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="file_docs\Nhap_hoc.html" />
@@ -208,6 +213,7 @@
     <Content Include="testdb.aspx" />
     <Content Include="Tittle.aspx" />
     <Content Include="Web.config" />
+    <EmbeddedResource Include="Bo\HSMSGroup.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Admin\add_pupil.aspx.cs">
@@ -230,6 +236,13 @@
     </Compile>
     <Compile Include="Admin\content_admin.aspx.designer.cs">
       <DependentUpon>content_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\edit_del_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>edit_del_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\edit_del_pupil.aspx.designer.cs">
+      <DependentUpon>edit_del_pupil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\function_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
