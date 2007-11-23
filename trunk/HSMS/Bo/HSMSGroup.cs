@@ -47,37 +47,37 @@ namespace HSMS.Bo
             this.suffix = suffix;
         }
 
-        public object Id
+        public virtual int Id
         {
-            get { return id; }
+            get { return id != null ? (int) id : 0; }
             set { id = value; }
         }
 
-        public bool IsGod
+        public virtual bool IsGod
         {
-            get { return isGod;  }
+            get { return isGod; }
             set { isGod = value; }
         }
 
-        public string Name
+        public virtual string Name
         {
             get { return name; }
             set { name = value; }
         }
 
-        public string Description
+        public virtual string Description
         {
             get { return description; }
             set { description = value; }
         }
 
-        public string Prefix
+        public virtual string Prefix
         {
             get { return prefix; }
             set { prefix = value; }
         }
 
-        public string Suffix
+        public virtual string Suffix
         {
             get { return suffix; }
             set { suffix = value; }

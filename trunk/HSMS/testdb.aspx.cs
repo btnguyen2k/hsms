@@ -1,8 +1,9 @@
 using System;
-using System.Data.Common;
+using System.Collections;
 using System.Web.UI;
 using HSMS.Bo;
 using HSMS.Db;
+using NHibernate;
 
 namespace HSMS
 {
@@ -14,9 +15,24 @@ namespace HSMS
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            DbConnection conn = DbUtils.getDbConnection();
-            labelTestDb.Text = conn.ToString();
-            conn.Close();
+            //DbConnection conn = DbUtils.GetDbConnection();
+            //labelTestDb.Text = conn.ToString();
+            //conn.Close();
+
+            ISession session = NHibernateHelper.GetCurrentSession();
+            try
+            {
+                HSMSGroup group = (HSMSGroup)session.Load(typeof (HSMSGroup), 1);
+                labelTestDb.Text = group != null ? group.ToString() : "NULL";
+            }
+            finally
+            {
+                NHibernateHelper.CloseSession();
+            }
+
+            //labelTestDb.Text = NHibernateHelper.GetCurrentSession().ToString();
+            //HSMSGroup group = UserManager.getGroup(1);
+            //labelTestDb.Text = group != null ? group.ToString() : null;
         }
 
         protected void Button2_Click(object sender, EventArgs e)
