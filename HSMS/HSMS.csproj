@@ -29,6 +29,150 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bamboo.Prevalence, Version=1.4.4.4, Culture=neutral, PublicKeyToken=0edf2245780ab2d7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Bamboo.Prevalence.dll</HintPath>
+    </Reference>
+    <Reference Include="Bamboo.Prevalence.Util, Version=1.4.4.4, Culture=neutral, PublicKeyToken=0edf2245780ab2d7">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Bamboo.Prevalence.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy, Version=1.1.5.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.0.3, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections.Test, Version=1.0.0.1, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Iesi.Collections.Test.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Memcached.ClientLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42c0400964dcc297, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Memcached.ClientLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.MemCache, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.MemCache.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.MemCache.Tests, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.MemCache.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.Prevalence, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.Prevalence.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.Prevalence.Tests, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.Prevalence.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache.Tests, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.SysCache.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache2, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Caches.SysCache2.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.DomainModel, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.DomainModel.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Examples, Version=0.0.5000.6, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Examples.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.JetDriver, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.JetDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Mapping.Attributes, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Mapping.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Mapping.Attributes.Test, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Mapping.Attributes.Test.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Tasks, Version=1.2.0.4000, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Test, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Test.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Test.Performance, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Test.Performance.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Tool.hbm2net, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Tool.hbm2net.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Tool.hbm2net.Tests, Version=0.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.Tool.hbm2net.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.UserTypes.Oracle, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.UserTypes.Oracle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.UserTypes.SqlTypes, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.UserTypes.SqlTypes.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.UserTypes.Tests, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NHibernate.UserTypes.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="nmock, Version=1.0.1536.20687, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\nmock.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Nullables.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables.NHibernate, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Nullables.NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Nullables.Tests, Version=1.2.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\Nullables.Tests.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=0.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\nhibernate\NVelocity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -52,6 +196,7 @@
     <Content Include="App_Data\hsms_log.ldf">
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
+    <EmbeddedResource Include="Bo\HSMSGroup.hbm.xml" />
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="file_docs\Nhap_hoc.html" />
@@ -126,6 +271,8 @@
       <DependentUpon>content.aspx</DependentUpon>
     </Compile>
     <Compile Include="Db\DbUtils.cs" />
+    <Compile Include="Db\NHibernateConnectionProvider.cs" />
+    <Compile Include="Db\NHibernateHelper.cs" />
     <Compile Include="enroll.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>enroll.aspx</DependentUpon>
@@ -166,6 +313,9 @@
   <ItemGroup>
     <None Include="Resources\DBSchema.DDL" />
     <None Include="Resources\DBSchema.vsd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\nhibernate\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v8.0\WebApplications\Microsoft.WebApplication.targets" />
