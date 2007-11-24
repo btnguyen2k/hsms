@@ -22,7 +22,7 @@ namespace HSMS.Admin
             {
                 Response.Redirect("http://localhost/HSMS/main.aspx");
             }
-      
+            Add_Result.Text = "";
         }
 
         protected void AddPupil_Click(object sender, EventArgs e)
@@ -106,6 +106,9 @@ namespace HSMS.Admin
             Class.Text = "";
             Pupil_id.Text = "";
             Email.Text = "";
+
+            Add_Result.Text = "Thêm vào thành công!";
+
 
         }
     }
