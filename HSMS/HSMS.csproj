@@ -197,11 +197,16 @@
     <Content Include="App_Data\hsms_log.ldf">
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\hsms_temp.mdf">
+    </Content>
+    <Content Include="App_Data\hsms_temp_log.ldf">
+      <DependentUpon>hsms_temp.mdf</DependentUpon>
+    </Content>
     <Content Include="App_Data\temp.mdf">
     </Content>
     <Content Include="App_Data\temp_log.ldf">
       <DependentUpon>temp.mdf</DependentUpon>
-    </Content>    
+    </Content>
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="file_docs\Nhap_hoc.html" />

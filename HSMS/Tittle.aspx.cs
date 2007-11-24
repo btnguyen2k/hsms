@@ -37,9 +37,10 @@ namespace HSMS
             String connStr =
                 "Provider=SQLNCLI; Server=.\\SQLExpress; Database=dbname; Trusted_Connection=Yes;";
             OleDbConnection conn = new OleDbConnection(connStr);
-            conn.Open();
+            
             OleDbCommand cm = new OleDbCommand();
             cm.Connection = conn;
+            conn.Open();
 
             // Access database
             cm.CommandText = "Select ulogin_name," + "upassword From HSMSUser";
