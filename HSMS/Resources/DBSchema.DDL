@@ -2,7 +2,7 @@
 
 --    Driver Used : Microsoft Visual Studio - Microsoft Access Driver.
 --    Document    : D:\Workspace\dotNet\HSMS\HSMS\Resources\DBSchema.vsd.
---    Time Created: November 27, 2007 2:38 AM.
+--    Time Created: November 27, 2007 4:32 AM.
 --    Operation   : From Visio Generate Wizard.
 --    Connected data source : HSMS
 --    Connected server      : ACCESS
@@ -153,7 +153,7 @@ create table `HSMSRole` (
 -- 	`uname_mid` : uname_mid is of HSMSUser
 -- 	`uname_last` : uname_last is of HSMSUser
 -- 	`udob_day` : udob_day is of HSMSUser
--- 	`udob_mont` : udob_mont is of HSMSUser
+-- 	`udob_month` : udob_month is of HSMSUser
 -- 	`udob_year` : udob_year is of HSMSUser
 -- 	`ucreation_timestamp` : ucreation_timestamp is of HSMSUser  
 create table `HSMSUser` ( 
@@ -165,7 +165,7 @@ create table `HSMSUser` (
 	`uname_mid` TEXT(32),
 	`uname_last` TEXT(16),
 	`udob_day` INTEGER,
-	`udob_mont` INTEGER,
+	`udob_month` INTEGER,
 	`udob_year` INTEGER,
 	`ucreation_timestamp` LONG, constraint `HSMSUser_PK` primary key (`uid`) ); 
 
