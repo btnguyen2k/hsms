@@ -190,6 +190,7 @@
     <Content Include="Admin\change_pass_admin.aspx" />
     <Content Include="Admin\content_admin.aspx" />
     <Content Include="Admin\edit_del_pupil.aspx" />
+    <Content Include="Admin\edit_del_teacher.aspx" />
     <Content Include="Admin\function_admin.aspx" />
     <Content Include="Admin\main_admin.aspx" />
     <Content Include="Admin\title_admin.aspx" />
@@ -251,6 +252,13 @@
     </Compile>
     <Compile Include="Admin\edit_del_pupil.aspx.designer.cs">
       <DependentUpon>edit_del_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\edit_del_teacher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>edit_del_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\edit_del_teacher.aspx.designer.cs">
+      <DependentUpon>edit_del_teacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\function_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
