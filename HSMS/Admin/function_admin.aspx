@@ -11,6 +11,12 @@
     <div>
         <asp:HyperLink ID="ChangePass" runat="server" Font-Underline="True" Font-Names="Verdana"
             Width="180px" Target="content_admin" NavigateUrl="change_pass_admin.aspx">*Thay đổi mật khẩu</asp:HyperLink><br />
+        <asp:Label ID="Label4" runat="server" Text="QUẢN LÝ GIÁO VIÊN" Width="174px"></asp:Label><br />
+        &nbsp;
+        <asp:Label ID="Label5" runat="server" Text="+"></asp:Label>
+        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Verdana" Font-Size="Medium"
+            ForeColor="Blue" NavigateUrl="~/Admin/add_tearcher.aspx" Target="content_admin"
+            Width="165px">Thêm giáo viên mới</asp:HyperLink><br />
         <asp:Label ID="Label1" runat="server" Text="* QUẢN LÝ HỌC SINH" Width="177px" Font-Underline="True"></asp:Label>
         <br />
         &nbsp;

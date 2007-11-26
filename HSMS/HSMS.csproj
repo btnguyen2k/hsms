@@ -186,6 +186,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\add_pupil.aspx" />
+    <Content Include="Admin\add_tearcher.aspx" />
     <Content Include="Admin\change_pass_admin.aspx" />
     <Content Include="Admin\content_admin.aspx" />
     <Content Include="Admin\edit_del_pupil.aspx" />
@@ -201,11 +202,6 @@
     </Content>
     <Content Include="App_Data\hsms_temp_log.ldf">
       <DependentUpon>hsms_temp.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\temp.mdf">
-    </Content>
-    <Content Include="App_Data\temp_log.ldf">
-      <DependentUpon>temp.mdf</DependentUpon>
     </Content>
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
@@ -227,6 +223,13 @@
     </Compile>
     <Compile Include="Admin\add_pupil.aspx.designer.cs">
       <DependentUpon>add_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_tearcher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>add_tearcher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\add_tearcher.aspx.designer.cs">
+      <DependentUpon>add_tearcher.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\change_pass_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
