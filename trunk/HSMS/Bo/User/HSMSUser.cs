@@ -51,7 +51,19 @@ namespace HSMS.Bo.User
                     roles = new HashedSet<HSMSGroup>();
                 }
 
-                if (!roles.Contains(group))
+                if (group != null && !roles.Contains(group))
+                {
+                    roles.Add(group);
+                }
+            }
+        }
+
+        public void SetRole(HSMSGroup group)
+        {
+            lock (this)
+            {
+                roles = new HashedSet<HSMSGroup>();
+                if (group != null)
                 {
                     roles.Add(group);
                 }
@@ -140,7 +152,7 @@ namespace HSMS.Bo.User
             }
             set
             {
-                if ( value == null )
+                if (value == null)
                 {
                     FirstName = null;
                     MidName = null;
