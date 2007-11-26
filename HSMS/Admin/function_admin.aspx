@@ -17,6 +17,10 @@
         <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Verdana" Font-Size="Medium"
             ForeColor="Blue" NavigateUrl="~/Admin/add_tearcher.aspx" Target="content_admin"
             Width="165px">Thêm giáo viên mới</asp:HyperLink><br />
+        &nbsp;
+        <asp:Label ID="Label6" runat="server" Text="+"></asp:Label>
+        <asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Verdana" Font-Size="Medium"
+            ForeColor="Blue" NavigateUrl="~/Admin/edit_del_teacher.aspx" Target="content_admin">Chỉnh sữa giáo viên</asp:HyperLink><br />
         <asp:Label ID="Label1" runat="server" Text="* QUẢN LÝ HỌC SINH" Width="177px" Font-Underline="True"></asp:Label>
         <br />
         &nbsp;
