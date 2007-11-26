@@ -1,12 +1,10 @@
 namespace HSMS.Bo.User
 {
     /// <summary>
-    /// This class represent a pupil's parent.
+    /// This class represent a parent in school.
     /// </summary>
-    public class HSMSParent
+    public class HSMSParent : DelegatedUser
     {
-        private HSMSPupil hsmsPupil;
-
         /// <summary>
         /// Constructs a new HSMSParent object.
         /// </summary>
@@ -17,16 +15,10 @@ namespace HSMS.Bo.User
         /// <summary>
         /// Constructs a new HSMSParent object.
         /// </summary>
-        /// <param name="hsmsPupil"></param>
-        public HSMSParent(HSMSPupil hsmsPupil)
+        /// <param name="hsmsUser"></param>
+        public HSMSParent(HSMSUser hsmsUser)
+            : base(hsmsUser)
         {
-            this.hsmsPupil = hsmsPupil;
-        }
-
-        public HSMSPupil HsmsPupil
-        {
-            get { return hsmsPupil; }
-            set { hsmsPupil = value; }
         }
     }
 }

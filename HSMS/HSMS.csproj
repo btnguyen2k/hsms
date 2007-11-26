@@ -282,6 +282,7 @@
     <Compile Include="Admin\title_admin.aspx.designer.cs">
       <DependentUpon>title_admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bo\User\DelegatedUser.cs" />
     <Compile Include="Bo\User\HSMSParent.cs" />
     <Compile Include="Bo\User\HSMSPupil.cs" />
     <Compile Include="Bo\User\HSMSGroupRule.cs" />
