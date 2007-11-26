@@ -1,14 +1,10 @@
-using HSMS.Bo.User;
-
 namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represent a teacher in school.
     /// </summary>
-    public class HSMSTeacher
+    public class HSMSTeacher : DelegatedUser
     {
-        private HSMSUser hsmsUser;
-
         /// <summary>
         /// Constructs a new HSMSTeacher object.
         /// </summary>
@@ -21,14 +17,8 @@ namespace HSMS.Bo.User
         /// </summary>
         /// <param name="hsmsUser"></param>
         public HSMSTeacher(HSMSUser hsmsUser)
+            : base(hsmsUser)
         {
-            this.hsmsUser = hsmsUser;
-        }
-
-        public HSMSUser HsmsUser
-        {
-            get { return hsmsUser; }
-            set { hsmsUser = value; }
         }
     }
 }
