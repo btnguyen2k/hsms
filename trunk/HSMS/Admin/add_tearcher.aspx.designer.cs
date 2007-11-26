@@ -119,6 +119,15 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_MainClass;
         
         /// <summary>
+        /// Teacher_MainClass_Year control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_MainClass_Year;
+        
+        /// <summary>
         /// Teacher_id control.
         /// </summary>
         /// <remarks>
@@ -135,5 +144,23 @@ namespace HSMS.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Email;
+        
+        /// <summary>
+        /// Add_Teacher control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Add_Teacher;
+        
+        /// <summary>
+        /// Add_Result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Add_Result;
     }
 }

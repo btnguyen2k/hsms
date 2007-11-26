@@ -27,16 +27,16 @@
         <br />
         <br />
   
-  <table border="1" id="Information" align="left" runat="server" style="width: 545px">
+  <table border="1" id="Information" align="left" runat="server" style="width: 528px">
 	<tr>
-		<td style="width: 140px" >&nbsp;Họ và tên :</td>
-		<td style="width: 75px" >		
+		<td style="width: 180px" >&nbsp;Họ và tên :</td>
+		<td style="width: 74px" >		
 			<input type="text" runat="server" name="T1" size="20" id="Teacher_name"/>		
 		</td>
 	</tr>
 	<tr>
-		<td style="width: 140px" >&nbsp;Ngày tháng năm sinh :</td>
-		<td style="width: 75px" >
+		<td style="width: 180px" >&nbsp;Ngày tháng năm sinh :</td>
+		<td style="width: 74px" >
 		    <table border="1" width="100%" id="table2" runat="server">
 			    <tr>
 				    <td>
@@ -53,42 +53,67 @@
         </td>
 	</tr>
 	<tr>
-		<td style="width: 140px">
+		<td style="width: 180px">
             Năm băt đầu giảng dạy :</td>
-		<td style="width: 75px">
+		<td style="width: 74px">
 			<input type="text" name="T2" style="width: 60px" runat="server" id="Teacher_YearStart"/>		
 		</td>
 	</tr>
 	<tr>
-		<td style="width: 140px">
+		<td style="width: 180px">
             Dạy môn học :</td>
-		<td style="width: 75px">
+		<td style="width: 74px">
 			<input type="text" name="T3" style="width: 96px" runat="server" id="Teacher_Subject"/>
 		</td>
 	</tr>
 	<tr>
-		<td style="width: 140px">Chủ nhiệm lớp :</td>
-		<td style="width: 75px">
+		<td style="width: 180px">Chủ nhiệm lớp :</td>
+		<td style="width: 74px">
 			<input type="text" name="T4" style="width: 95px" runat="server" id="Teacher_MainClass" />
 		</td>
 	</tr>
 	<tr>
-		<td style="width: 140px">
+		<td style="width: 180px">Năm học:</td>
+		<td style="width: 74px">
+			<input type="text" name="T4" style="width: 95px" runat="server" id="Teacher_MainClass_Year" />
+		</td>
+	</tr>
+	<tr>
+		<td style="width: 180px">
             Mã số giáo viên :</td>
-		<td style="width: 75px">
+		<td style="width: 74px">
 			<input type="text" name="T2" style="width: 60px" runat="server" id="Teacher_id"/>		
 		</td>
 	</tr>
 	<tr>
-		<td style="width: 140px">&nbsp;Email :
+		<td style="width: 180px">&nbsp;Email :
         </td>
-		<td style="width: 75px">
+		<td style="width: 74px">
 			<input type="text" name="T5" size="20" runat="server" id="Teacher_Email"/>
 		</td>
 	</tr>
 </table>
-    
-    </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" /><br />
+        &nbsp; &nbsp;&nbsp;
+        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label></div>
     </form>
 </body>
 </html>

@@ -109,7 +109,6 @@ namespace HSMS.Admin
 
             Add_Result.Text = "Thêm vào thành công!";
 
-
         }
     }
 }
