@@ -1,4 +1,4 @@
-namespace HSMS.Bo
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represents a user group.
@@ -59,6 +59,12 @@ namespace HSMS.Bo
             set { isGod = value; }
         }
 
+        public virtual int God
+        {
+            get { return isGod ? 1 : 0; }
+            set { isGod = value != 0; }
+        }
+
         public virtual string Name
         {
             get { return name; }
@@ -81,6 +87,24 @@ namespace HSMS.Bo
         {
             get { return suffix; }
             set { suffix = value; }
+        }
+
+        public override bool Equals(object o)
+        {
+            HSMSGroup gr = o as HSMSGroup;
+            return gr != null ? id == gr.id : false;
+        }
+
+        public override int GetHashCode()
+        {
+            int result = 0;
+            if (id != null) result ^= id.GetHashCode();
+            if (name != null) result ^= name.GetHashCode();
+            result ^= isGod.GetHashCode();
+            if (description != null) result ^= description.GetHashCode();
+            if (prefix != null) result ^= prefix.GetHashCode();
+            if (suffix != null) result ^= suffix.GetHashCode();
+            return result;
         }
     }
 }

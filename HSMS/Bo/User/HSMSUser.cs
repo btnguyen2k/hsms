@@ -1,21 +1,23 @@
-using System.Collections.Generic;
+using Iesi.Collections.Generic;
 
-namespace HSMS.Bo
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represents a user account within the system.
     /// </summary>
-    public class HSMSUser : IHSMSUser
+    public class HSMSUser //: IHSMSUser
     {
         private object id;
         private string loginName;
         private string password;
         private string email;
-        private ICollection<HSMSGroup> roles;
+        //private ICollection<HSMSGroup> roles;
+        private ISet<HSMSGroup> roles;
         private string lastName;
         private string midName;
         private string firstName;
         private int dobDay, dobMonth, dobYear;
+        private int creationTimestamp;
 
         /// <summary>
         /// Constructs a new HSMSUser object.
@@ -45,7 +47,8 @@ namespace HSMS.Bo
             {
                 if (roles == null)
                 {
-                    roles = new List<HSMSGroup>();
+                    //roles = new List<HSMSGroup>();
+                    roles = new HashedSet<HSMSGroup>();
                 }
 
                 if (!roles.Contains(group))
@@ -62,79 +65,113 @@ namespace HSMS.Bo
 
         public void RemoveRole(HSMSGroup group)
         {
-            lock ( this )
+            lock (this)
             {
-                if ( roles != null && group != null )
+                if (roles != null && group != null)
                 {
                     roles.Remove(group);
                 }
             }
         }
 
-        public object Id
+        public virtual int Id
         {
-            get { return id; }
+            get { return id != null ? (int) id : 0; }
             set { id = value; }
         }
 
-        public string LoginName
+        public virtual string LoginName
         {
             get { return loginName; }
             set { loginName = value; }
         }
 
-        public string Password
+        public virtual string Password
         {
             get { return password; }
             set { password = value; }
         }
 
-        public string Email
+        public virtual string Email
         {
             get { return email; }
             set { email = value; }
         }
 
-        public ICollection<HSMSGroup> Roles
+        //public ICollection<HSMSGroup> Roles
+        //{
+        //    get { return roles; }
+        //    set { roles = value; }
+        //}
+
+        public virtual ISet<HSMSGroup> Roles
         {
             get { return roles; }
             set { roles = value; }
         }
 
-        public string LastName
+        public virtual string LastName
         {
             get { return lastName; }
             set { lastName = value; }
         }
 
-        public string MidName
+        public virtual string MidName
         {
             get { return midName; }
             set { midName = value; }
         }
 
-        public string FirstName
+        public virtual string FirstName
         {
             get { return firstName; }
             set { firstName = value; }
         }
 
-        public int DobDay
+        public virtual string FullName
+        {
+            get
+            {
+                string fullname = "";
+                if (lastName != null && lastName.Length > 0) fullname += lastName.Trim();
+                if (midName != null && midName.Length > 0) fullname += " " + midName.Trim();
+                if (firstName != null && firstName.Length > 0) fullname += " " + firstName.Trim();
+                return fullname.Trim();
+            }
+            set
+            {
+                if ( value == null )
+                {
+                    FirstName = null;
+                    MidName = null;
+                    LastName = null;
+                    return;
+                }
+            }
+        }
+
+        public virtual int DobDay
         {
             get { return dobDay; }
             set { dobDay = value; }
         }
 
-        public int DobMonth
+        public virtual int DobMonth
         {
             get { return dobMonth; }
             set { dobMonth = value; }
         }
 
-        public int DobYear
+        public virtual int DobYear
         {
             get { return dobYear; }
             set { dobYear = value; }
+        }
+
+        public virtual int CreationTimestamp
+        {
+            get { return creationTimestamp; }
+            set { creationTimestamp = value; }
         }
     }
 }

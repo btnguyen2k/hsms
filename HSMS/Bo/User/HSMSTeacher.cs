@@ -1,4 +1,6 @@
-namespace HSMS.Bo
+using HSMS.Bo.User;
+
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represent a teacher in school.

@@ -1,4 +1,4 @@
-namespace HSMS.Bo
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represents a Group-Permission mapping.
@@ -29,22 +29,40 @@ namespace HSMS.Bo
             this.isGlobal = isGlobal;
         }
 
-        public HSMSGroup Group
+        public virtual HSMSGroup Group
         {
             get { return group; }
             set { group = value; }
         }
 
-        public HSMSPermission Permission
+        public virtual HSMSPermission Permission
         {
             get { return permission; }
             set { permission = value; }
         }
 
-        public bool IsGlobal
+        public virtual bool IsGlobal
         {
             get { return isGlobal; }
             set { isGlobal = value; }
+        }
+
+        public virtual int Global
+        {
+            get { return isGlobal ? 1 : 0; }
+            set { isGlobal = value != 0; }
+        }
+
+        public override bool Equals(object o)
+        {
+            HSMSGroupRule gr = o as HSMSGroupRule;
+            if ( gr == null ) return false;
+            return group.Equals(gr.group) && permission.Equals(gr.permission);
+        }
+
+        public override int GetHashCode()
+        {
+            return group.GetHashCode() ^ permission.GetHashCode();
         }
     }
 }

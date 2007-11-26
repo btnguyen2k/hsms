@@ -1,4 +1,4 @@
-namespace HSMS.Bo
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represent a pupil's parent.
