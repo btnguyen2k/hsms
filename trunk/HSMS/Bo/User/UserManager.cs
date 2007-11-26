@@ -233,7 +233,33 @@ namespace HSMS.Bo.User
             }
         }
 
-
+        /// <summary>
+        /// Creates a new user account.
+        /// </summary>
+        /// <param name="group"></param>
+        /// <param name="loginName"></param>
+        /// <param name="password"></param>
+        /// <param name="email"></param>
+        /// <param name="fullname"></param>
+        /// <param name="dobDay"></param>
+        /// <param name="dobMonth"></param>
+        /// <param name="dobYear"></param>
+        /// <returns></returns>
+        public static HSMSUser CreateUser(HSMSGroup group, string loginName, string password, string email,
+                                          string fullname, int dobDay, int dobMonth, int dobYear)
+        {
+            HSMSUser user = new HSMSUser();
+            user.LoginName = loginName.Trim().ToLower();
+            user.Password = Utils.Md5(password.Trim());
+            user.Email = email.Trim();
+            user.FullName = fullname.Trim();
+            user.DobDay = dobYear;
+            user.DobMonth = dobMonth;
+            user.DobYear = dobYear;
+            long ticks = DateTime.UtcNow.Ticks;
+            user.CreationTimestamp = (int) (ticks/TimeSpan.TicksPerSecond);
+            return CreateUser(user);
+        }
 
         /// <summary>
         /// Creates a new user account.
