@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="HSMS.Bo.User" assembly="HSMS">
+  <class name="HSMSPermission" table="HSMSPermission">
+    <id name="Name" column="pname" type="String" length="32">
+      <generator class="assigned"/>
+    </id>
+    <property name="Description" column="pdesc" type="String" length="255" />
+  </class>
+</hibernate-mapping>

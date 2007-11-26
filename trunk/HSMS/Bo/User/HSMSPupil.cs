@@ -1,6 +1,6 @@
-using System.Collections.Generic;
+using Iesi.Collections.Generic;
 
-namespace HSMS.Bo
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This class represent a pupil in school.
@@ -42,7 +42,7 @@ namespace HSMS.Bo
             return hsmsUser.HasRole(group);
         }
 
-        public new object Id
+        public new int Id
         {
             get { return hsmsUser.Id; }
             set { hsmsUser.Id = value; }
@@ -66,7 +66,13 @@ namespace HSMS.Bo
             set { hsmsUser.Email = value; }
         }
 
-        public new ICollection<HSMSGroup> Roles
+        //public new ICollection<HSMSGroup> Roles
+        //{
+        //    get { return hsmsUser.Roles; }
+        //    set { hsmsUser.Roles = value; }
+        //}
+
+        public new ISet<HSMSGroup> Roles
         {
             get { return hsmsUser.Roles; }
             set { hsmsUser.Roles = value; }

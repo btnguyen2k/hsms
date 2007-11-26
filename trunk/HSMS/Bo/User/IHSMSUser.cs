@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace HSMS.Bo
+namespace HSMS.Bo.User
 {
     /// <summary>
     /// This interface represents a user account.

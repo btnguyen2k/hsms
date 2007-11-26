@@ -8,13 +8,22 @@ namespace HSMS.Db
     public sealed class NHibernateHelper : IHttpModule
     {
         private const string CurrentSessionKey = "nhibernate.current_session";
-        private static readonly ISessionFactory sessionFactory;
+        private static readonly ISessionFactory SessionFactory;
+        private static bool HasError = false;
 
         static NHibernateHelper()
         {
             //string configFile = AppDomain.CurrentDomain.BaseDirectory + "Resources\\nhibernate\\hibernate.cfg.xml";
-            //sessionFactory = new Configuration().Configure(configFile).BuildSessionFactory();
-            sessionFactory = new Configuration().Configure().BuildSessionFactory();
+            //SessionFactory = new Configuration().Configure(configFile).BuildSessionFactory();
+            SessionFactory = new Configuration().Configure().BuildSessionFactory();
+        }
+
+        /// <summary>
+        /// Indicates that there was an error occured
+        /// </summary>
+        public static void MarkError()
+        {
+            HasError = true;
         }
 
         /// <summary>
@@ -28,8 +37,9 @@ namespace HSMS.Db
 
             if (currentSession == null)
             {
-                currentSession = sessionFactory.OpenSession();
+                currentSession = SessionFactory.OpenSession();
                 context.Items[CurrentSessionKey] = currentSession;
+                currentSession.BeginTransaction();
             }
 
             return currentSession;
@@ -52,7 +62,8 @@ namespace HSMS.Db
             {
                 try
                 {
-                    currentSession.Flush();
+                    if (HasError) currentSession.Transaction.Rollback();
+                    else currentSession.Transaction.Commit();
                 }
                 finally
                 {
@@ -70,9 +81,9 @@ namespace HSMS.Db
         /// </summary>
         public static void CloseSessionFactory()
         {
-            if (sessionFactory != null)
+            if (SessionFactory != null)
             {
-                sessionFactory.Close();
+                SessionFactory.Close();
             }
         }
 
