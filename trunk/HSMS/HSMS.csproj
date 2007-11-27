@@ -193,6 +193,7 @@
     <Content Include="Admin\edit_del_teacher.aspx" />
     <Content Include="Admin\function_admin.aspx" />
     <Content Include="Admin\main_admin.aspx" />
+    <Content Include="Admin\teacher_scheduling.aspx" />
     <Content Include="Admin\title_admin.aspx" />
     <Content Include="App_Data\hsms.mdf">
     </Content>
@@ -274,6 +275,13 @@
     </Compile>
     <Compile Include="Admin\main_admin.aspx.designer.cs">
       <DependentUpon>main_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\teacher_scheduling.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>teacher_scheduling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\teacher_scheduling.aspx.designer.cs">
+      <DependentUpon>teacher_scheduling.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\title_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>

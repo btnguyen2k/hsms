@@ -21,6 +21,10 @@
         <asp:Label ID="Label6" runat="server" Text="+"></asp:Label>
         <asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Verdana" Font-Size="Medium"
             ForeColor="Blue" NavigateUrl="~/Admin/edit_del_teacher.aspx" Target="content_admin">Chỉnh sữa giáo viên</asp:HyperLink><br />
+        &nbsp;
+        <asp:Label ID="Label7" runat="server" Text="+"></asp:Label>
+        <asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Admin/teacher_scheduling.aspx" Target="content_admin">Lịch giảng dạy</asp:HyperLink><br />
         <asp:Label ID="Label1" runat="server" Text="* QUẢN LÝ HỌC SINH" Width="177px" Font-Underline="True"></asp:Label>
         <br />
         &nbsp;
@@ -30,7 +34,9 @@
         &nbsp;
         <asp:Label ID="Label3" runat="server" Text="+" Width="1px"></asp:Label>
         <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Verdana" Font-Size="Medium"
-            NavigateUrl="~/Admin/edit_del_pupil.aspx" Target="content_admin" Width="160px">Chỉnh sữa học sinh</asp:HyperLink></div>      
+            NavigateUrl="~/Admin/edit_del_pupil.aspx" Target="content_admin" Width="160px">Chỉnh sữa học sinh</asp:HyperLink>
+        <br />
+        <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label></div>      
     </form>
 </body>
 </html>
