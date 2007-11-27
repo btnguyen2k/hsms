@@ -105,9 +105,10 @@
         <br />
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;<asp:Button ID="Teacher_DelInf" runat="server" Text="Xoá" Width="95px" />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button
-            ID="Teacher_EditInf" runat="server" Text="Cập nhật mới" /><br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="Teacher_DelInf" runat="server"
+            OnClick="Teacher_DelInf_Click" Text="Xoá" Width="90px" />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button
+            ID="Teacher_EditInf" runat="server" Text="Cập nhật mới" OnClick="Teacher_EditInf_Click" /><br />
         <asp:Label ID="Teacher_EditResult" runat="server" ForeColor="Red" Width="491px"></asp:Label></div>
     </form>
 </body>

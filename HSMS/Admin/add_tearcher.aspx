@@ -112,7 +112,9 @@
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" /><br />
-        &nbsp; &nbsp;&nbsp;
+        &nbsp; 
+        <br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
         <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label></div>
     </form>
 </body>
