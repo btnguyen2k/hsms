@@ -9,9 +9,9 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 
-namespace HSMS.Admin
+namespace HSMS.Teacher
 {
-    public partial class title_admin : System.Web.UI.Page
+    public partial class title_teacher : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,12 +23,12 @@ namespace HSMS.Admin
             else
             {
                 Session.Timeout = 60;
-                Welcome.Text = "Hi, " + Session["login_id"].ToString().Trim() + "!";
-                    // +Session["login_pass"] + Session["login_state"];
+                Welcome.Text = "Chào giáo viên, " + Session["login_id"].ToString().Trim() + "!";
+                // +Session["login_pass"] + Session["login_state"];
             }
         }
 
-        protected void Logout_Click(object sender, EventArgs e)
+        protected void LogOut_Click(object sender, EventArgs e)
         {
             Session["login_state"] = "not_login";
             Session.Timeout = 5;
