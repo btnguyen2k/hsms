@@ -188,6 +188,9 @@
     <Content Include="Admin\add_pupil.aspx" />
     <Content Include="Admin\add_tearcher.aspx" />
     <Content Include="Admin\change_pass_admin.aspx" />
+    <Content Include="Admin\class_manager.aspx" />
+    <Content Include="Admin\class_schedule.aspx" />
+    <Content Include="Admin\subject_manager.aspx" />
     <Content Include="Admin\content_admin.aspx" />
     <Content Include="Admin\edit_del_pupil.aspx" />
     <Content Include="Admin\edit_del_teacher.aspx" />
@@ -207,14 +210,25 @@
     </Content>
     <EmbeddedResource Include="Bo\User\HSMSPermission.hbm.xml" />
     <EmbeddedResource Include="Bo\User\HSMSGroupRule.hbm.xml" />
+    <Content Include="App_Data\temphsms.mdf">
+    </Content>
+    <Content Include="App_Data\temphsms_log.ldf">
+      <DependentUpon>temphsms.mdf</DependentUpon>
+    </Content>
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="file_docs\Nhap_hoc.html" />
     <Content Include="Function.aspx" />
     <Content Include="images\font.jpg" />
     <Content Include="Main.aspx" />
+    <Content Include="Pupil\main_pupil.aspx" />
     <Content Include="Resources\HSMS.mdb">
     </Content>
+    <Content Include="Teacher\change_pass_teacher.aspx" />
+    <Content Include="Teacher\content_teacher.aspx" />
+    <Content Include="Teacher\function_teacher.aspx" />
+    <Content Include="Teacher\main_teacher.aspx" />
+    <Content Include="Teacher\title_teacher.aspx" />
     <Content Include="Tittle.aspx" />
     <Content Include="Web.config" />
     <EmbeddedResource Include="Bo\User\HSMSGroup.hbm.xml" />
@@ -240,6 +254,27 @@
     </Compile>
     <Compile Include="Admin\change_pass_admin.aspx.designer.cs">
       <DependentUpon>change_pass_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\class_manager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>class_manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\class_manager.aspx.designer.cs">
+      <DependentUpon>class_manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\class_schedule.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>class_schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\class_schedule.aspx.designer.cs">
+      <DependentUpon>class_schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subject_manager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>subject_manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\subject_manager.aspx.designer.cs">
+      <DependentUpon>subject_manager.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\content_admin.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -334,6 +369,48 @@
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pupil\main_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>main_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\main_pupil.aspx.designer.cs">
+      <DependentUpon>main_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\change_pass_teacher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>change_pass_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\change_pass_teacher.aspx.designer.cs">
+      <DependentUpon>change_pass_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\content_teacher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>content_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\content_teacher.aspx.designer.cs">
+      <DependentUpon>content_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\function_teacher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>function_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\function_teacher.aspx.designer.cs">
+      <DependentUpon>function_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\main_teacher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>main_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\main_teacher.aspx.designer.cs">
+      <DependentUpon>main_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\title_teacher.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>title_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\title_teacher.aspx.designer.cs">
+      <DependentUpon>title_teacher.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tittle.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Tittle.aspx</DependentUpon>
