@@ -1,5 +1,3 @@
-using HSMS.Bo.User;
-
 namespace HSMS.Bo.User
 {
     /// <summary>

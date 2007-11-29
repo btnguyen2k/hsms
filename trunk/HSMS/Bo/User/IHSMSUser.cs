@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace HSMS.Bo.User
 {
     /// <summary>
     /// This interface represents a user account.
     /// </summary>
-    interface IHSMSUser
+    internal interface IHSMSUser
     {
         /// <summary>
         /// Assigns a role (group) to this user account.

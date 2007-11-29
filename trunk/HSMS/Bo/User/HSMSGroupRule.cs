@@ -56,7 +56,7 @@ namespace HSMS.Bo.User
         public override bool Equals(object o)
         {
             HSMSGroupRule gr = o as HSMSGroupRule;
-            if ( gr == null ) return false;
+            if (gr == null) return false;
             return group.Equals(gr.group) && permission.Equals(gr.permission);
         }
 

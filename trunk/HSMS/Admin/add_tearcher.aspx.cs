@@ -1,19 +1,11 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
 using System.Data.OleDb;
-using System.Web;
-using System.Web.Security;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using NHibernate.Test.UserCollection;
+using HSMS.Db;
 
 namespace HSMS.Admin
 {
-    public partial class add_tearcher : System.Web.UI.Page
+    public partial class add_tearcher : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -27,18 +19,17 @@ namespace HSMS.Admin
 
         protected void Add_Teacher_Click(object sender, EventArgs e)
         {
-            String connStr =
-                "Provider=SQLNCLI; Server=.\\SQLExpress; Database=dbname; Trusted_Connection=Yes;";
-            OleDbConnection conn = new OleDbConnection(connStr);
+            OleDbConnection conn = DbUtils.GetSQLDbConnection();
             conn.Open();
             OleDbCommand cm = new OleDbCommand();
             cm.Connection = conn;
-            
+
             // Them thong tin vao cac table HSMSUser, HSMSTeacher, HSMSCLass
             cm.CommandText =
-               "INSERT INTO HSMSUser (ulogin_name, upassword, uemail, ufull_name, udob_day, udob_mont, udob_year) VALUES ('" +
-               Teacher_id.Value + "', '" + Teacher_id.Value + "','" + Teacher_Email.Value + "','" + Teacher_name.Value + "'," + Teacher_Day.Value + "," +
-               Teacher_Month.Value + "," + Teacher_Year.Value + ")";
+                "INSERT INTO HSMSUser (ulogin_name, upassword, uemail, ufull_name, udob_day, udob_mont, udob_year) VALUES ('" +
+                Teacher_id.Value + "', '" + Teacher_id.Value + "','" + Teacher_Email.Value + "','" + Teacher_name.Value +
+                "'," + Teacher_Day.Value + "," +
+                Teacher_Month.Value + "," + Teacher_Year.Value + ")";
             cm.ExecuteNonQuery();
 
             cm.CommandText = "Select uid, ulogin_name From HSMSUser";
@@ -52,12 +43,14 @@ namespace HSMS.Admin
                 }
             }
             dr.Dispose();
-            cm.CommandText = "INSERT INTO HSMSTeacher (uid, teacher_id, subject_id, year_start) VALUES ('" + uid_user.Trim() + "','" + Teacher_id.Value +
-                            "','" + Teacher_Subject.Value + "','" + Teacher_YearStart.Value + "')";
+            cm.CommandText = "INSERT INTO HSMSTeacher (uid, teacher_id, subject_id, year_start) VALUES ('" +
+                             uid_user.Trim() + "','" + Teacher_id.Value +
+                             "','" + Teacher_Subject.Value + "','" + Teacher_YearStart.Value + "')";
             cm.ExecuteNonQuery();
 
-            cm.CommandText = "INSERT INTO HSMSClass (class_id, teacher_id, year) VALUES ('" + Teacher_MainClass.Value + "','" + Teacher_id.Value + "','" + Teacher_MainClass_Year.Value +
-         "')";
+            cm.CommandText = "INSERT INTO HSMSClass (class_id, teacher_id, year) VALUES ('" + Teacher_MainClass.Value +
+                             "','" + Teacher_id.Value + "','" + Teacher_MainClass_Year.Value +
+                             "')";
             cm.ExecuteNonQuery();
 
             cm.Dispose();
@@ -66,7 +59,5 @@ namespace HSMS.Admin
 
             Add_Result.Text = "Thêm thông tin giáo viên thành công!!!";
         }
-
-      
     }
 }
