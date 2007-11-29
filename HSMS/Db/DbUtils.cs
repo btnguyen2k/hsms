@@ -1,6 +1,5 @@
 using System;
 using System.Data;
-using System.Data.Common;
 using System.Data.OleDb;
 using NHibernate.Driver;
 using NHibernate.JetDriver;
@@ -9,6 +8,16 @@ namespace HSMS.Db
 {
     public class DbUtils
     {
+        private const string CONNECTION_STRING_SQL2005 =
+            "Provider=SQLNCLI; Server=.\\SQLExpress; Database=dbname; Trusted_Connection=Yes;";
+
+        //"Provider=SQLNCLI;Server=.\\SQLExpress;AttachDbFilename=C:\\Inetpub\\wwwroot\\HSMS\\App_Data\\hsms.mdf; Database=dbname;Trusted_Connection=Yes;";
+
+        public static OleDbConnection GetSQLDbConnection()
+        {
+            return new OleDbConnection(CONNECTION_STRING_SQL2005);
+        }
+
         private const string CONNECTION_STRING =
             "Provider=Microsoft.Jet.OLEDB.4.0;Data Source={APP_DIR}Resources\\hsms.mdb;User Id=admin;Password=;";
 
@@ -26,9 +35,10 @@ namespace HSMS.Db
         }
 
         private static string ConnectionString = null;
+
         public static IDbConnection GetDbConnection()
         {
-            if ( ConnectionString == null )
+            if (ConnectionString == null)
             {
                 ConnectionString = CONNECTION_STRING.Replace("{APP_DIR}", AppDomain.CurrentDomain.BaseDirectory);
             }

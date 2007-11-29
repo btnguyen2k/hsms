@@ -1,9 +1,9 @@
 using System;
 using System.Web.UI;
 
-namespace HSMS.Teacher
+namespace HSMS.Pupil
 {
-    public partial class main_teacher : Page
+    public partial class content_pupil : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -221,13 +221,19 @@
     <Content Include="Function.aspx" />
     <Content Include="images\font.jpg" />
     <Content Include="Main.aspx" />
+    <Content Include="Pupil\changepass_pupil.aspx" />
+    <Content Include="Pupil\content_pupil.aspx" />
+    <Content Include="Pupil\function_pupil.aspx" />
     <Content Include="Pupil\main_pupil.aspx" />
+    <Content Include="Pupil\schedule.aspx" />
+    <Content Include="Pupil\title_pupil.aspx" />
     <Content Include="Resources\HSMS.mdb">
     </Content>
     <Content Include="Teacher\change_pass_teacher.aspx" />
     <Content Include="Teacher\content_teacher.aspx" />
     <Content Include="Teacher\function_teacher.aspx" />
     <Content Include="Teacher\main_teacher.aspx" />
+    <Content Include="Teacher\scheduling.aspx" />
     <Content Include="Teacher\title_teacher.aspx" />
     <Content Include="Tittle.aspx" />
     <Content Include="Web.config" />
@@ -369,12 +375,47 @@
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pupil\changepass_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>changepass_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\changepass_pupil.aspx.designer.cs">
+      <DependentUpon>changepass_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\content_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>content_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\content_pupil.aspx.designer.cs">
+      <DependentUpon>content_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\function_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>function_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\function_pupil.aspx.designer.cs">
+      <DependentUpon>function_pupil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pupil\main_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>main_pupil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pupil\main_pupil.aspx.designer.cs">
       <DependentUpon>main_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\schedule.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\schedule.aspx.designer.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\title_pupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>title_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\title_pupil.aspx.designer.cs">
+      <DependentUpon>title_pupil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\change_pass_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -403,6 +444,13 @@
     </Compile>
     <Compile Include="Teacher\main_teacher.aspx.designer.cs">
       <DependentUpon>main_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\scheduling.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>scheduling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\scheduling.aspx.designer.cs">
+      <DependentUpon>scheduling.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\title_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>

@@ -1,43 +1,30 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
 using System.Data.OleDb;
-using System.Web;
-using System.Web.Security;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using System.Data.SqlClient;
+using HSMS.Db;
 
 namespace HSMS
 {
-    public partial class Tittle : System.Web.UI.Page
+    public partial class Tittle : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Timeout = 5;
         }
+
         protected void TextBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
+
         protected void LoginProcess_Click(object sender, EventArgs e)
         {
             int count = 0;
-            
+
             // Trang thai chua login
             Session["login_state"] = "not_login";
 
-            //String connStr =
-            //    "Provider=SQLNCLI;Server=.\\SQLExpress;AttachDbFilename=C:\\Inetpub\\wwwroot\\HSMS\\App_Data\\hsms.mdf; Database=dbname;Trusted_Connection=Yes;";
-            
-            // Make connection to databse
-            String connStr =
-                "Provider=SQLNCLI; Server=.\\SQLExpress; Database=dbname; Trusted_Connection=Yes;";
-            OleDbConnection conn = new OleDbConnection(connStr);
-            
+            OleDbConnection conn = DbUtils.GetSQLDbConnection();
+
             OleDbCommand cm = new OleDbCommand();
             cm.Connection = conn;
             conn.Open();
@@ -47,14 +34,15 @@ namespace HSMS
             OleDbDataReader dr = cm.ExecuteReader();
             while (dr.Read())
             {
-                if ((dr["ulogin_name"].ToString().Trim() == LoginName.Text) && (dr["upassword"].ToString().Trim() == Password.Text))
+                if ((dr["ulogin_name"].ToString().Trim() == LoginName.Text) &&
+                    (dr["upassword"].ToString().Trim() == Password.Text))
                 {
                     count++;
                 }
             }
             dr.Dispose();
             dr.Close();
-            
+
             if (count > 0)
             {
                 // Luu trang thai login
@@ -63,7 +51,7 @@ namespace HSMS
                 Session["login_state"] = "login";
                 Session.Timeout = 60;
 
-                switch(RadioButton_Choice.SelectedIndex)
+                switch (RadioButton_Choice.SelectedIndex)
                 {
                     case 0:
                         {
@@ -72,7 +60,7 @@ namespace HSMS
                             int check = 0;
                             while (dr1.Read())
                             {
-                                if ((dr1["Admin_id"].ToString().Trim() == LoginName.Text) )
+                                if ((dr1["Admin_id"].ToString().Trim() == LoginName.Text))
                                 {
                                     check++;
                                 }
@@ -80,11 +68,10 @@ namespace HSMS
                             if (check > 0)
                             {
                                 Response.Redirect("Admin/main_admin.aspx");
-                                
                             }
                             dr1.Dispose();
                             dr1.Close();
-                            LoginName.Text = "";    
+                            LoginName.Text = "";
                             break;
                         }
                     case 1:
@@ -102,7 +89,6 @@ namespace HSMS
                             if (check > 0)
                             {
                                 Response.Redirect("Teacher/main_teacher.aspx");
-
                             }
                             dr1.Dispose();
                             dr1.Close();
@@ -124,7 +110,6 @@ namespace HSMS
                             if (check > 0)
                             {
                                 Response.Redirect("Pupil/main_pupil.aspx");
-
                             }
                             dr1.Dispose();
                             dr1.Close();
@@ -137,7 +122,6 @@ namespace HSMS
                             break;
                         }
                 }
-                
             }
             else
             {
@@ -147,7 +131,6 @@ namespace HSMS
             conn.Dispose();
             conn.Close();
             cm.Dispose();
-            
-        }     
+        }
     }
 }

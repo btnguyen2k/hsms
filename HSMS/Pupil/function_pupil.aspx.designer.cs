@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HSMS.Teacher {
+namespace HSMS.Pupil {
     
     
     /// <summary>
-    /// function_teacher class.
+    /// function_pupil class.
     /// </summary>
     /// <remarks>
     /// Auto-generated class.
     /// </remarks>
-    public partial class function_teacher {
+    public partial class function_pupil {
         
         /// <summary>
         /// form1 control.

@@ -4,13 +4,18 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
-    <title>Untitled Page</title>
+    <title>Pupil page</title>
+     <script language="javascript" type="text/javascript">
+    if ( top != self ) {
+        top.location.href = self.location.href;
+    }
+    </script>
 </head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
+<frameset rows="20%, *">    
+    <frame frameborder = "0" noresize name = "title_pupil" src = "title_pupil.aspx">     
+    <frameset cols="20%, *">
+     <frame frameborder = "0" noresize name = "function_pupil" src = "function_pupil.aspx">
+     <frame frameborder = "0" noresize name = "content_pupil" src = "content_pupil.aspx">
+    </frameset>
+</frameset>
 </html>

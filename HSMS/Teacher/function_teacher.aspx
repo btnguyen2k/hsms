@@ -10,7 +10,9 @@
     <form id="form1" runat="server">
     <div>
         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" Target="content_teacher"
-            Width="137px" NavigateUrl="~/Teacher/change_pass_teacher.aspx">* Thay đổi mật kkhẩu</asp:HyperLink></div>
+            Width="137px" NavigateUrl="~/Teacher/change_pass_teacher.aspx">* Thay đổi mật khẩu</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/scheduling.aspx"
+            Target="content_teacher" Width="111px">* Lịch công tác</asp:HyperLink>&nbsp;</div>
     </form>
 </body>
 </html>

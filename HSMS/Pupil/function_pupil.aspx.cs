@@ -1,17 +1,17 @@
 using System;
 using System.Web.UI;
 
-namespace HSMS.Admin
+namespace HSMS.Pupil
 {
-    public partial class main_admin : Page
+    public partial class function_pupil : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*   // Check login simple
+            // Check login simple
             if (Session.Timeout != 60)
             {
-                Response.Redirect("http://localhost/HSMS/main.aspx");
-            } */
+                Response.Redirect("~/main.aspx");
+            }
         }
     }
 }

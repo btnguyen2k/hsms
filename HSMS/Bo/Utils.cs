@@ -1,4 +1,6 @@
+using System;
 using System.Security.Cryptography;
+using System.Text;
 
 namespace HSMS.Bo
 {
@@ -9,9 +11,9 @@ namespace HSMS.Bo
             if (input == null || input == "") return "";
 
             MD5CryptoServiceProvider x = new MD5CryptoServiceProvider();
-            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(input);
+            byte[] bytes = Encoding.UTF8.GetBytes(input);
             bytes = x.ComputeHash(bytes);
-            System.Text.StringBuilder s = new System.Text.StringBuilder();
+            StringBuilder s = new StringBuilder();
             foreach (byte b in bytes)
             {
                 s.Append(b.ToString("x2").ToLower());
@@ -19,9 +21,9 @@ namespace HSMS.Bo
             return s.ToString();
         }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            System.Console.Out.WriteLine(Md5("abc"));
+            Console.Out.WriteLine(Md5("abc"));
         }
     }
 }

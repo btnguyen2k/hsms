@@ -1,17 +1,9 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
 using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 
 namespace HSMS.Admin
 {
-    public partial class title_admin : System.Web.UI.Page
+    public partial class title_admin : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,7 +16,7 @@ namespace HSMS.Admin
             {
                 Session.Timeout = 60;
                 Welcome.Text = "Hi, " + Session["login_id"].ToString().Trim() + "!";
-                    // +Session["login_pass"] + Session["login_state"];
+                // +Session["login_pass"] + Session["login_state"];
             }
         }
 
