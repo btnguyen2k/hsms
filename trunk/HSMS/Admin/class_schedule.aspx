@@ -252,7 +252,18 @@
         <asp:Button ID="AddClass_Schedule" runat="server" Text="Thêm" Width="99px" OnClick="AddClass_Schedule_Click" />
         &nbsp; &nbsp; &nbsp;<asp:Button ID="EditClass_Schedule" runat="server" Text="Sữa"
             Width="92px" OnClick="EditClass_Schedule_Click" /><br />
-        <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="455px"></asp:Label>
+        <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="455px"></asp:Label>&nbsp;<br />
+        <br />
+        <asp:Table ID="temp" runat="server" Width="96px">
+            <asp:TableRow ID="a" runat="server">
+                <asp:TableCell runat="server">1</asp:TableCell>
+                <asp:TableCell runat="server">2</asp:TableCell>
+            </asp:TableRow>
+            <asp:TableRow ID="b" runat="server">
+                <asp:TableCell runat="server">3</asp:TableCell>
+                <asp:TableCell runat="server">4</asp:TableCell>
+            </asp:TableRow>
+        </asp:Table>
     
     </form>
 </body>
