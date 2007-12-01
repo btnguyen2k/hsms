@@ -39,7 +39,9 @@
         <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Verdana" ForeColor="Blue"
             NavigateUrl="~/Admin/subject_manager.aspx" Target="content_admin">* Quản lý môn học</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Verdana" ForeColor="Blue"
-            NavigateUrl="~/Admin/class_schedule.aspx" Target="content_admin">* Thời khoá biểu</asp:HyperLink></div>      
+            NavigateUrl="~/Admin/class_schedule.aspx" Target="content_admin">* Thời khoá biểu</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/class_manager.aspx"
+            Target="content_admin">* Quản lý lớp học</asp:HyperLink></div>      
     </form>
 </body>
 </html>
