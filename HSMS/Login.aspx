@@ -44,7 +44,7 @@
             </tr>
             <tr>
                 <td align="center">
-                    <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx">Trở Về Trang Chủ</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default.aspx">Trở Về Trang Chủ</asp:HyperLink>
                 </td>
             </tr>
         </table>
