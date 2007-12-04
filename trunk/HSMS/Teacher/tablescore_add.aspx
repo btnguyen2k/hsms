@@ -50,7 +50,7 @@
         <asp:Label ID="SerultScore" runat="server" ForeColor="Red" Width="529px"></asp:Label><br />
         &nbsp;<br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp;<asp:Button ID="Save_ScoreTable" runat="server" Text="Lưu" Width="102px" Visible="False" />
+        &nbsp; &nbsp;<asp:Button ID="Save_ScoreTable" runat="server" Text="Lưu" Width="102px" Visible="False" OnClick="Save_ScoreTable_Click" />
         &nbsp; &nbsp;&nbsp;
         <asp:Button ID="Calculate_TBM" runat="server" Text="Tính tổng kết TBM" Width="144px" Visible="False" />
         &nbsp; &nbsp;&nbsp;
