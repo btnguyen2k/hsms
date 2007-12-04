@@ -5,8 +5,10 @@ namespace HSMS.Bo.User
     /// </summary>
     public class HSMSGroupRule
     {
-        private HSMSGroup group;
-        private HSMSPermission permission;
+        //private HSMSGroup group;
+        //private HSMSPermission permission;
+        private object groupId;
+        private string permName;
         private bool isGlobal;
 
         /// <summary>
@@ -16,6 +18,7 @@ namespace HSMS.Bo.User
         {
         }
 
+        /*
         /// <summary>
         /// Constructs a new HSMSGroupRule object.
         /// </summary>
@@ -28,7 +31,16 @@ namespace HSMS.Bo.User
             this.permission = permission;
             this.isGlobal = isGlobal;
         }
+        */
 
+        public HSMSGroupRule(object groupId, string permName, bool isGlobal)
+        {
+            this.groupId = groupId;
+            this.permName = permName;
+            this.isGlobal = isGlobal;
+        }
+
+        /*
         public virtual HSMSGroup Group
         {
             get { return group; }
@@ -39,6 +51,19 @@ namespace HSMS.Bo.User
         {
             get { return permission; }
             set { permission = value; }
+        }
+        */
+
+        public virtual int GroupId
+        {
+            get { return (int) groupId; }
+            set { groupId = value; }
+        }
+
+        public virtual string PermissionName
+        {
+            get { return permName; }
+            set { permName = value; }
         }
 
         public virtual bool IsGlobal
@@ -53,16 +78,32 @@ namespace HSMS.Bo.User
             set { isGlobal = value != 0; }
         }
 
+        /*
         public override bool Equals(object o)
         {
             HSMSGroupRule gr = o as HSMSGroupRule;
             if (gr == null) return false;
             return group.Equals(gr.group) && permission.Equals(gr.permission);
         }
+        */
 
+        public override bool Equals(object o)
+        {
+            HSMSGroupRule gr = o as HSMSGroupRule;
+            if (gr == null) return false;
+            return groupId.Equals(gr.groupId) && permName.Equals(gr.permName);
+        }
+
+        /*
         public override int GetHashCode()
         {
             return group.GetHashCode() ^ permission.GetHashCode();
+        }
+        */
+
+        public override int GetHashCode()
+        {
+            return groupId.GetHashCode() ^ permName.GetHashCode();
         }
     }
 }

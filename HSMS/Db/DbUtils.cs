@@ -19,7 +19,8 @@ namespace HSMS.Db
         }
 
         private const string CONNECTION_STRING =
-            "Provider=Microsoft.Jet.OLEDB.4.0;Data Source={APP_DIR}Resources\\hsms.mdb;User Id=admin;Password=;";
+        //    "Provider=Microsoft.Jet.OLEDB.4.0;Data Source={APP_DIR}Resources\\hsms.mdb;User Id=admin;Password=;";
+            "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Workspace\\dotNet\\HSMS\\HSMS\\Resources\\hsms.mdb;User Id=admin;Password=;";
 
         public static readonly IDriver NHIBERNATE_DRIVER = new JetDriver();
 

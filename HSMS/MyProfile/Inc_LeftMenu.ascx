@@ -1,0 +1,1 @@
+﻿<asp:HyperLink runat="Server" NavigateUrl="ChangePassword.aspx">Đổi Mật Mã</asp:HyperLink>

@@ -41,7 +41,21 @@ namespace HSMS.Bo.User
             this.email = email;
         }
 
-        public void AddRole(HSMSGroup group)
+        /// <summary>
+        /// Authenticates a password.
+        /// </summary>
+        /// <param name="rawPassword"></param>
+        /// <returns></returns>
+        public virtual bool Authenticate(string rawPassword)
+        {
+            if (rawPassword == null || rawPassword.Trim().Length == 0)
+            {
+                return false;
+            }
+            return Utils.Md5(rawPassword.Trim()) == password;
+        }
+
+        public virtual void AddRole(HSMSGroup group)
         {
             lock (this)
             {
@@ -58,7 +72,7 @@ namespace HSMS.Bo.User
             }
         }
 
-        public void SetRole(HSMSGroup group)
+        public virtual void SetRole(HSMSGroup group)
         {
             lock (this)
             {
@@ -70,12 +84,12 @@ namespace HSMS.Bo.User
             }
         }
 
-        public bool HasRole(HSMSGroup group)
+        public virtual bool HasRole(HSMSGroup group)
         {
             return roles != null && roles.Contains(group);
         }
 
-        public void RemoveRole(HSMSGroup group)
+        public virtual void RemoveRole(HSMSGroup group)
         {
             lock (this)
             {
@@ -152,12 +166,36 @@ namespace HSMS.Bo.User
             }
             set
             {
-                if (value == null)
+                if (value == null || value.Trim().Length == 0)
                 {
-                    FirstName = null;
-                    MidName = null;
-                    LastName = null;
+                    firstName = null;
+                    midName = null;
+                    lastName = null;
                     return;
+                }
+                else
+                {
+                    string[] tokens = value.Trim().Split(' ');
+                    if (tokens.Length == 1)
+                    {
+                        firstName = tokens[0].Trim();
+                    }
+                    else if (tokens.Length == 2)
+                    {
+                        lastName = tokens[0].Trim();
+                        firstName = tokens[1].Trim();
+                    }
+                    else
+                    {
+                        //tokens.length >= 3
+                        lastName = tokens[0].Trim();
+                        midName = tokens[1].Trim();
+                        for (int i = 2; i < tokens.Length - 1; i++)
+                        {
+                            midName += " " + tokens[i].Trim();
+                        }
+                        lastName = tokens[tokens.Length - 1];
+                    }
                 }
             }
         }

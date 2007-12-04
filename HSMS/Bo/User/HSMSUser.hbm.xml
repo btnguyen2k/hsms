@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="HSMS.Bo.User" assembly="HSMS">
+  <class name="HSMSUser" table="HSMSUSer">
+    <id name="Id" column="uid" type="Int32">
+      <generator class="native"/>
+    </id>
+    <set name="Roles" table="HSMSRole" lazy="false">
+      <key column="uid" />
+      <many-to-many column="gid" class="HSMSGroup" />
+    </set>
+    <property name="LoginName" column="ulogin_name" type="String" length="32" not-null="true" />
+    <property name="Password" column="upassword" type="String" length="64" not-null="true" />
+    <property name="Email" column="uemail" type="String" length="64" not-null="true" />
+    <property name="FirstName" column="uname_first" type="String" length="16" not-null="true" />
+    <property name="MidName" column="uname_mid" type="String" length="32" />
+    <property name="LastName" column="uname_last" type="String" length="16" />
+    <property name="DobDay" column="udob_day" type="Int32" />
+    <property name="DobMonth" column="udob_month" type="Int32" />
+    <property name="DobYear" column="udob_year" type="Int32" />
+    <property name="CreationTimestamp" column="ucreation_timestamp" type="Int32" not-null="true" />
+  </class>
+</hibernate-mapping>

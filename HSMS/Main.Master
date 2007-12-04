@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="HSMS.MasterMain" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html401/loose.dtd">
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+<form runat="server" id="FormMain">
+    <table border="0" cellpadding="4" cellspacing="1" width="1024" align="center">
+    <tr>
+        <td colspan="2" style="border-bottom: solid 1px #000000">
+            <!-- header -->
+            <center>
+                <h1><asp:Label id="PageHeader" runat="server" /></h1>
+            </center>
+            <asp:Label id="SmallUserNote" runat="server" />
+            <asp:HyperLink runat="server" NavigateUrl="~/Default.aspx" ID="TopMenuItemHome">Trang Chủ</asp:HyperLink>
+            
+            <asp:Label ID="TopMenuSeparatorMyProfile" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/MyProfile/Default.aspx" ID="TopMenuItemMyProfile">Hồ Sơ Cá Nhân</asp:HyperLink>
+                        
+            <asp:Label ID="TopMenuSeparatorAdminPage" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/Admin/Default.aspx" ID="TopMenuItemAdminPage">Trang Admin</asp:HyperLink>
+            
+            <asp:Label ID="TopMenuSeparatorTeacherPage" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/Teacher/Default.aspx" ID="TopMenuItemTeacherPage">Trang Giáo Viên</asp:HyperLink>
+            
+            <asp:Label ID="TopMenuSeparatorPupilPage" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/Pupil/Default.aspx" ID="TopMenuItemPupilPage">Trang Học Sinh</asp:HyperLink>
+            
+            <asp:Label ID="TopMenuSeparatorParentPage" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/Parent/Default.aspx" ID="TopMenuItemParentPage">Trang Phụ Huynh</asp:HyperLink>
+                        
+            <asp:Label ID="TopMenuSeparatorLogout" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/Logout.aspx" ID="TopMenuItemLogout">Đăng Xuất</asp:HyperLink>
+            <asp:Label ID="TopMenuSeparatorLogin" runat="server" Font-Bold="true"> | </asp:Label>
+            <asp:HyperLink runat="server" NavigateUrl="~/Login.aspx" ID="TopMenuItemLogin">Đăng Nhập</asp:HyperLink>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" style="border-right: solid 1px #000000" width="200">
+            <asp:ContentPlaceHolder runat="server" ID="CONTENT_LEFT_MENU" />
+        </td>
+        <td valign="top">
+            <asp:ContentPlaceHolder runat="server" ID="CONTENT_MAIN" />
+        </td>
+    </tr>
+    <tr>
+        <td align="center" colspan="2" style="border-top: solid 1px #000000">
+            <!-- footer -->
+            <small>Footer</small>
+        </td>
+    </tr>
+    </table>
+</form>    
+</body>
+</html>
