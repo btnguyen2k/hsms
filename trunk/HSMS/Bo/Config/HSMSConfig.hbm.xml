@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" namespace="HSMS.Bo.Config" assembly="HSMS">
+  <class name="HSMSConfig" table="HSMSConfig">
+    <id name="Name" column="cname" type="String" length="32">
+      <generator class="assigned"/>
+    </id>
+    <property name="Value" column="cvalue" type="String" length="255" not-null="true" />
+  </class>
+</hibernate-mapping>

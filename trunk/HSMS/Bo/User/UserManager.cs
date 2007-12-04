@@ -211,6 +211,44 @@ namespace HSMS.Bo.User
             }
         }
 
+        private static readonly string HQL_SELECT_ID_BY_LOGIN_NAME = "SELECT u.Id FROM " + ENTITY_HSMSUSER +
+                                                                     " u WHERE u.LoginName= :LoginName";
+
+        /// <summary>
+        /// Gets a user account by login name
+        /// </summary>
+        /// <param name="loginname"></param>
+        /// <returns></returns>
+        public static HSMSUser GetUser(string loginname)
+        {
+            if (loginname == null || loginname.Trim().Length == 0)
+            {
+                return null;
+            }
+            ISession session = NHibernateHelper.GetCurrentSession();
+            try
+            {
+                object id =
+                    session.CreateQuery(HQL_SELECT_ID_BY_LOGIN_NAME).SetCacheable(true).SetParameter("LoginName",
+                                                                                                     loginname.Trim().
+                                                                                                         ToLower()).
+                        UniqueResult();
+                if (id != null)
+                {
+                    return GetUser((int) id);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch (HibernateException)
+            {
+                NHibernateHelper.MarkError();
+                throw;
+            }
+        }
+
         /// <summary>
         /// Deletes a user account by id.
         /// </summary>
@@ -256,8 +294,7 @@ namespace HSMS.Bo.User
             user.DobDay = dobYear;
             user.DobMonth = dobMonth;
             user.DobYear = dobYear;
-            long ticks = DateTime.UtcNow.Ticks;
-            user.CreationTimestamp = (int) (ticks/TimeSpan.TicksPerSecond);
+            user.CreationTimestamp = Utils.GetCurrentUnixTimestamp();
             return CreateUser(user);
         }
 
@@ -280,6 +317,104 @@ namespace HSMS.Bo.User
                 NHibernateHelper.MarkError();
                 throw;
             }
+        }
+
+        /// <summary>
+        /// Updates an user account.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <returns></returns>
+        public static HSMSUser UpdateUser(HSMSUser user)
+        {
+            if (user == null) return null;
+            ISession session = NHibernateHelper.GetCurrentSession();
+            try
+            {
+                session.Update(user);
+                return user;
+            }
+            catch (HibernateException)
+            {
+                NHibernateHelper.MarkError();
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// Changes an user's password.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <param name="newPassword"></param>
+        /// <returns></returns>
+        public static HSMSUser ChangeUserPassword(int userId, string newPassword)
+        {
+            return ChangeUserPassword(GetUser(userId), newPassword);
+        }
+
+        /// <summary>
+        /// Changes an user's password.
+        /// </summary>
+        /// <param name="user"></param>
+        /// <param name="newPassword"></param>
+        /// <returns></returns>
+        public static HSMSUser ChangeUserPassword(HSMSUser user, string newPassword)
+        {
+            if (user == null || newPassword == null || newPassword.Trim().Length == 0) return null;
+            user.Password = Utils.Md5(newPassword.Trim());
+            return UpdateUser(user);
+        }
+
+        private static readonly Type ENTITY_HSMSGROUPRULE = typeof (HSMSGroupRule);
+
+        private static readonly string HQL_SELECT_GROUP_RULE = "FROM " + ENTITY_HSMSGROUPRULE +
+                                                               " gr WHERE gr.GroupId=:GroupId AND gr.PermissionName=:PermissionName";
+
+        public static HSMSGroupRule GetGroupRule(HSMSGroup group, HSMSPermission permission)
+        {
+            if (group == null || permission == null) return null;
+            ISession session = NHibernateHelper.GetCurrentSession();
+            try
+            {
+                return
+                    (HSMSGroupRule)
+                    session.CreateQuery(HQL_SELECT_GROUP_RULE).SetCacheable(false).SetParameter("GroupId", group.Id).
+                        SetParameter("PermissionName",
+                                     permission.Name).UniqueResult();
+            }
+            catch (HibernateException)
+            {
+                NHibernateHelper.MarkError();
+                throw;
+            }
+        }
+
+        public static bool HasPermission(HSMSGroup group, HSMSPermission permission)
+        {
+            if (group == null || permission == null) return false;
+            if (group.IsGod) return true;
+            return GetGroupRule(group, permission) != null;
+        }
+
+        /*
+        public static bool HasPermission(HSMSGroup group, HSMSPermission permission, bool global)
+        {
+            HSMSGroupRule gr = GetGroupRule(group, permission);
+            if (gr == null) return false;
+            if (global) return gr.IsGlobal;
+            return true;
+        }
+        */
+
+        public static bool HasPermission(HSMSUser user, HSMSPermission permission)
+        {
+            if (user == null || permission == null) return false;
+            ICollection<HSMSGroup> roles = user.Roles;
+            if (roles == null) return false;
+            foreach (HSMSGroup group in roles)
+            {
+                if (HasPermission(group, permission)) return true;
+            }
+            return false;
         }
     }
 }

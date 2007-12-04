@@ -332,6 +332,8 @@
     <Compile Include="Admin\title_admin.aspx.designer.cs">
       <DependentUpon>title_admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bo\Config\ConfigManager.cs" />
+    <Compile Include="Bo\Config\HSMSConfig.cs" />
     <Compile Include="Bo\User\DelegatedUser.cs" />
     <Compile Include="Bo\User\HSMSParent.cs" />
     <Compile Include="Bo\User\HSMSPupil.cs" />
@@ -342,7 +344,9 @@
     <Compile Include="Bo\User\HSMSTeacher.cs" />
     <Compile Include="Bo\User\HSMSUser.cs" />
     <Compile Include="Bo\User\IHSMSUser.cs" />
+    <Compile Include="Bo\User\PermissionConstants.cs" />
     <Compile Include="Bo\User\UserManager.cs" />
+    <Compile Include="Bo\User\UserSessionManager.cs" />
     <Compile Include="Bo\Utils.cs" />
     <Compile Include="content.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -354,6 +358,13 @@
     <Compile Include="Db\DbUtils.cs" />
     <Compile Include="Db\NHibernateConnectionProvider.cs" />
     <Compile Include="Db\NHibernateHelper.cs" />
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="enroll.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>enroll.aspx</DependentUpon>
@@ -368,12 +379,54 @@
     <Compile Include="Function.aspx.designer.cs">
       <DependentUpon>Function.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Installer\QuickInstaller.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>QuickInstaller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Installer\QuickInstaller.aspx.designer.cs">
+      <DependentUpon>QuickInstaller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile\ChangePassword.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfile\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pupil\changepass_pupil.aspx.cs">
@@ -474,8 +527,19 @@
     <Compile Include="Tittle.aspx.designer.cs">
       <DependentUpon>Tittle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\MyProfileCommon.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Bo\Config\HSMSConfig.hbm.xml" />
+    <EmbeddedResource Include="Bo\User\HSMSUser.hbm.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="Installer\QuickInstaller.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Main.Master" />
+    <Content Include="MyProfile\ChangePassword.aspx" />
+    <Content Include="MyProfile\Default.aspx" />
+    <Content Include="MyProfile\Inc_LeftMenu.ascx" />
     <None Include="Resources\DBSchema.DDL" />
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>
