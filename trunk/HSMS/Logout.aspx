@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title></title>
-    <meta http-equiv="refresh" content="2;url=~/Default.aspx" runat="server" id="MetaRedirect"/>
+    <meta http-equiv="refresh" content="1; url=Default.aspx" runat="server" id="MetaRedirect"/>
 </head>
 <body>
     <form id="FormLogout" runat="server">
