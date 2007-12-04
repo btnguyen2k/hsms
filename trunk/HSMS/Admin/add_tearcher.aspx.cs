@@ -48,10 +48,14 @@ namespace HSMS.Admin
                              "','" + Teacher_Subject.Value + "','" + Teacher_YearStart.Value + "')";
             cm.ExecuteNonQuery();
 
-            cm.CommandText = "INSERT INTO HSMSClass (class_id, teacher_id, year) VALUES ('" + Teacher_MainClass.Value +
+            if (Teacher_MainClass.Value != "")
+            {
+                cm.CommandText = "INSERT INTO HSMSClass (class_id, teacher_id, year) VALUES ('" + Teacher_MainClass.Value +
                              "','" + Teacher_id.Value + "','" + Teacher_MainClass_Year.Value +
                              "')";
-            cm.ExecuteNonQuery();
+                cm.ExecuteNonQuery();
+            }
+            
 
             cm.Dispose();
             conn.Close();

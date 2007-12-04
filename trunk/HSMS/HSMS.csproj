@@ -234,6 +234,7 @@
     <Content Include="Teacher\function_teacher.aspx" />
     <Content Include="Teacher\main_teacher.aspx" />
     <Content Include="Teacher\scheduling.aspx" />
+    <Content Include="Teacher\tablescore_add.aspx" />
     <Content Include="Teacher\title_teacher.aspx" />
     <Content Include="Tittle.aspx" />
     <Content Include="Web.config" />
@@ -451,6 +452,13 @@
     </Compile>
     <Compile Include="Teacher\scheduling.aspx.designer.cs">
       <DependentUpon>scheduling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\tablescore_add.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>tablescore_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\tablescore_add.aspx.designer.cs">
+      <DependentUpon>tablescore_add.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\title_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>

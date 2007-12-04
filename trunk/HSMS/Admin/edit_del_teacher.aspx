@@ -19,7 +19,10 @@
         &nbsp;
         <asp:TextBox ID="Teacher_FindId" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Find_Teacher" runat="server" Text="Tìm kiếm" OnClick="Find_Teacher_Click" /><br />
+        <asp:Button ID="Find_Teacher" runat="server" Text="Tìm kiếm" OnClick="Find_Teacher_Click" />
+        &nbsp; &nbsp; &nbsp;
+        <asp:Button ID="TeacherList" runat="server" OnClick="TeacherList_Click" Text="Danh sách giáo viên"
+            Width="156px" /><br />
         <br />
         &nbsp;<asp:Label ID="TeacherFindResultText" runat="server" ForeColor="Red" Width="386px"></asp:Label><br />
  
