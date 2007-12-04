@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HSMS.Admin {
+namespace HSMS.Teacher {
     
     
     /// <summary>
-    /// edit_del_teacher class.
+    /// tablescore_add class.
     /// </summary>
     /// <remarks>
     /// Auto-generated class.
     /// </remarks>
-    public partial class edit_del_teacher {
+    public partial class tablescore_add {
         
         /// <summary>
         /// form1 control.
@@ -38,6 +38,15 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// ClassName control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox ClassName;
+        
+        /// <summary>
         /// Label2 control.
         /// </summary>
         /// <remarks>
@@ -47,174 +56,138 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Teacher_FindId control.
+        /// ClassYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Teacher_FindId;
+        protected global::System.Web.UI.WebControls.TextBox ClassYear;
         
         /// <summary>
-        /// Find_Teacher control.
+        /// Confirm_ClassName_Year control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Find_Teacher;
+        protected global::System.Web.UI.WebControls.Button Confirm_ClassName_Year;
         
         /// <summary>
-        /// TeacherList control.
+        /// View_ClassTeaching control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button TeacherList;
+        protected global::System.Web.UI.WebControls.Button View_ClassTeaching;
         
         /// <summary>
-        /// TeacherFindResultText control.
+        /// ResultContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TeacherFindResultText;
+        protected global::System.Web.UI.WebControls.Label ResultContent;
         
         /// <summary>
-        /// Information control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTable Information;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Teacher_name control.
+        /// SubjectName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_name;
+        protected global::System.Web.UI.WebControls.TextBox SubjectName;
         
         /// <summary>
-        /// table2 control.
+        /// Confirm_ClassSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTable table2;
+        protected global::System.Web.UI.WebControls.Button Confirm_ClassSubject;
         
         /// <summary>
-        /// Teacher_Day control.
+        /// SubjectList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Day;
+        protected global::System.Web.UI.WebControls.Button SubjectList;
         
         /// <summary>
-        /// Teacher_Month control.
+        /// HK_Select control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Month;
+        protected global::System.Web.UI.WebControls.RadioButtonList HK_Select;
         
         /// <summary>
-        /// Teacher_Year control.
+        /// ResultAction control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Year;
+        protected global::System.Web.UI.WebControls.Label ResultAction;
         
         /// <summary>
-        /// Teacher_YearStart control.
+        /// ResultScore control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_YearStart;
+        protected global::System.Web.UI.WebControls.Label ResultScore;
         
         /// <summary>
-        /// Teacher_Subject control.
+        /// SerultScore control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Subject;
+        protected global::System.Web.UI.WebControls.Label SerultScore;
         
         /// <summary>
-        /// Teacher_MainClass control.
+        /// Save_ScoreTable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_MainClass;
+        protected global::System.Web.UI.WebControls.Button Save_ScoreTable;
         
         /// <summary>
-        /// Teacher_MainClass_Year control.
+        /// Calculate_TBM control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_MainClass_Year;
+        protected global::System.Web.UI.WebControls.Button Calculate_TBM;
         
         /// <summary>
-        /// Teacher_id control.
+        /// Calculate_TBMHK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_id;
-        
-        /// <summary>
-        /// Teacher_Email control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Email;
-        
-        /// <summary>
-        /// Teacher_DelInf control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Teacher_DelInf;
-        
-        /// <summary>
-        /// Teacher_EditInf control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Teacher_EditInf;
-        
-        /// <summary>
-        /// Teacher_EditResult control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Teacher_EditResult;
+        protected global::System.Web.UI.WebControls.Button Calculate_TBMHK;
     }
 }
