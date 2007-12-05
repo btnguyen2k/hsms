@@ -47,7 +47,7 @@
         </asp:RadioButtonList>
         <asp:Label ID="ResultAction" runat="server" ForeColor="Red" Width="628px"></asp:Label><br />
         <asp:Label ID="ResultScore" runat="server" Width="633px"></asp:Label></div>
-        <asp:Label ID="SerultScore" runat="server" ForeColor="Red" Width="529px"></asp:Label><br />
+        <asp:Label ID="ResultScoreText" runat="server" ForeColor="Red" Width="529px"></asp:Label><br />
         &nbsp;<br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;<asp:Button ID="Save_ScoreTable" runat="server" Text="Lưu" Width="102px" Visible="False" OnClick="Save_ScoreTable_Click" />
