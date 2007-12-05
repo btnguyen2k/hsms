@@ -155,13 +155,13 @@ namespace HSMS.Teacher {
         protected global::System.Web.UI.WebControls.Label ResultScore;
         
         /// <summary>
-        /// SerultScore control.
+        /// ResultScoreText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SerultScore;
+        protected global::System.Web.UI.WebControls.Label ResultScoreText;
         
         /// <summary>
         /// Save_ScoreTable control.
