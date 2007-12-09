@@ -198,23 +198,8 @@
     <Content Include="Admin\main_admin.aspx" />
     <Content Include="Admin\teacher_scheduling.aspx" />
     <Content Include="Admin\title_admin.aspx" />
-    <Content Include="App_Data\hsms.mdf">
-    </Content>
-    <Content Include="App_Data\hsms_log.ldf">
-      <DependentUpon>hsms.mdf</DependentUpon>
-    </Content>
-    <Content Include="App_Data\hsms_temp.mdf">
-    </Content>
-    <Content Include="App_Data\hsms_temp_log.ldf">
-      <DependentUpon>hsms_temp.mdf</DependentUpon>
-    </Content>
     <EmbeddedResource Include="Bo\User\HSMSPermission.hbm.xml" />
     <EmbeddedResource Include="Bo\User\HSMSGroupRule.hbm.xml" />
-    <Content Include="App_Data\temphsms.mdf">
-    </Content>
-    <Content Include="App_Data\temphsms_log.ldf">
-      <DependentUpon>temphsms.mdf</DependentUpon>
-    </Content>
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="file_docs\Nhap_hoc.html" />
@@ -492,6 +477,20 @@
     <Compile Include="Teacher\function_teacher.aspx.designer.cs">
       <DependentUpon>function_teacher.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\MainClassFinalScore.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MainClassFinalScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\MainClassFinalScore.aspx.designer.cs">
+      <DependentUpon>MainClassFinalScore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\main_class_manager.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>main_class_manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\main_class_manager.aspx.designer.cs">
+      <DependentUpon>main_class_manager.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\main_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>main_teacher.aspx</DependentUpon>
@@ -532,6 +531,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Bo\Config\HSMSConfig.hbm.xml" />
     <EmbeddedResource Include="Bo\User\HSMSUser.hbm.xml" />
+    <Content Include="App_Data\hsms.mdf">
+    </Content>
+    <Content Include="App_Data\hsms_log.ldf">
+      <DependentUpon>hsms.mdf</DependentUpon>
+    </Content>
     <Content Include="Default.aspx" />
     <Content Include="Installer\QuickInstaller.aspx" />
     <Content Include="Login.aspx" />
@@ -540,6 +544,8 @@
     <Content Include="MyProfile\ChangePassword.aspx" />
     <Content Include="MyProfile\Default.aspx" />
     <Content Include="MyProfile\Inc_LeftMenu.ascx" />
+    <Content Include="Teacher\MainClassFinalScore.aspx" />
+    <Content Include="Teacher\main_class_manager.aspx" />
     <None Include="Resources\DBSchema.DDL" />
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>
