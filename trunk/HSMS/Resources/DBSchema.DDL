@@ -2,8 +2,8 @@
 
 --    Driver Used : Microsoft Visual Studio - Microsoft Access Driver.
 --    Document    : D:\Workspace\dotNet\HSMS\HSMS\Resources\DBSchema.vsd.
---    Time Created: November 30, 2007 4:31 AM.
---    Operation   : From Visio Update Database Wizard.
+--    Time Created: December 05, 2007 4:33 AM.
+--    Operation   : From Visio Generate Wizard.
 --    Connected data source : HSMS
 --    Connected server      : ACCESS
 --    Connected database    : D:\Workspace\dotNet\HSMS\HSMS\Resources\HSMS.mdb
@@ -26,5 +26,310 @@ create table `HSMSConfig` (
 -- 	`cvalue`
 
 
+-- Create new table `HSMSSubject`.
+-- `HSMSSubject` : Table of HSMSSubject
+-- 	`sid` : sid identifies HSMSSubject
+-- 	`sname` : sname is of HSMSSubject
+-- 	`sgrade` : sgrade is of HSMSSubject
+-- 	`scat` : scat is of HSMSSubject
+-- 	`sdesc` : sdesc is of HSMSSubject  
+create table `HSMSSubject` ( 
+	`sid` TEXT(10),
+	`sname` TEXT(64),
+	`sgrade` LONG,
+	`scat` TEXT(10),
+	`sdesc` TEXT(255), constraint `HSMSSubject_PK` primary key (`sid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSSubject`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSSubject' :
+-- 	`sid`
+-- 	`sname`
+-- 	`sgrade`
+
+
+-- Create new table `HSMSSubjectCat`.
+-- `HSMSSubjectCat` : Table of HSMSSubjectCat
+-- 	`scid` : scid identifies HSMSSubjectCat
+-- 	`scname` : scname is of HSMSSubjectCat
+-- 	`scdesc` : scdesc is of HSMSSubjectCat
+-- 	`schead_uid` : schead_uid is of HSMSSubjectCat  
+create table `HSMSSubjectCat` ( 
+	`scid` TEXT(10),
+	`scname` TEXT(64),
+	`scdesc` TEXT(255),
+	`schead_uid` LONG, constraint `HSMSSubjectCat_PK` primary key (`scid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSSubjectCat`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSSubjectCat' :
+-- 	`scid`
+-- 	`scname`
+
+
+-- Create new table `HSMSParent`.
+-- `HSMSParent` : Table of HSMSParent
+-- 	`uid` : uid identifies HSMSParent
+-- 	`ppupil_id` : ppupil_id is of HSMSParent  
+create table `HSMSParent` ( 
+	`uid` INTEGER,
+	`ppupil_id` LONG, constraint `HSMSParent_PK` primary key (`uid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSParent`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSParent' :
+-- 	`uid`
+-- 	`ppupil_id`
+
+
+-- Create new table `HSMSTeacher`.
+-- `HSMSTeacher` : Table of HSMSTeacher
+-- 	`uid` : uid identifies HSMSTeacher  
+create table `HSMSTeacher` ( 
+	`uid` INTEGER, constraint `HSMSTeacher_PK` primary key (`uid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSTeacher`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSTeacher' :
+-- 	`uid`
+
+
+-- Create new table `HSMSPupil`.
+-- `HSMSPupil` : Table of HSMSPupil
+-- 	`uid` : uid identifies HSMSPupil
+-- 	`pid_year` : pid_year is of HSMSPupil
+-- 	`pid_hash` : pid_hash is of HSMSPupil
+-- 	`pid_number` : pid_number is of HSMSPupil  
+create table `HSMSPupil` ( 
+	`uid` INTEGER,
+	`pid_year` LONG,
+	`pid_hash` CHAR(2),
+	`pid_number` LONG, constraint `HSMSPupil_PK` primary key (`uid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSPupil`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSPupil' :
+-- 	`uid`
+-- 	`pid_year`
+-- 	`pid_hash`
+-- 	`pid_number`
+
+
+-- Create new table `HSMSGroupRule`.
+-- `HSMSGroupRule` : Table of HSMSGroupRule
+-- 	`gid` : gid identifies HSMSGroupRule
+-- 	`pname` : pname partly identifies HSMSGroupRule
+-- 	`gris_global` : gris_global is of HSMSGroupRule  
+create table `HSMSGroupRule` ( 
+	`gid` INTEGER,
+	`pname` VARCHAR(32),
+	`gris_global` SHORT, constraint `HSMSGroupRule_PK` primary key (`gid`, `pname`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSGroupRule`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSGroupRule' :
+-- 	`gid`
+-- 	`pname`
+-- 	`gris_global`
+
+
+-- Create new table `HSMSPermission`.
+-- `HSMSPermission` : Table of HSMSPermission
+-- 	`pname` : pname identifies HSMSPermission
+-- 	`pdesc` : pdesc is of HSMSPermission  
+create table `HSMSPermission` ( 
+	`pname` VARCHAR(32),
+	`pdesc` VARCHAR(255), constraint `HSMSPermission_PK` primary key (`pname`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSPermission`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSPermission' :
+-- 	`pname`
+
+
+-- Create new table `HSMSRole`.
+-- `HSMSRole` : Table of HSMSRole
+-- 	`uid` : uid partly identifies HSMSRole
+-- 	`gid` : gid identifies HSMSRole  
+create table `HSMSRole` ( 
+	`uid` INTEGER,
+	`gid` INTEGER, constraint `HSMSRole_PK` primary key (`gid`, `uid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSRole`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSRole' :
+-- 	`uid`
+-- 	`gid`
+
+
+-- Create new table `HSMSUser`.
+-- `HSMSUser` : Table of HSMSUser
+-- 	`uid` : uid identifies HSMSUser
+-- 	`ulogin_name` : ulogin_name partly identifies HSMSUser
+-- 	`upassword` : upassword is of HSMSUser
+-- 	`uemail` : uemail is of HSMSUser
+-- 	`uname_first` : uname_first is of HSMSUser
+-- 	`uname_mid` : uname_mid is of HSMSUser
+-- 	`uname_last` : uname_last is of HSMSUser
+-- 	`udob_day` : udob_day is of HSMSUser
+-- 	`udob_month` : udob_month is of HSMSUser
+-- 	`udob_year` : udob_year is of HSMSUser
+-- 	`ucreation_timestamp` : ucreation_timestamp is of HSMSUser  
+create table `HSMSUser` ( 
+	`uid` COUNTER,
+	`ulogin_name` VARCHAR(32),
+	`upassword` VARCHAR(64),
+	`uemail` VARCHAR(64),
+	`uname_first` TEXT(16),
+	`uname_mid` TEXT(32),
+	`uname_last` TEXT(16),
+	`udob_day` INTEGER,
+	`udob_month` INTEGER,
+	`udob_year` INTEGER,
+	`ucreation_timestamp` LONG, constraint `HSMSUser_PK` primary key (`uid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSUser`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSUser' :
+-- 	`uid`
+-- 	`ulogin_name`
+-- 	`upassword`
+-- 	`uemail`
+-- 	`uname_first`
+-- 	`ucreation_timestamp`
+
+
+-- Create new table `HSMSGroup`.
+-- `HSMSGroup` : Table of HSMSGroup
+-- 	`gid` : gid identifies HSMSGroup
+-- 	`gname` : gname is of HSMSGroup
+-- 	`gis_god` : gis_god partly identifies HSMSGroup
+-- 	`gdesc` : gdesc is of HSMSGroup
+-- 	`gprefix` : gprefix is of HSMSGroup
+-- 	`gsuffix` : gsuffix is of HSMSGroup  
+create table `HSMSGroup` ( 
+	`gid` COUNTER,
+	`gname` VARCHAR(32),
+	`gis_god` SMALLINT,
+	`gdesc` VARCHAR(255),
+	`gprefix` VARCHAR(64),
+	`gsuffix` VARCHAR(64), constraint `HSMSGroup_PK` primary key (`gid`) ); 
+
+-- Note: Access does not support the mandatory (not null) constraint in SQL DDL.
+-- The mandatory constraints for table '`HSMSGroup`' will be created in the database using DAO
+-- only if there is a connection to the Access MDB file during DDL generation.
+-- Not nullable columns for table 'HSMSGroup' :
+-- 	`gid`
+-- 	`gname`
+-- 	`gis_god`
+
+
+-- Add the remaining keys, constraints and indexes for the table `HSMSPupil`.
+alter table `HSMSPupil` add constraint `HSMSPupil_UC1` unique (
+	`pid_hash`,
+	`pid_number`,
+	`pid_year`); 
+
+
+-- Add the remaining keys, constraints and indexes for the table `HSMSUser`.
+create unique index `idxLoginName` on `HSMSUser` (
+	`ulogin_name`); 
+
+
+alter table `HSMSUser` add constraint `HSMSUser_UC2` unique (
+	`uemail`); 
+
+
+-- Add foreign key constraints to table `HSMSParent`.
+alter table `HSMSParent`
+	add constraint `HSMSUser_HSMSParent_FK1` foreign key (
+		`uid`)
+	 references `HSMSUser` (
+		`uid`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSUser_HSMSParent_FK1' on table 'HSMSParent' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
+-- Add foreign key constraints to table `HSMSTeacher`.
+alter table `HSMSTeacher`
+	add constraint `HSMSUser_HSMSTeacher_FK1` foreign key (
+		`uid`)
+	 references `HSMSUser` (
+		`uid`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSUser_HSMSTeacher_FK1' on table 'HSMSTeacher' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
+-- Add foreign key constraints to table `HSMSPupil`.
+alter table `HSMSPupil`
+	add constraint `HSMSUser_HSMSPupil_FK1` foreign key (
+		`uid`)
+	 references `HSMSUser` (
+		`uid`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSUser_HSMSPupil_FK1' on table 'HSMSPupil' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
+-- Add foreign key constraints to table `HSMSGroupRule`.
+alter table `HSMSGroupRule`
+	add constraint `HSMSGroup_HSMSGroupRule_FK1` foreign key (
+		`gid`)
+	 references `HSMSGroup` (
+		`gid`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSGroup_HSMSGroupRule_FK1' on table 'HSMSGroupRule' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
+alter table `HSMSGroupRule`
+	add constraint `HSMSPermission_HSMSGroupRule_FK1` foreign key (
+		`pname`)
+	 references `HSMSPermission` (
+		`pname`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSPermission_HSMSGroupRule_FK1' on table 'HSMSGroupRule' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
+-- Add foreign key constraints to table `HSMSRole`.
+alter table `HSMSRole`
+	add constraint `HSMSGroup_HSMSRole_FK1` foreign key (
+		`gid`)
+	 references `HSMSGroup` (
+		`gid`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSGroup_HSMSRole_FK1' on table 'HSMSRole' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
+alter table `HSMSRole`
+	add constraint `HSMSUser_HSMSRole_FK1` foreign key (
+		`uid`)
+	 references `HSMSUser` (
+		`uid`); 
+
+-- Note: Access does not support referential action clauses in SQL DDL.  Referential actions will be
+-- created in the database for constraint 'HSMSUser_HSMSRole_FK1' on table 'HSMSRole' using DAO
+-- only if there is a connection to the Access database during DDL generation.
+-- 	On parent table update: CASCADE
+-- 	On parent table delete: CASCADE
 
 -- This is the end of the Microsoft Visual Studio generated SQL DDL script.

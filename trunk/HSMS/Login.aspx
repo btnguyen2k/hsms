@@ -18,26 +18,16 @@
                     <asp:Label runat="server" ID="ErrorMessage" Visible="False" ForeColor="Red" />
                     <table border="0" cellpadding="4" cellspacing="1" align="center">
                         <tr>
-                            <td>
-                                Tên đăng nhập</td>
-                            <td>
-                                :</td>
-                            <td>
-                                <input runat="server" id="InputLoginName" type="text" /></td>
+                            <td>Tên đăng nhập:</td>
+                            <td><input runat="server" id="InputLoginName" type="text" style="width: 200px" /></td>
                         </tr>
                         <tr>
-                            <td>
-                                Mật mã</td>
-                            <td>
-                                :</td>
-                            <td>
-                                <input runat="server" id="InputPassword" type="password" /></td>
+                            <td>Mật mã:</td>
+                            <td><input runat="server" id="InputPassword" type="password" style="width: 200px" /></td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                &nbsp;</td>
-                            <td>
-                                <asp:Button ID="ButtonLogin" runat="server" Text="Đăng Nhập" OnClick="ButtonLogin_Click" /></td>
+                            <td>&nbsp;</td>
+                            <td><asp:Button ID="ButtonLogin" runat="server" Text="Đăng Nhập" OnClick="ButtonLogin_Click" /></td>
                         </tr>
                     </table>
                 </td>

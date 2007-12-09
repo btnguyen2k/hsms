@@ -6,9 +6,22 @@ namespace HSMS.Bo
 {
     public class Utils
     {
+        public const int SEMESTER_1 = 1;
+        public const int SEMESTER_2 = 2;
+        public const int SEMESTER_SUMMER = 3;
+
         public static int CalcSchoolYear()
         {
             DateTime now = DateTime.Now;
+            if (now.Month > 9 || now.Month < 2) return SEMESTER_1;
+            if (now.Month >= 2 && now.Month <= 6) return SEMESTER_2;
+            return SEMESTER_SUMMER;
+        }
+
+        public static int CalcSchoolSemester()
+        {
+            DateTime now = DateTime.Now;
+            if ( now.Month >= 9 )
             if (now.Month > 6) return now.Year;
             return now.Year - 1;
         }
