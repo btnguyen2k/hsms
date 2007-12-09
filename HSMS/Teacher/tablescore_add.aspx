@@ -52,10 +52,9 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;<asp:Button ID="Save_ScoreTable" runat="server" Text="Lưu" Width="102px" Visible="False" OnClick="Save_ScoreTable_Click" />
         &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Calculate_TBM" runat="server" Text="Tính tổng kết TBM" Width="144px" Visible="False" />
-        &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Calculate_TBMHK" runat="server" Text="Tổng kết TBM HK" Visible="False"
-            Width="144px" /><br />
+        <asp:Button ID="Calculate_TBM" runat="server" Text="Tính tổng kết TBM" Width="144px" Visible="False" OnClick="Calculate_TBM_Click" Enabled="False" />
+        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
     </form>
 </body>
 </html>
