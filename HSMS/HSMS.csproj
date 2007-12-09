@@ -226,6 +226,13 @@
     <EmbeddedResource Include="Bo\User\HSMSGroup.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddSubjectCat.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddSubjectCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddSubjectCat.aspx.designer.cs">
+      <DependentUpon>AddSubjectCat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\add_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>add_pupil.aspx</DependentUpon>
@@ -260,6 +267,20 @@
     </Compile>
     <Compile Include="Admin\class_schedule.aspx.designer.cs">
       <DependentUpon>class_schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubjectCatList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SubjectCatList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubjectCatList.aspx.designer.cs">
+      <DependentUpon>SubjectCatList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\subject_manager.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -319,6 +340,8 @@
     </Compile>
     <Compile Include="Bo\Config\ConfigManager.cs" />
     <Compile Include="Bo\Config\HSMSConfig.cs" />
+    <Compile Include="Bo\Subject\HSMSSubjectCat.cs" />
+    <Compile Include="Bo\Subject\SubjectManager.cs" />
     <Compile Include="Bo\User\DelegatedUser.cs" />
     <Compile Include="Bo\User\HSMSParent.cs" />
     <Compile Include="Bo\User\HSMSPupil.cs" />
@@ -371,6 +394,9 @@
     <Compile Include="Installer\QuickInstaller.aspx.designer.cs">
       <DependentUpon>QuickInstaller.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Libs\SimpleObjectCaching\Cache.cs" />
+    <Compile Include="Libs\SimpleObjectCaching\CacheItem.cs" />
+    <Compile Include="Libs\SimpleObjectCaching\CacheManager.cs" />
     <Compile Include="Login.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Login.aspx</DependentUpon>
@@ -526,11 +552,18 @@
     <Compile Include="Tittle.aspx.designer.cs">
       <DependentUpon>Tittle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UI\AdminCommon.cs" />
     <Compile Include="UI\MyProfileCommon.cs" />
+    <Compile Include="UI\SubjectCatRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Bo\Config\HSMSConfig.hbm.xml" />
     <EmbeddedResource Include="Bo\User\HSMSUser.hbm.xml" />
+    <Content Include="Admin\AddSubjectCat.aspx" />
+    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Inc_LeftMenu.ascx" />
+    <Content Include="Admin\SubjectCatList.aspx" />
+    <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
     <Content Include="App_Data\hsms.mdf">
     </Content>
     <Content Include="App_Data\hsms_log.ldf">
@@ -550,7 +583,6 @@
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Bo\Subject\" />
     <Folder Include="lib\nhibernate\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
