@@ -475,6 +475,13 @@
     <Compile Include="Pupil\schedule.aspx.designer.cs">
       <DependentUpon>schedule.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pupil\ScoreTable.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ScoreTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\ScoreTable.aspx.designer.cs">
+      <DependentUpon>ScoreTable.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pupil\title_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>title_pupil.aspx</DependentUpon>
@@ -495,6 +502,20 @@
     </Compile>
     <Compile Include="Teacher\content_teacher.aspx.designer.cs">
       <DependentUpon>content_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailPupiLDD.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailPupiLDD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailPupiLDD.aspx.designer.cs">
+      <DependentUpon>DetailPupiLDD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailPupilTBMK.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailPupilTBMK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailPupilTBMK.aspx.designer.cs">
+      <DependentUpon>DetailPupilTBMK.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\function_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -545,6 +566,13 @@
     <Compile Include="Teacher\title_teacher.aspx.designer.cs">
       <DependentUpon>title_teacher.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\Track_learning.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Track_learning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Track_learning.aspx.designer.cs">
+      <DependentUpon>Track_learning.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tittle.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Tittle.aspx</DependentUpon>
@@ -577,8 +605,12 @@
     <Content Include="MyProfile\ChangePassword.aspx" />
     <Content Include="MyProfile\Default.aspx" />
     <Content Include="MyProfile\Inc_LeftMenu.ascx" />
+    <Content Include="Pupil\ScoreTable.aspx" />
+    <Content Include="Teacher\DetailPupiLDD.aspx" />
+    <Content Include="Teacher\DetailPupilTBMK.aspx" />
     <Content Include="Teacher\MainClassFinalScore.aspx" />
     <Content Include="Teacher\main_class_manager.aspx" />
+    <Content Include="Teacher\Track_learning.aspx" />
     <None Include="Resources\DBSchema.DDL" />
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>

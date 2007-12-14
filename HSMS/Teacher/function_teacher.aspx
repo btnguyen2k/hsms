@@ -13,6 +13,8 @@
             Width="137px" NavigateUrl="~/Teacher/change_pass_teacher.aspx">* Thay đổi mật khẩu</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/scheduling.aspx"
             Target="content_teacher" Width="111px">* Lịch công tác</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/Track_learning.aspx"
+            Target="content_teacher" Width="130px">* Theo dõi rèn luyện</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/tablescore_add.aspx"
             Target="content_teacher" Width="137px">* Bảng điểm môn học</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/MainClassFinalScore.aspx"

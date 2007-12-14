@@ -25,7 +25,7 @@
         <br />
         <br />
         <asp:Table ID="ClassListTable" runat="server" BorderStyle="Solid" GridLines="Both" Visible="False"
-            Width="769px">
+            Width="783px">
             <asp:TableRow runat="server">
                 <asp:TableCell runat="server" HorizontalAlign="Center">STT</asp:TableCell>
                 <asp:TableCell runat="server" HorizontalAlign="Center">Họ và Tên</asp:TableCell>
