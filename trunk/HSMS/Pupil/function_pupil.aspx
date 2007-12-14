@@ -12,7 +12,9 @@
         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Pupil/changepass_pupil.aspx"
             Target="content_pupil" Width="131px">* Thay đổi mật khẩu</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Blue" NavigateUrl="~/Pupil/schedule.aspx"
-            Target="content_pupil">* Thời khoá biểu</asp:HyperLink>&nbsp;</div>
+            Target="content_pupil">* Thời khoá biểu</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink3" runat="server" ForeColor="Blue" NavigateUrl="~/Pupil/ScoreTable.aspx"
+            Target="content_pupil" Width="129px">Xem bảng điểm</asp:HyperLink>&nbsp;</div>
     </form>
 </body>
 </html>

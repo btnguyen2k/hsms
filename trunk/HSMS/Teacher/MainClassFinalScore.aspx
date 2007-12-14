@@ -26,7 +26,9 @@
             <asp:ListItem Selected="True">HK I</asp:ListItem>
             <asp:ListItem>HK II</asp:ListItem>
         </asp:RadioButtonList><br />
-        <asp:Label ID="ResultContent" runat="server" ForeColor="Red" Width="655px"></asp:Label></div>
+        <asp:Label ID="ResultContent" runat="server" ForeColor="Red" Width="655px"></asp:Label><br />
+        <br />
+        <asp:Button ID="SaveResult" runat="server" Text="Lưu" Visible="False" Width="168px" OnClick="SaveResult_Click" /></div>
     </form>
 </body>
 </html>
