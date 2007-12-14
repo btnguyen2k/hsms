@@ -15,7 +15,10 @@
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
         <asp:Button ID="ConfirmYear" runat="server" OnClick="ConfirmYear_Click" Text="Xác nhận" />
         <br />
-        <asp:Label ID="ResultContent" runat="server" ForeColor="Red" Width="509px"></asp:Label></div>
+        <br />
+        <asp:Label ID="ResultContent" runat="server" ForeColor="Red" Width="509px"></asp:Label><br />
+        <br />
+        <asp:Label ID="ResultFinal" runat="server" ForeColor="Red" Width="575px"></asp:Label></div>
     </form>
 </body>
 </html>
