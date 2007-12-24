@@ -12,7 +12,7 @@ namespace HSMS.Db
         private const string CONNECTION_STRING_SQL2005 =
             "Provider=SQLNCLI; Server=.\\SQLExpress; Database=dbname; Trusted_Connection=Yes;";
 
-        //"Provider=SQLNCLI;Server=.\\SQLExpress;AttachDbFilename=C:\\Inetpub\\wwwroot\\HSMS\\App_Data\\hsms.mdf; Database=dbname;Trusted_Connection=Yes;";
+        //"Provider=SQLNCLI;Server=.\\SQLExpress;AttachDbFilename=F:\database\\hsms.mdf; Database=dbname;Trusted_Connection=Yes;";
 
         public static OleDbConnection GetSQLDbConnection()
         {

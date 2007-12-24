@@ -598,6 +598,8 @@
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
+    <Content Include="file_docs\bangiamhieu.htm" />
+    <Content Include="file_docs\cosovatchat.html" />
     <Content Include="Installer\QuickInstaller.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
