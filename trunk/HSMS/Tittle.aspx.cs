@@ -50,8 +50,8 @@ namespace HSMS
                 Session["login_pass"] = Password.Text;
                 Session["login_state"] = "login";
                 Session.Timeout = 60;
-
-                switch (RadioButton_Choice.SelectedIndex)
+                
+              switch (RadioButton_Choice.SelectedIndex)
                 {
                     case 0:
                         {

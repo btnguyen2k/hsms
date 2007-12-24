@@ -19,7 +19,7 @@
             Width="154px" Target="content" NavigateUrl="file_docs/Nhap_hoc.html">Thủ Tục Nhập Học</asp:HyperLink><br />
       
         <asp:HyperLink ID="CSVC" runat="server" Font-Italic="True" Font-Names="Verdana"
-            Width="154px" Target="content" NavigateUrl="http://www.google.com">Cở Sở Vật Chất</asp:HyperLink><br />
+            Width="154px" Target="content" NavigateUrl="file_docs/cosovatchat.html">Cở Sở Vật Chất</asp:HyperLink><br />
       
         <asp:HyperLink ID="BGH" runat="server" Font-Italic="True" Font-Names="Verdana"
             Width="154px" Target="content" NavigateUrl="http://www.google.com">Ban Giám Hiệu</asp:HyperLink><br />
