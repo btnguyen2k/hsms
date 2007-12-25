@@ -95,8 +95,11 @@
         <br />
         <br />
         &nbsp;
-    
-    </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="620px"></asp:Label></div>
     </form>
 </body>
 </html>

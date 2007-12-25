@@ -21,7 +21,7 @@
         <asp:TextBox ID="Classid_Year" runat="server" Width="78px"></asp:TextBox>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="FindClass_Schedule" runat="server"
             OnClick="FindClass_Schedule_Click" Text="Tìm" Width="88px" />
-        &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="ClassFind_ScheduleAll" runat="server" Text="Tìm tất cả" OnClick="ClassFind_ScheduleAll_Click" /><br />
+        &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="ClassFind_ScheduleAll" runat="server" Text="Danh sách lớp" OnClick="ClassFind_ScheduleAll_Click" /><br />
         <br />
         <asp:Label ID="Find_Result" runat="server" ForeColor="Red" Width="458px"></asp:Label><br />
         <br />
@@ -249,9 +249,15 @@
         &nbsp;
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="AddClass_Schedule" runat="server" Text="Thêm" Width="99px" OnClick="AddClass_Schedule_Click" />
+        <asp:Button ID="AddClass_Schedule" runat="server" Text="Thêm" Width="99px" OnClick="AddClass_Schedule_Click" Visible="False" />
         &nbsp; &nbsp; &nbsp;<asp:Button ID="EditClass_Schedule" runat="server" Text="Sữa"
-            Width="92px" OnClick="EditClass_Schedule_Click" /><br />
+            Width="92px" OnClick="EditClass_Schedule_Click" Visible="False" />
+        &nbsp; &nbsp;
+        <asp:Button ID="SubjectList" runat="server" OnClick="SubjectList_Click" Text="Danh sách môn học"
+            Visible="False" Width="131px" />
+        &nbsp;
+        <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Quay lại" Visible="False"
+            Width="95px" /><br />
         <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="455px"></asp:Label>&nbsp;<br />
         <br />
     

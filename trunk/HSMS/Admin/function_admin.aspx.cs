@@ -10,7 +10,7 @@ namespace HSMS.Admin
             // Check login simple
             if (Session.Timeout != 60)
             {
-                Response.Redirect("http://localhost/HSMS/main.aspx");
+                Response.Redirect("~/main.aspx");
             }
         }
     }

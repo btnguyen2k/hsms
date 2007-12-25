@@ -32,7 +32,7 @@
         <asp:HyperLink ID="AddPupil" runat="server" Font-Names="Verdana" Font-Size="Medium"
             ForeColor="#0000C0" Target="content_admin" NavigateUrl="add_pupil.aspx" Width="157px">Thêm học sinh mới</asp:HyperLink><br />
         &nbsp;
-        <asp:Label ID="Label3" runat="server" Text="+" Width="1px"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="+" Width="1px"></asp:Label>&nbsp;
         <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Verdana" Font-Size="Medium"
             NavigateUrl="~/Admin/edit_del_pupil.aspx" Target="content_admin" Width="160px">Chỉnh sữa học sinh</asp:HyperLink>
         <br />

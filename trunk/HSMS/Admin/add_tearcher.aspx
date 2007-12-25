@@ -108,14 +108,16 @@
         <br />
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-        <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" /><br />
-        &nbsp; 
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label></div>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" />&nbsp;
+        <asp:Button ID="ViewClassList" runat="server" OnClick="ViewClassList_Click" Text="Danh sách lớp"
+            Width="103px" />&nbsp;<asp:Button ID="ViewSubjectList" runat="server" OnClick="ViewSubjectList_Click"
+                Text="Danh sách môn hoc" /><br />
+        &nbsp;&nbsp;<br />
+        &nbsp;<asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label></div>
     </form>
 </body>
 </html>

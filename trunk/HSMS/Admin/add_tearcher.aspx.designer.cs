@@ -155,6 +155,24 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.WebControls.Button Add_Teacher;
         
         /// <summary>
+        /// ViewClassList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ViewClassList;
+        
+        /// <summary>
+        /// ViewSubjectList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ViewSubjectList;
+        
+        /// <summary>
         /// Add_Result control.
         /// </summary>
         /// <remarks>
