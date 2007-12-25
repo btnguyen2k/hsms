@@ -255,7 +255,8 @@
    
         <asp:Button ID="Teacher_AddSchedule" runat="server" Text="Thêm" OnClick="Teacher_AddSchedule_Click" Width="86px" />
         <asp:Button ID="Teacher_EditSchedule" runat="server" Text="Sữa" Width="84px" OnClick="Teacher_EditSchedule_Click" />    
-        <br />
+        <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Quay lại" Visible="False"
+            Width="94px" /><br />
         &nbsp;&nbsp;
         <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="446px"></asp:Label>
     </form>    
