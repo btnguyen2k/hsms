@@ -19,7 +19,7 @@
         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="Label2" runat="server" Text="Họ và Tên : "
             Width="102px"></asp:Label>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:TextBox ID="Name" runat="server" Width="229px"></asp:TextBox><br />
+        <asp:TextBox ID="Name" runat="server" Width="229px" OnTextChanged="Name_TextChanged"></asp:TextBox><br />
         <br />
         &nbsp; &nbsp; &nbsp;&nbsp;
         <asp:Label ID="Label3" runat="server" Text="Ngày tháng năm sinh :" Width="141px"></asp:Label>&nbsp;
