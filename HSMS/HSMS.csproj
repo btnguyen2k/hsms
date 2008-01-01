@@ -282,6 +282,13 @@
     <Compile Include="Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Notice.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\EditNews.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>EditNews.aspx</DependentUpon>
@@ -648,6 +655,7 @@
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
+    <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\listnews.aspx" />
     <Content Include="Admin\SubjectCatList.aspx" />
     <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
