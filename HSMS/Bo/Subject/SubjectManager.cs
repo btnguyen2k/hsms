@@ -106,8 +106,40 @@ namespace HSMS.Bo.Subject
 
         public static HSMSSubjectCat GetSubjectCat(string id)
         {
+            if (id == null) return null;
             IDictionary<string, HSMSSubjectCat> subjectCats = GetAllSubjectCatsAsMap();
-            return subjectCats[id];
+            try
+            {
+                return subjectCats[id];
+            }
+            catch (KeyNotFoundException)
+            {
+                return null;
+            }
+        }
+
+        public static void DeleteSubjectCat(string id)
+        {
+            DeleteSubjectCat(GetSubjectCat(id));
+        }
+
+        public static void DeleteSubjectCat(HSMSSubjectCat subjectCat)
+        {
+            if (subjectCat == null) return;
+            ISession session = NHibernateHelper.GetCurrentSession();
+            try
+            {
+                session.Delete(subjectCat);
+            }
+            catch (HibernateException)
+            {
+                NHibernateHelper.MarkError();
+                throw;
+            }
+            finally
+            {
+                InvalidateCacheSubjectCats();    
+            }            
         }
     }
 }

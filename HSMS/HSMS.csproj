@@ -282,6 +282,13 @@
     <Compile Include="Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DeleteSubjectCat.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DeleteSubjectCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DeleteSubjectCat.aspx.designer.cs">
+      <DependentUpon>DeleteSubjectCat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Notice.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Notice.aspx</DependentUpon>
@@ -653,6 +660,7 @@
     <Content Include="Admin\AddNews.aspx" />
     <Content Include="Admin\AddSubjectCat.aspx" />
     <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\DeleteSubjectCat.aspx" />
     <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
     <Content Include="Admin\Notice.aspx" />
