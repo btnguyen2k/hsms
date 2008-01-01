@@ -41,6 +41,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\nhibernate\Castle.DynamicProxy.dll</HintPath>
     </Reference>
+    <Reference Include="FreeTextBox, Version=3.1.6.34851, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL" />
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.84.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\nhibernate\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -202,7 +203,6 @@
     <EmbeddedResource Include="Bo\User\HSMSGroupRule.hbm.xml" />
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
-    <Content Include="file_docs\Nhap_hoc.html" />
     <Content Include="Function.aspx" />
     <Content Include="images\font.jpg" />
     <Content Include="Main.aspx" />
@@ -226,6 +226,13 @@
     <EmbeddedResource Include="Bo\User\HSMSGroup.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddNews.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddSubjectCat.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>AddSubjectCat.aspx</DependentUpon>
@@ -274,6 +281,20 @@
     </Compile>
     <Compile Include="Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditNews.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditNews.aspx.designer.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\listnews.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>listnews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\listnews.aspx.designer.cs">
+      <DependentUpon>listnews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\SubjectCatList.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -372,6 +393,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditFTB.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditFTB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditFTB.aspx.designer.cs">
+      <DependentUpon>EditFTB.aspx</DependentUpon>
     </Compile>
     <Compile Include="enroll.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -573,6 +601,34 @@
     <Compile Include="Teacher\Track_learning.aspx.designer.cs">
       <DependentUpon>Track_learning.aspx</DependentUpon>
     </Compile>
+    <Compile Include="testFTB.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>testFTB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="testFTB.aspx.designer.cs">
+      <DependentUpon>testFTB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\showthongtin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>showthongtin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\showthongtin.aspx.designer.cs">
+      <DependentUpon>showthongtin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\upload.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\upload.aspx.designer.cs">
+      <DependentUpon>upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\xoathongtin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>xoathongtin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TEST\xoathongtin.aspx.designer.cs">
+      <DependentUpon>xoathongtin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Tittle.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Tittle.aspx</DependentUpon>
@@ -587,19 +643,28 @@
   <ItemGroup>
     <EmbeddedResource Include="Bo\Config\HSMSConfig.hbm.xml" />
     <EmbeddedResource Include="Bo\User\HSMSUser.hbm.xml" />
+    <Content Include="Admin\AddNews.aspx" />
     <Content Include="Admin\AddSubjectCat.aspx" />
     <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
+    <Content Include="Admin\listnews.aspx" />
     <Content Include="Admin\SubjectCatList.aspx" />
     <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <Content Include="App_Data\hsms.mdf">
     </Content>
     <Content Include="App_Data\hsms_log.ldf">
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
+    <Content Include="EditFTB.aspx" />
     <Content Include="file_docs\bangiamhieu.htm" />
-    <Content Include="file_docs\cosovatchat.html" />
+    <Content Include="file_docs\cosovatchat.htm" />
+    <Content Include="file_docs\lichsuphattrien.htm" />
+    <Content Include="file_docs\nhansu.htm" />
+    <Content Include="file_docs\thanhtich.htm" />
+    <Content Include="ftb.imagegallery.aspx" />
     <Content Include="Installer\QuickInstaller.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
@@ -613,6 +678,10 @@
     <Content Include="Teacher\MainClassFinalScore.aspx" />
     <Content Include="Teacher\main_class_manager.aspx" />
     <Content Include="Teacher\Track_learning.aspx" />
+    <Content Include="testFTB.aspx" />
+    <Content Include="TEST\showthongtin.aspx" />
+    <Content Include="TEST\upload.aspx" />
+    <Content Include="TEST\xoathongtin.aspx" />
     <None Include="Resources\DBSchema.DDL" />
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>
