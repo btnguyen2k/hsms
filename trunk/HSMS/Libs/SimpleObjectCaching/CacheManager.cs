@@ -42,6 +42,7 @@ namespace HSMS.Libs.SimpleObjectCaching
 
         public static Cache GetCache(string name)
         {
+            if (name == null) return null;
             lock (caches)
             {
                 Cache c;

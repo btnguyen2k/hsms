@@ -9,6 +9,9 @@
         <HeaderTemplate>
             <table border="0" cellpadding="4" cellspacing="1" align="center" width="80%">
                 <tr>
+                    <td colspan="2" style="border: solid 1px #000000; font-weight: bold; background-color: #E0E0E0">
+                        &nbsp;
+                    </td>
                     <td align="center" style="border: solid 1px #000000; font-weight: bold; background-color: #E0E0E0">ID</td>
                     <td align="center" style="border: solid 1px #000000; font-weight: bold; background-color: #E0E0E0">Tên</td>
                     <td align="center" style="border: solid 1px #000000; font-weight: bold; background-color: #E0E0E0">Ghi Chú</td>
@@ -17,6 +20,8 @@
         </HeaderTemplate>
         <ItemTemplate>
             <tr>
+                <td align="center" style="border: solid 1px #000000"><a href="<%# DataBinder.Eval(Container.DataItem, "UrlEdit") %>">Sửa</a></td>
+                <td align="center" style="border: solid 1px #000000"><a href="<%# DataBinder.Eval(Container.DataItem, "UrlDelete") %>">Xóa</a></td>
                 <td align="center" style="border: solid 1px #000000"><%# DataBinder.Eval(Container.DataItem, "Id") %></td>
                 <td align="center" style="border: solid 1px #000000"><%# DataBinder.Eval(Container.DataItem, "Name") %></td>
                 <td align="center" style="border: solid 1px #000000"><%# DataBinder.Eval(Container.DataItem, "Description") %></td>

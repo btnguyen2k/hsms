@@ -16,6 +16,7 @@ namespace HSMS.Libs.SimpleObjectCaching
         {
             get
             {
+                if (key == null) return null;
                 CacheItem ci;
                 try
                 {
@@ -35,6 +36,7 @@ namespace HSMS.Libs.SimpleObjectCaching
             }
             set
             {
+                if (key == null) return;
                 if (value != null)
                 {
                     CacheItem ci = new CacheItem(key, value);
