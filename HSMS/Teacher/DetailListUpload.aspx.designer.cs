@@ -8,16 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HSMS.Admin {
+namespace HSMS.Teacher {
     
     
     /// <summary>
-    /// EditNews class.
+    /// DetailListUpload class.
     /// </summary>
     /// <remarks>
     /// Auto-generated class.
     /// </remarks>
-    public partial class EditNews {
+    public partial class DetailListUpload {
         
         /// <summary>
         /// form1 control.
@@ -29,12 +29,12 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// NewsTable control.
+        /// ResultTable control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label NewsTable;
+        protected global::System.Web.UI.WebControls.Label ResultTable;
     }
 }

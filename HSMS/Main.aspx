@@ -13,7 +13,7 @@
 </head>
 
 
-<frameset rows="32%, *">    
+<frameset rows="34%, *">    
     <frame frameborder = "0" noresize name = "tittle" src = "Tittle.aspx">     
     <frameset cols="15%, *">
      <frame frameborder = "0" noresize name = "function" src = "function.aspx">
