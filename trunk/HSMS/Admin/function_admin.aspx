@@ -42,9 +42,14 @@
             NavigateUrl="~/Admin/class_schedule.aspx" Target="content_admin">* Thời khoá biểu</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/class_manager.aspx"
             Target="content_admin">* Quản lý lớp học</asp:HyperLink><br />
-        <asp:Label ID="Label8" runat="server" Text="+" Width="4px"></asp:Label><asp:HyperLink
-            ID="HyperLink8" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/Notice.aspx"
-            Target="content_admin" Width="156px">Quản lý thông báo</asp:HyperLink></div>      
+        <asp:Label ID="Label9" runat="server" Text="* QUẢN LÝ THÔNG BÁO" Width="179px"></asp:Label><br />
+        &nbsp;<asp:Label ID="Label8" runat="server" Text="+" Width="4px"></asp:Label>&nbsp;
+        <asp:HyperLink
+            ID="HyperLink8" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/AddNews.aspx"
+            Target="content_admin" Width="140px">Thêm thông báo </asp:HyperLink><br />
+        &nbsp;<asp:Label ID="Label10" runat="server" Text="+" Width="12px"></asp:Label>
+        <asp:HyperLink ID="HyperLink9" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Admin/EditNews.aspx" Target="content_admin" Width="135px">Sữa thông báo</asp:HyperLink></div>      
     </form>
 </body>
 </html>

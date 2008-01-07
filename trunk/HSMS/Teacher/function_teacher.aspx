@@ -20,7 +20,17 @@
         <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/MainClassFinalScore.aspx"
             Target="content_teacher" Width="129px">* Bảng điểm tổng kết</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink4" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/main_class_manager.aspx"
-            Target="content_teacher">* Danh sách lớp</asp:HyperLink>&nbsp;</div>
+            Target="content_teacher">* Danh sách lớp</asp:HyperLink>&nbsp;<br />
+        <asp:Label ID="Label1" runat="server" Text="* Bài tập" Width="63px"></asp:Label><br />
+        &nbsp;
+        <asp:HyperLink ID="HyperLink7" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/AddExercise.aspx"
+            Target="content_teacher" Width="87px">- Ra bài tập</asp:HyperLink><br />
+        &nbsp;
+        <asp:HyperLink ID="HyperLink8" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/EditExercise.aspx"
+            Target="content_teacher">- Sữa nội dung</asp:HyperLink><br />
+        &nbsp;
+        <asp:HyperLink ID="HyperLink9" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/ListUpload.aspx"
+            Target="content_teacher">- Danh sách nộp bài</asp:HyperLink></div>
     </form>
 </body>
 </html>

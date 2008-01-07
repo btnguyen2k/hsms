@@ -204,7 +204,6 @@
     <Content Include="content.aspx" />
     <Content Include="enroll.aspx" />
     <Content Include="Function.aspx" />
-    <Content Include="images\font.jpg" />
     <Content Include="Main.aspx" />
     <Content Include="Pupil\changepass_pupil.aspx" />
     <Content Include="Pupil\content_pupil.aspx" />
@@ -226,6 +225,13 @@
     <EmbeddedResource Include="Bo\User\HSMSGroup.hbm.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\AddNews.aspx.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddNews.aspx.designer.cs">
+      <DependentUpon>AddNews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AddNews.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>AddNews.aspx</DependentUpon>
@@ -281,6 +287,27 @@
     </Compile>
     <Compile Include="Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DetailNews.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DetailNews.aspx.designer.cs">
+      <DependentUpon>DetailNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditNews.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditNews.aspx.designer.cs">
+      <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\DeleteSubjectCat.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -408,6 +435,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DetailNews.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailNews.aspx.designer.cs">
+      <DependentUpon>DetailNews.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditFTB.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>EditFTB.aspx</DependentUpon>
@@ -481,6 +515,13 @@
     <Compile Include="MyProfile\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Notice.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Notice.aspx.designer.cs">
+      <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pupil\changepass_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -495,6 +536,20 @@
     </Compile>
     <Compile Include="Pupil\content_pupil.aspx.designer.cs">
       <DependentUpon>content_pupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\DetailExercise.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\DetailExercise.aspx.designer.cs">
+      <DependentUpon>DetailExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\Exercise.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Exercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pupil\Exercise.aspx.designer.cs">
+      <DependentUpon>Exercise.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pupil\function_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -531,6 +586,13 @@
     <Compile Include="Pupil\title_pupil.aspx.designer.cs">
       <DependentUpon>title_pupil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\AddExercise.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\AddExercise.aspx.designer.cs">
+      <DependentUpon>AddExercise.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\change_pass_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>change_pass_teacher.aspx</DependentUpon>
@@ -544,6 +606,20 @@
     </Compile>
     <Compile Include="Teacher\content_teacher.aspx.designer.cs">
       <DependentUpon>content_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailEditExercise.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailEditExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailEditExercise.aspx.designer.cs">
+      <DependentUpon>DetailEditExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailListUpload.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailListUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\DetailListUpload.aspx.designer.cs">
+      <DependentUpon>DetailListUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\DetailPupiLDD.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -559,12 +635,26 @@
     <Compile Include="Teacher\DetailPupilTBMK.aspx.designer.cs">
       <DependentUpon>DetailPupilTBMK.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\EditExercise.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>EditExercise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\EditExercise.aspx.designer.cs">
+      <DependentUpon>EditExercise.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\function_teacher.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>function_teacher.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\function_teacher.aspx.designer.cs">
       <DependentUpon>function_teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ListUpload.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ListUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\ListUpload.aspx.designer.cs">
+      <DependentUpon>ListUpload.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\MainClassFinalScore.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -660,9 +750,12 @@
     <Content Include="Admin\AddNews.aspx" />
     <Content Include="Admin\AddSubjectCat.aspx" />
     <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\DetailNews.aspx" />
+    <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\DeleteSubjectCat.aspx" />
     <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
+    <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\listnews.aspx" />
     <Content Include="Admin\SubjectCatList.aspx" />
@@ -674,6 +767,7 @@
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
+    <Content Include="DetailNews.aspx" />
     <Content Include="EditFTB.aspx" />
     <Content Include="file_docs\bangiamhieu.htm" />
     <Content Include="file_docs\cosovatchat.htm" />
@@ -681,6 +775,9 @@
     <Content Include="file_docs\nhansu.htm" />
     <Content Include="file_docs\thanhtich.htm" />
     <Content Include="ftb.imagegallery.aspx" />
+    <Content Include="file_docs\lichsuphattrien.htm" />
+    <Content Include="file_docs\nhansu.htm" />
+    <Content Include="file_docs\thanhtich.htm" />
     <Content Include="Installer\QuickInstaller.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
@@ -688,9 +785,17 @@
     <Content Include="MyProfile\ChangePassword.aspx" />
     <Content Include="MyProfile\Default.aspx" />
     <Content Include="MyProfile\Inc_LeftMenu.ascx" />
+    <Content Include="Notice.aspx" />
+    <Content Include="Pupil\DetailExercise.aspx" />
+    <Content Include="Pupil\Exercise.aspx" />
     <Content Include="Pupil\ScoreTable.aspx" />
+    <Content Include="Teacher\AddExercise.aspx" />
+    <Content Include="Teacher\DetailEditExercise.aspx" />
+    <Content Include="Teacher\DetailListUpload.aspx" />
     <Content Include="Teacher\DetailPupiLDD.aspx" />
     <Content Include="Teacher\DetailPupilTBMK.aspx" />
+    <Content Include="Teacher\EditExercise.aspx" />
+    <Content Include="Teacher\ListUpload.aspx" />
     <Content Include="Teacher\MainClassFinalScore.aspx" />
     <Content Include="Teacher\main_class_manager.aspx" />
     <Content Include="Teacher\Track_learning.aspx" />
@@ -702,6 +807,8 @@
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Files\" />
+    <Folder Include="images\" />
     <Folder Include="lib\nhibernate\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

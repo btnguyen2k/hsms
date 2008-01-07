@@ -15,7 +15,7 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
         <asp:TextBox ID="NewTitle" runat="server" Width="229px" ></asp:TextBox><br />
         <br />
-        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="Label1" runat="server" Text="Image: "
+        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="Label1" runat="server" Text="Hình đính kèm:"
             Width="102px"></asp:Label>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <asp:FileUpLoad id="ImageUpLoad" runat="server" />
         <br />
@@ -31,8 +31,10 @@
         <br />
         <br />
         <br />
-        <asp:Button runat="server" id="NewSave" Text="Save" OnClick="NewSave_Click" />
-    </div>
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <asp:Button runat="server" id="NewSave" Text="Lưu" OnClick="NewSave_Click" Width="141px" />
+        <br />
+        <asp:Label ID="ResultAction" runat="server" ForeColor="Red" Width="602px"></asp:Label></div>
     </form>
 </body>
 </html>
