@@ -232,13 +232,6 @@
     <Compile Include="Admin\AddNews.aspx.designer.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddNews.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>AddNews.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AddNews.aspx.designer.cs">
-      <DependentUpon>AddNews.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\AddSubjectCat.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>AddSubjectCat.aspx</DependentUpon>
@@ -315,27 +308,6 @@
     </Compile>
     <Compile Include="Admin\DeleteSubjectCat.aspx.designer.cs">
       <DependentUpon>DeleteSubjectCat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Notice.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Notice.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Notice.aspx.designer.cs">
-      <DependentUpon>Notice.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\EditNews.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>EditNews.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\EditNews.aspx.designer.cs">
-      <DependentUpon>EditNews.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\listnews.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>listnews.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\listnews.aspx.designer.cs">
-      <DependentUpon>listnews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\SubjectCatList.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -757,7 +729,6 @@
     <Content Include="Admin\Inc_LeftMenu.ascx" />
     <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\Notice.aspx" />
-    <Content Include="Admin\listnews.aspx" />
     <Content Include="Admin\SubjectCatList.aspx" />
     <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
     <EmbeddedResource Include="Properties\licenses.licx" />
@@ -774,7 +745,6 @@
     <Content Include="file_docs\lichsuphattrien.htm" />
     <Content Include="file_docs\nhansu.htm" />
     <Content Include="file_docs\thanhtich.htm" />
-    <Content Include="ftb.imagegallery.aspx" />
     <Content Include="file_docs\lichsuphattrien.htm" />
     <Content Include="file_docs\nhansu.htm" />
     <Content Include="file_docs\thanhtich.htm" />
