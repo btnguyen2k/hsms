@@ -777,6 +777,9 @@
     <None Include="Resources\DBSchema.vsd" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Browsers\" />
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="App_LocalResources\" />
     <Folder Include="Files\" />
     <Folder Include="images\" />
     <Folder Include="lib\nhibernate\" />

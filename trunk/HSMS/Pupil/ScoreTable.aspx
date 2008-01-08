@@ -10,8 +10,8 @@
     <form id="form1" runat="server">
     <div>
         <asp:Label ID="Label1" runat="server" Text="Năm học:" Width="80px"></asp:Label>
-        <asp:TextBox ID="ClassYear" runat="server" Width="94px"></asp:TextBox><br />
-        <br />
+        <asp:TextBox ID="ClassYear" runat="server" Width="94px"></asp:TextBox>&nbsp; &nbsp;
+        &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
         <asp:Button ID="ConfirmYear" runat="server" OnClick="ConfirmYear_Click" Text="Xác nhận" />
         <br />

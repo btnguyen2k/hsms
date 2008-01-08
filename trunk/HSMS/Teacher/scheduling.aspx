@@ -8,9 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-      <asp:Label ID="ScheduleResult" runat="server" Width="337px"></asp:Label>
-      
-      <table border="1" id="schedule" runat="server" >
+      <asp:Label ID="ScheduleResult" runat="server" Width="337px"></asp:Label><table border="1" id="schedule" runat="server" >
 	<tr>
 		<td align = "center" nowrap="nowrap">Ti&#7871;t\Th&#7913; </td>
 		<td  align = "center">2 </td>
