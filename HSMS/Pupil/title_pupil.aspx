@@ -24,7 +24,7 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <asp:Button ID="LogOut" runat="server" BorderColor="White" BorderStyle="None" Font-Italic="True"
             OnClick="LogOut_Click" Text="(thoát)" /><br />
-        <asp:Label ID="Welcome" runat="server" ForeColor="Red" Width="246px"></asp:Label></div>
+        <asp:Label ID="Welcome" runat="server" ForeColor="Red" Width="605px"></asp:Label></div>
     </form>
 </body>
 </html>
