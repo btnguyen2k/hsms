@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:Label ID="Begin" runat="server" Width="678px"></asp:Label><br />
+        <br />
         <asp:Label ID="Label1" runat="server" Text="Lớp:" Width="79px"></asp:Label>&nbsp;
         <asp:TextBox ID="ClassName" runat="server" OnTextChanged="TextBox1_TextChanged" Width="100px"></asp:TextBox><br />
         <br />

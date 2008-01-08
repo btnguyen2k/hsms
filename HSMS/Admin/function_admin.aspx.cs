@@ -12,7 +12,7 @@ namespace HSMS.Admin
             {
                 Response.Redirect("~/main.aspx");
             }
-            Response.Write("Test");
+            
         }
     }
 }

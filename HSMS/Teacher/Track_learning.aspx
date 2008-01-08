@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:Label ID="Notice" runat="server" Width="674px"></asp:Label><br />
+        <br />
         <asp:Label ID="Label1" runat="server" Text="Lớp :" Width="55px"></asp:Label>&nbsp;
         <asp:TextBox ID="ClassName" runat="server" Width="98px"></asp:TextBox><br />
         <br />
@@ -32,6 +34,7 @@
         <asp:Button ID="Check_id" runat="server" OnClick="Check_id_Click" Text="Xác nhận"
             Visible="False" />&nbsp;<asp:Button ID="ViewPupilList" runat="server" OnClick="ViewPupilList_Click"
                 Text="Danh sách học sinh" Visible="False" Width="137px" /><br />
+        <br />
         <asp:Label ID="ResultTracking" runat="server" ForeColor="Red" Width="559px"></asp:Label><br />
         <br />
         <asp:TextBox ID="Content" runat="server" BorderColor="Black" BorderStyle="Double"

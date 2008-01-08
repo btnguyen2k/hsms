@@ -36,7 +36,7 @@
         <asp:HyperLink ID="News" runat="server" Font-Italic="True" Font-Names="Verdana"
             Width="154px" Target="content" NavigateUrl="http://www.cand.com.vn">Tin Tức</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink5" runat="server" Font-Italic="True" Font-Names="Verdana"
-            ForeColor="Blue" NavigateUrl="http://google.com.vn" Target="content" Width="151px">Liên hệ</asp:HyperLink>
+            ForeColor="Blue" NavigateUrl="Mailto:webmaster@ptth.com" Target="content" Width="151px">Liên hệ</asp:HyperLink>
         &nbsp;
         
     </form>

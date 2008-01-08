@@ -9,6 +9,8 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <asp:Label ID="NoticeView" runat="server" Width="666px"></asp:Label><br />
+        <br />
         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;&nbsp; &nbsp;
@@ -38,7 +40,6 @@
         <asp:Button ID="Confirm_ClassSubject" runat="server" Text="Xác nhận" Width="88px" OnClick="Confirm_ClassSubject_Click" Visible="False" />
         &nbsp; &nbsp;&nbsp;
         <asp:Button ID="SubjectList" runat="server" Text="Danh sách môn học" Width="121px" OnClick="SubjectList_Click" Visible="False" />&nbsp;<br />
-        <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <asp:RadioButtonList
             align="center" ID="HK_Select" runat="server" RepeatDirection="Horizontal" Visible="False">

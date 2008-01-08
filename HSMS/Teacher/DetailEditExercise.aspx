@@ -24,9 +24,11 @@
                 ID="FileUpLoad1" runat="server" /><br />
             <br />
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<asp:Button ID="AddNewEx" runat="server" OnClick="AddNewEx_Click"
-                Text="Cập nhật bài tập" /><br />
+            &nbsp; &nbsp; <asp:Button ID="AddNewEx" runat="server" OnClick="AddNewEx_Click"
+                Text="Cập nhật bài tập" />
+            &nbsp; &nbsp; &nbsp;
+            <asp:Button ID="DeleteExercise" runat="server" OnClick="DeleteExercise_Click" Text="Xoá bài tập"
+                Width="124px" /><br />
             <asp:Label ID="Result" runat="server" ForeColor="Red" Width="597px"></asp:Label></div>
     
     </div>
