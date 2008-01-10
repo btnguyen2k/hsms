@@ -12,7 +12,6 @@ namespace HSMS.Admin
             {
                 Response.Redirect("~/main.aspx");
             }
-            
         }
     }
 }

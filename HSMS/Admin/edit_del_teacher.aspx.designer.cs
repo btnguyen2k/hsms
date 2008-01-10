@@ -191,6 +191,24 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Email;
         
         /// <summary>
+        /// Label15 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label15;
+        
+        /// <summary>
+        /// HistoryTeacher control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox HistoryTeacher;
+        
+        /// <summary>
         /// Teacher_DelInf control.
         /// </summary>
         /// <remarks>

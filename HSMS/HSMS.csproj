@@ -358,6 +358,13 @@
     <Compile Include="Admin\main_admin.aspx.designer.cs">
       <DependentUpon>main_admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Teacher_List.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Teacher_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Teacher_List.aspx.designer.cs">
+      <DependentUpon>Teacher_List.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\teacher_scheduling.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>teacher_scheduling.aspx</DependentUpon>
@@ -732,6 +739,7 @@
     <Content Include="Admin\SubjectCatList.aspx" />
     <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <Content Include="Admin\Teacher_List.aspx" />
     <Content Include="App_Data\hsms.mdf">
     </Content>
     <Content Include="App_Data\hsms_log.ldf">
