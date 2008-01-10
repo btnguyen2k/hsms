@@ -25,6 +25,7 @@
             Width="156px" /><br />
         <br />
         &nbsp;<asp:Label ID="TeacherFindResultText" runat="server" ForeColor="Red" Width="386px"></asp:Label><br />
+        <br />
  
  <table border="1" id="Information" align="left" runat="server" style="width: 528px">
 	<tr>
@@ -107,6 +108,9 @@
         <br />
         <br />
         <br />
+        <asp:Label ID="Label15" runat="server" Text="Tiểu sử công tác:" Width="110px" Visible="False"></asp:Label><br />
+        <asp:TextBox ID="HistoryTeacher" runat="server" Height="126px" TextMode="MultiLine"
+            Width="445px" Visible="False"></asp:TextBox><br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="Teacher_DelInf" runat="server"
             OnClick="Teacher_DelInf_Click" Text="Xoá" Width="90px" />
