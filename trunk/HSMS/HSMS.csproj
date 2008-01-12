@@ -295,6 +295,27 @@
     <Compile Include="Admin\EditNews.aspx.designer.cs">
       <DependentUpon>EditNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\Map.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MapDetail.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MapDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MapDetail.aspx.designer.cs">
+      <DependentUpon>MapDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MapNew.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>MapNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MapNew.aspx.designer.cs">
+      <DependentUpon>MapNew.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Notice.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Notice.aspx</DependentUpon>
@@ -565,6 +586,13 @@
     <Compile Include="Pupil\title_pupil.aspx.designer.cs">
       <DependentUpon>title_pupil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="SanTruong.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>SanTruong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SanTruong.aspx.designer.cs">
+      <DependentUpon>SanTruong.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\AddExercise.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>AddExercise.aspx</DependentUpon>
@@ -684,6 +712,13 @@
     <Compile Include="Teacher\Track_learning.aspx.designer.cs">
       <DependentUpon>Track_learning.aspx</DependentUpon>
     </Compile>
+    <Compile Include="temp.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>temp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="temp.aspx.designer.cs">
+      <DependentUpon>temp.aspx</DependentUpon>
+    </Compile>
     <Compile Include="testFTB.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>testFTB.aspx</DependentUpon>
@@ -734,6 +769,9 @@
     <Content Include="Admin\DeleteSubjectCat.aspx" />
     <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
+    <Content Include="Admin\Map.aspx" />
+    <Content Include="Admin\MapDetail.aspx" />
+    <Content Include="Admin\MapNew.aspx" />
     <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\SubjectCatList.aspx" />
@@ -767,6 +805,7 @@
     <Content Include="Pupil\DetailExercise.aspx" />
     <Content Include="Pupil\Exercise.aspx" />
     <Content Include="Pupil\ScoreTable.aspx" />
+    <Content Include="SanTruong.aspx" />
     <Content Include="Teacher\AddExercise.aspx" />
     <Content Include="Teacher\DetailEditExercise.aspx" />
     <Content Include="Teacher\DetailListUpload.aspx" />
@@ -777,6 +816,7 @@
     <Content Include="Teacher\MainClassFinalScore.aspx" />
     <Content Include="Teacher\main_class_manager.aspx" />
     <Content Include="Teacher\Track_learning.aspx" />
+    <Content Include="temp.aspx" />
     <Content Include="testFTB.aspx" />
     <Content Include="TEST\showthongtin.aspx" />
     <Content Include="TEST\upload.aspx" />
