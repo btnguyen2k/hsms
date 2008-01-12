@@ -123,11 +123,9 @@
         &nbsp; &nbsp; &nbsp;
         <asp:Label ID="Label3" runat="server" ForeColor="Blue" Text="THÔNG TIN THÊM"
             Width="155px"></asp:Label><br />
-        <asp:Label ID="Label4" runat="server" Text="Có thể dạy thay thế môn:" Width="155px"></asp:Label><br />
-        &nbsp; &nbsp; &nbsp;
-        <asp:Label ID="Label5" runat="server" Text="Môn học:" Width="65px"></asp:Label><asp:TextBox ID="Subject1" runat="server" Width="103px"></asp:TextBox><br />
-        &nbsp; &nbsp;&nbsp; &nbsp;<asp:Label ID="Label6" runat="server" Text="Môn học:" Width="65px"></asp:Label><asp:TextBox
-            ID="Subject2" runat="server" Width="103px"></asp:TextBox>
+        <asp:Label ID="Label4" runat="server" Text="Chức vụ:" Width="64px"></asp:Label>
+        <asp:TextBox ID="Position" runat="server" Width="313px"></asp:TextBox><br />
+        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <br />
         <asp:Label ID="Label15" runat="server" Text="Tiểu sử công tác:" Width="110px"></asp:Label><br />

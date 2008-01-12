@@ -108,6 +108,9 @@
         <br />
         <br />
         <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Chức vụ:" Width="69px"></asp:Label>
+        <asp:TextBox ID="Position" runat="server" Width="367px"></asp:TextBox><br />
         <asp:Label ID="Label15" runat="server" Text="Tiểu sử công tác:" Width="110px" Visible="False"></asp:Label><br />
         <asp:TextBox ID="HistoryTeacher" runat="server" Height="126px" TextMode="MultiLine"
             Width="445px" Visible="False"></asp:TextBox><br />

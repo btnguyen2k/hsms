@@ -53,10 +53,9 @@
             Target="content_admin" Width="140px">Thêm thông báo </asp:HyperLink><br />
         &nbsp;<asp:Label ID="Label10" runat="server" Text="+" Width="12px"></asp:Label>
         <asp:HyperLink ID="HyperLink9" runat="server" Font-Names="Verdana" ForeColor="Blue"
-            NavigateUrl="~/Admin/EditNews.aspx" Target="content_admin" Width="135px">Sữa thông báo</asp:HyperLink>
-        &nbsp;<br />
-        &nbsp;
-    </div>      
+            NavigateUrl="~/Admin/EditNews.aspx" Target="content_admin" Width="135px">Sữa thông báo</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink11" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Admin/Map.aspx" Target="content_admin">* Quản lý phòng ốc</asp:HyperLink></div>      
     </form>
 </body>
 </html>
