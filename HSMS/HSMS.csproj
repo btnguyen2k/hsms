@@ -470,9 +470,9 @@
     <Compile Include="Installer\QuickInstaller.aspx.designer.cs">
       <DependentUpon>QuickInstaller.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Libs\SimpleObjectCaching\Cache.cs" />
-    <Compile Include="Libs\SimpleObjectCaching\CacheItem.cs" />
-    <Compile Include="Libs\SimpleObjectCaching\CacheManager.cs" />
+    <Compile Include="file_docs\Libs\SimpleObjectCaching\Cache.cs" />
+    <Compile Include="file_docs\Libs\SimpleObjectCaching\CacheItem.cs" />
+    <Compile Include="file_docs\Libs\SimpleObjectCaching\CacheManager.cs" />
     <Compile Include="Login.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Login.aspx</DependentUpon>
