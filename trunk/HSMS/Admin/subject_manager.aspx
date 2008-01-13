@@ -15,14 +15,12 @@
         &nbsp;<br />
         &nbsp;&nbsp;
         <asp:Label ID="Label2" runat="server" Text="Tên môn học:"></asp:Label>
-        &nbsp;
-        <asp:TextBox ID="SubjectName" runat="server" OnTextChanged="SubjectName_TextChanged"
-            Width="99px"></asp:TextBox>
+        &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;<asp:DropDownList ID="SubjectName" runat="server">
+        </asp:DropDownList>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <asp:Button ID="Find_Subject" runat="server" OnClick="Find_Subject_Click" Text="Tìm"
             Width="78px" />
-        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Find_SubjectAll" runat="server" OnClick="Find_SubjectAll_Click" Text="Tìm tất cả" /><br />
+        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<br />
         &nbsp; &nbsp; &nbsp;
         <br />
         &nbsp;&nbsp;

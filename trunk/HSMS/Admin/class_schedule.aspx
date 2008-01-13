@@ -15,13 +15,13 @@
             Text="THỜI KHOÁ BIỂU"></asp:Label><br />
         <br />
         <asp:Label ID="Label2" runat="server" Text="Tên lớp:" Width="61px"></asp:Label>
-        &nbsp;
-        <asp:TextBox ID="Classid_Name" runat="server" Width="76px"></asp:TextBox>&nbsp;
+        &nbsp;&nbsp; &nbsp;<asp:DropDownList ID="Classid_Name" runat="server">
+        </asp:DropDownList>
         <asp:Label ID="Label3" runat="server" Text="Năm học:" Width="65px"></asp:Label>&nbsp;
         <asp:TextBox ID="Classid_Year" runat="server" Width="78px"></asp:TextBox>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="FindClass_Schedule" runat="server"
             OnClick="FindClass_Schedule_Click" Text="Tìm" Width="88px" />
-        &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="ClassFind_ScheduleAll" runat="server" Text="Danh sách lớp" OnClick="ClassFind_ScheduleAll_Click" /><br />
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
         <br />
         <asp:Label ID="Find_Result" runat="server" ForeColor="Red" Width="458px"></asp:Label><br />
         <br />

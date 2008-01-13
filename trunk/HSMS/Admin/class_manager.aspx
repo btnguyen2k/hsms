@@ -15,7 +15,14 @@
         &nbsp; &nbsp;&nbsp;
         <asp:Label ID="Label2" runat="server" Text="Năm học:" Width="65px"></asp:Label>
         &nbsp; &nbsp;&nbsp;
-        <asp:TextBox ID="ClassYear" runat="server" Width="78px"></asp:TextBox><br />
+        <asp:TextBox ID="ClassYear" runat="server" Width="78px"></asp:TextBox>
+        &nbsp;
+        <asp:Label ID="Label9" runat="server" Text="Danh sách lớp:"></asp:Label>&nbsp;<asp:DropDownList
+            ID="ClassValue" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ClassValue_SelectedIndexChanged">
+        </asp:DropDownList><br />
+        <asp:Label ID="Label10" runat="server" Text="Danh sách giáo  viên" Width="132px"></asp:Label>
+        <asp:DropDownList ID="TeacherValue" runat="server" AutoPostBack="True" OnSelectedIndexChanged="TeacherValue_SelectedIndexChanged">
+        </asp:DropDownList><br />
         <br />
         &nbsp; &nbsp; &nbsp;&nbsp;
         <asp:Button ID="CreateNewClass" runat="server" OnClick="CreateNewClass_Click" Text="Thêm lớp mới"
@@ -55,9 +62,11 @@
             Width="98px" OnClick="NewUpClass_Click" /><br />
         <br />
         <asp:Button ID="TeacherList" runat="server" OnClick="TeacherList_Click" Text="Danh sách giáo viên"
-            Width="134px" /><br />
+            Width="134px" />&nbsp;<br />
         <asp:Label ID="ResultAction" runat="server" ForeColor="Red" Width="438px"></asp:Label><br />
-        <asp:Label ID="mode" runat="server"></asp:Label></div>
+        <asp:Label ID="mode" runat="server"></asp:Label><br />
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/class_manager.aspx"
+            Target="content_admin">Quay lại</asp:HyperLink></div>
     </form>
 </body>
 </html>

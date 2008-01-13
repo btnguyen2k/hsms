@@ -17,13 +17,12 @@
         <br />
         &nbsp; &nbsp;&nbsp;
         <asp:Label ID="Label2" runat="server" Text="Mã số giáo viên :" Width="110px"></asp:Label>
-        <asp:TextBox ID="Teacher_FindId" runat="server" Width="120px"></asp:TextBox>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp;&nbsp;<asp:DropDownList ID="Teacher_FindId" runat="server">
+        </asp:DropDownList>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <asp:Button ID="Teacher_Finding" runat="server" OnClick="Teacher_Finding_Click" Text="Tìm"
             Width="107px" />
-        &nbsp;
-        <asp:Button ID="ListTeacher" runat="server" OnClick="ListTeacher_Click" Text="Danh sách GV"
-            Width="143px" /><br />
+        &nbsp;&nbsp;&nbsp;<br />
         <br />
         &nbsp; &nbsp; &nbsp;
         <asp:Label ID="Finding_result" runat="server" ForeColor="Red" Width="413px"></asp:Label>
