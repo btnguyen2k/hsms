@@ -80,7 +80,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Day;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher_Day;
         
         /// <summary>
         /// Teacher_Month control.
@@ -89,7 +89,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Month;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher_Month;
         
         /// <summary>
         /// Teacher_Year control.
@@ -98,7 +98,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Year;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher_Year;
         
         /// <summary>
         /// Teacher_YearStart control.
@@ -107,7 +107,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_YearStart;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher_YearStart;
         
         /// <summary>
         /// Teacher_Subject control.
@@ -116,7 +116,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_Subject;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher_Subject;
         
         /// <summary>
         /// Teacher_MainClass control.
@@ -125,7 +125,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Teacher_MainClass;
+        protected global::System.Web.UI.WebControls.DropDownList Teacher_MainClass;
         
         /// <summary>
         /// Teacher_MainClass_Year control.

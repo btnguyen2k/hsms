@@ -15,7 +15,16 @@
             Text="THÔNG TIN HỌC SINH" Width="379px"></asp:Label><br />
         <br />
         &nbsp;<br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<asp:Label ID="Label3"
+            runat="server" Text="Lớp: " Width="42px"></asp:Label>&nbsp;
+        <asp:DropDownList ID="ClassList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ClassList_SelectedIndexChanged">
+        </asp:DropDownList>&nbsp;
+        <asp:Label ID="test" runat="server" Text="năm: "></asp:Label>
+        <asp:TextBox ID="YearSupport" runat="server" Width="65px"></asp:TextBox>&nbsp;
+        <asp:Label ID="Label4" runat="server" Text="danh sách học sinh:" Width="116px"></asp:Label>&nbsp;
+        <asp:DropDownList ID="PupilList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="PupilList_SelectedIndexChanged">
+        </asp:DropDownList><br />
+        <br />
         <asp:Label ID="Label2" runat="server" Text="Mã số học sinh : " Width="107px"></asp:Label>
         <asp:TextBox ID="Find_Pupil_id" runat="server" Width="130px"></asp:TextBox>
         &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
@@ -99,7 +108,17 @@
         <br />
         <br />
         <br />
-        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="620px"></asp:Label></div>
+        <br />
+        <br />
+        <asp:Label ID="Label12" runat="server" Text="Chức vụ trong lớp:" Visible="False"></asp:Label><asp:TextBox
+            ID="Position" runat="server" Visible="False" Width="238px"></asp:TextBox><br />
+        <asp:Label ID="Label13" runat="server" Text="Thành tích cá nhân:" Visible="False"
+            Width="117px"></asp:Label><br />
+        <asp:TextBox ID="History" runat="server" Height="154px" TextMode="MultiLine" Visible="False"
+            Width="576px"></asp:TextBox><br />
+        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="620px"></asp:Label><br />
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/edit_del_pupil.aspx"
+            Target="content_admin" Width="59px">Quay lại</asp:HyperLink></div>
     </form>
 </body>
 </html>

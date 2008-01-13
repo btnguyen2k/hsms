@@ -53,7 +53,7 @@ namespace HSMS.Admin {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Classid_Name;
+        protected global::System.Web.UI.WebControls.DropDownList Classid_Name;
         
         /// <summary>
         /// Label3 control.
@@ -81,15 +81,6 @@ namespace HSMS.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button FindClass_Schedule;
-        
-        /// <summary>
-        /// ClassFind_ScheduleAll control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ClassFind_ScheduleAll;
         
         /// <summary>
         /// Find_Result control.

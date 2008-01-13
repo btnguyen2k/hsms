@@ -16,7 +16,7 @@
         <br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+        &nbsp; &nbsp; &nbsp;&nbsp; 
         <asp:Label ID="Label2" runat="server" ForeColor="Blue" Text="THÔNG TIN CHUNG" Width="152px"></asp:Label>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -43,13 +43,57 @@
 		    <table border="1" width="100%" id="table2" runat="server">
 			    <tr>
 				    <td>
-					    <input type="text" name="T6" runat="server" style="width: 30px" id="Teacher_Day"/>				
-				    </td>
+                        &nbsp;<asp:DropDownList ID="Teacher_Day" runat="server">
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>4</asp:ListItem>
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>6</asp:ListItem>
+                            <asp:ListItem>7</asp:ListItem>
+                            <asp:ListItem>8</asp:ListItem>
+                            <asp:ListItem>9</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>11</asp:ListItem>
+                            <asp:ListItem>12</asp:ListItem>
+                            <asp:ListItem>13</asp:ListItem>
+                            <asp:ListItem>14</asp:ListItem>
+                            <asp:ListItem>15</asp:ListItem>
+                            <asp:ListItem>16</asp:ListItem>
+                            <asp:ListItem>17</asp:ListItem>
+                            <asp:ListItem>18</asp:ListItem>
+                            <asp:ListItem>19</asp:ListItem>
+                            <asp:ListItem>20</asp:ListItem>
+                            <asp:ListItem>21</asp:ListItem>
+                            <asp:ListItem>22</asp:ListItem>
+                            <asp:ListItem>23</asp:ListItem>
+                            <asp:ListItem>24</asp:ListItem>
+                            <asp:ListItem>25</asp:ListItem>
+                            <asp:ListItem>26</asp:ListItem>
+                            <asp:ListItem>27</asp:ListItem>
+                            <asp:ListItem>28</asp:ListItem>
+                            <asp:ListItem>29</asp:ListItem>
+                            <asp:ListItem>30</asp:ListItem>
+                            <asp:ListItem>31</asp:ListItem>
+                        </asp:DropDownList></td>
 				    <td>
-					    <input type="text" name="T7" style="width: 30px" runat="server" id="Teacher_Month"/>							
-				    </td>
-				    <td>				
-					    <input type="text" name="T8" style="width: 60px" runat="server" id="Teacher_Year"/>				
+                        <asp:DropDownList ID="Teacher_Month" runat="server">
+                            <asp:ListItem>1</asp:ListItem>
+                            <asp:ListItem>2</asp:ListItem>
+                            <asp:ListItem>3</asp:ListItem>
+                            <asp:ListItem>4</asp:ListItem>
+                            <asp:ListItem>5</asp:ListItem>
+                            <asp:ListItem>6</asp:ListItem>
+                            <asp:ListItem>7</asp:ListItem>
+                            <asp:ListItem>8</asp:ListItem>
+                            <asp:ListItem>9</asp:ListItem>
+                            <asp:ListItem>10</asp:ListItem>
+                            <asp:ListItem>11</asp:ListItem>
+                            <asp:ListItem>12</asp:ListItem>
+                            <asp:ListItem></asp:ListItem>
+                        </asp:DropDownList>&nbsp;</td>
+				    <td>				&nbsp;<asp:DropDownList ID="Teacher_Year" runat="server">
+                        </asp:DropDownList>&nbsp;
 				    </td>
 			    </tr>
 		    </table>
@@ -59,21 +103,22 @@
 		<td style="width: 180px">
             Năm băt đầu giảng dạy :</td>
 		<td style="width: 74px">
-			<input type="text" name="T2" style="width: 60px" runat="server" id="Teacher_YearStart"/>		
-		</td>
+            &nbsp;<asp:DropDownList ID="Teacher_YearStart" runat="server">
+            </asp:DropDownList></td>
 	</tr>
 	<tr>
 		<td style="width: 180px">
             Dạy môn học :</td>
 		<td style="width: 74px">
-			<input type="text" name="T3" style="width: 96px" runat="server" id="Teacher_Subject"/>
-		</td>
+            &nbsp;<asp:DropDownList ID="Teacher_Subject" runat="server">
+            </asp:DropDownList></td>
 	</tr>
 	<tr>
 		<td style="width: 180px">Chủ nhiệm lớp :</td>
 		<td style="width: 74px">
-			<input type="text" name="T4" style="width: 95px" runat="server" id="Teacher_MainClass" />
-		</td>
+            &nbsp;<asp:DropDownList ID="Teacher_MainClass" runat="server" AutoPostBack="True"
+                OnSelectedIndexChanged="Teacher_MainClass_SelectedIndexChanged">
+            </asp:DropDownList></td>
 	</tr>
 	<tr>
 		<td style="width: 180px">Năm học:</td>
@@ -131,11 +176,12 @@
         <asp:Label ID="Label15" runat="server" Text="Tiểu sử công tác:" Width="110px"></asp:Label><br />
         <asp:TextBox ID="HistoryTeacher" runat="server" Height="126px" TextMode="MultiLine" Width="445px"></asp:TextBox><br />
         <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;&nbsp;
         <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" />&nbsp;
         <asp:Button ID="ViewClassList" runat="server" OnClick="ViewClassList_Click" Text="Danh sách lớp"
-            Width="103px" />&nbsp;<asp:Button ID="ViewSubjectList" runat="server" OnClick="ViewSubjectList_Click"
-                Text="Danh sách môn hoc" /><br />
+            Width="103px" Visible="False" />&nbsp;<asp:Button ID="ViewSubjectList" runat="server" OnClick="ViewSubjectList_Click"
+                Text="Danh sách môn hoc" Visible="False" /><br />
         &nbsp;&nbsp;<br />
         &nbsp;<asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label></div>
     </form>
