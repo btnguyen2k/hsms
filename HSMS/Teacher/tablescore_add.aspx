@@ -14,8 +14,9 @@
         &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;&nbsp; &nbsp;
-        <asp:Label ID="Label1" runat="server" Text="Lớp:" Width="50px"></asp:Label>&nbsp;
-        <asp:TextBox ID="ClassName" runat="server" Width="96px"></asp:TextBox>
+        <asp:Label ID="Label1" runat="server" Text="Lớp:" Width="50px"></asp:Label>&nbsp;&nbsp;<asp:DropDownList
+            ID="ClassName" runat="server">
+        </asp:DropDownList>
         &nbsp;
         <asp:Label ID="Label2" runat="server" Text="Năm:" Width="44px"></asp:Label>
         <asp:TextBox ID="ClassYear" runat="server" Width="80px"></asp:TextBox>
@@ -53,9 +54,10 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp;<asp:Button ID="Save_ScoreTable" runat="server" Text="Lưu" Width="102px" Visible="False" OnClick="Save_ScoreTable_Click" />
         &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Calculate_TBM" runat="server" Text="Tính tổng kết TBM" Width="144px" Visible="False" OnClick="Calculate_TBM_Click" Enabled="False" />
-        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Calculate_TBM" runat="server" Text="Tính tổng kết TBM" Width="144px" Visible="False" OnClick="Calculate_TBM_Click" Enabled="False" /><br />
         <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/tablescore_add.aspx"
+            Target="content_teacher" Width="59px">Quay lại</asp:HyperLink>
     </form>
 </body>
 </html>

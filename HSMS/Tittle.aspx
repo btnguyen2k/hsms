@@ -25,7 +25,8 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp;
         <asp:Button ID="LoginProcess" runat="server" OnClick="LoginProcess_Click" Text="Đăng nhập"
-            Width="110px" /><br />
+            Width="110px" />
+        <asp:HyperLink ID="HyperLink1" runat="server" align = center ForeColor="Blue">Tìm kiếm</asp:HyperLink><br />
         <asp:RadioButtonList ID="RadioButton_Choice" runat="server" BackColor="SpringGreen"
             BorderColor="Blue" Font-Names="Verdana" Height="26px" RepeatDirection="Horizontal"
             Width="529px">
@@ -33,7 +34,9 @@
             <asp:ListItem>Gi&#225;o vi&#234;n</asp:ListItem>
             <asp:ListItem>Học Sinh</asp:ListItem>
             <asp:ListItem>Phụ huynh</asp:ListItem>
-        </asp:RadioButtonList></div>
+        </asp:RadioButtonList>
+        &nbsp;&nbsp;
+    </div>
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     </form>
 </body>

@@ -232,13 +232,6 @@
     <Compile Include="Admin\AddNews.aspx.designer.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\AddSubjectCat.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>AddSubjectCat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\AddSubjectCat.aspx.designer.cs">
-      <DependentUpon>AddSubjectCat.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\add_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>add_pupil.aspx</DependentUpon>
@@ -322,20 +315,6 @@
     </Compile>
     <Compile Include="Admin\Notice.aspx.designer.cs">
       <DependentUpon>Notice.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DeleteSubjectCat.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>DeleteSubjectCat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\DeleteSubjectCat.aspx.designer.cs">
-      <DependentUpon>DeleteSubjectCat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\SubjectCatList.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>SubjectCatList.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\SubjectCatList.aspx.designer.cs">
-      <DependentUpon>SubjectCatList.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\subject_manager.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -470,9 +449,6 @@
     <Compile Include="Installer\QuickInstaller.aspx.designer.cs">
       <DependentUpon>QuickInstaller.aspx</DependentUpon>
     </Compile>
-    <Compile Include="file_docs\Libs\SimpleObjectCaching\Cache.cs" />
-    <Compile Include="file_docs\Libs\SimpleObjectCaching\CacheItem.cs" />
-    <Compile Include="file_docs\Libs\SimpleObjectCaching\CacheManager.cs" />
     <Compile Include="Login.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Login.aspx</DependentUpon>
@@ -762,11 +738,9 @@
     <EmbeddedResource Include="Bo\Config\HSMSConfig.hbm.xml" />
     <EmbeddedResource Include="Bo\User\HSMSUser.hbm.xml" />
     <Content Include="Admin\AddNews.aspx" />
-    <Content Include="Admin\AddSubjectCat.aspx" />
     <Content Include="Admin\Default.aspx" />
     <Content Include="Admin\DetailNews.aspx" />
     <Content Include="Admin\EditNews.aspx" />
-    <Content Include="Admin\DeleteSubjectCat.aspx" />
     <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
     <Content Include="Admin\Map.aspx" />
@@ -774,7 +748,6 @@
     <Content Include="Admin\MapNew.aspx" />
     <Content Include="Admin\Notice.aspx" />
     <Content Include="Admin\Notice.aspx" />
-    <Content Include="Admin\SubjectCatList.aspx" />
     <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
     <EmbeddedResource Include="Properties\licenses.licx" />
     <Content Include="Admin\Teacher_List.aspx" />

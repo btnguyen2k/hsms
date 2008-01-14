@@ -44,7 +44,7 @@ namespace HSMS.Teacher {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ClassName;
+        protected global::System.Web.UI.WebControls.DropDownList ClassName;
         
         /// <summary>
         /// Label2 control.
@@ -99,5 +99,14 @@ namespace HSMS.Teacher {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table ClassListTable;
+        
+        /// <summary>
+        /// HyperLink1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

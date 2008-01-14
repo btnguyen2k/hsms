@@ -12,11 +12,11 @@
         <asp:Label ID="Notice" runat="server" Width="674px"></asp:Label><br />
         <br />
         <asp:Label ID="Label1" runat="server" Text="Lớp :" Width="55px"></asp:Label>&nbsp;
-        <asp:TextBox ID="ClassName" runat="server" Width="98px"></asp:TextBox><br />
+        <asp:DropDownList ID="ClassName" runat="server">
+        </asp:DropDownList><br />
         <br />
         <asp:Label ID="Label2" runat="server" Text="Năm" Width="51px"></asp:Label>&nbsp;
-        &nbsp;<asp:TextBox ID="ClassYear" runat="server" OnTextChanged="TextBox2_TextChanged"
-            Width="99px"></asp:TextBox><br />
+        &nbsp;<asp:TextBox ID="ClassYear" runat="server" Width="99px"></asp:TextBox><br />
         <br />
         <asp:Button ID="Check_Class" runat="server" OnClick="Check_Class_Click" Text="Xác nhận" />&nbsp;
         <asp:Button ID="ViewClassList" runat="server" OnClick="ViewClassList_Click" Text="Danh Sách Lớp"

@@ -31,6 +31,9 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
         <br />
         <asp:Label ID="Result" runat="server" ForeColor="Red" Width="597px"></asp:Label>
+        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Pupil/Exercise.aspx"
+            Target="content_pupil" Width="61px">Quay lại</asp:HyperLink>
     </form>
 </body>
 </html>
