@@ -56,6 +56,24 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.WebControls.DropDownList Teacher_FindId;
         
         /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
+        /// SubjectList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList SubjectList;
+        
+        /// <summary>
         /// Teacher_Finding control.
         /// </summary>
         /// <remarks>

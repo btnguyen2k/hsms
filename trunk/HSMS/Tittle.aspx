@@ -26,7 +26,7 @@
         &nbsp; &nbsp; &nbsp;
         <asp:Button ID="LoginProcess" runat="server" OnClick="LoginProcess_Click" Text="Đăng nhập"
             Width="110px" />
-        <asp:HyperLink ID="HyperLink1" runat="server" align = center ForeColor="Blue">Tìm kiếm</asp:HyperLink><br />
+        <br />
         <asp:RadioButtonList ID="RadioButton_Choice" runat="server" BackColor="SpringGreen"
             BorderColor="Blue" Font-Names="Verdana" Height="26px" RepeatDirection="Horizontal"
             Width="529px">
