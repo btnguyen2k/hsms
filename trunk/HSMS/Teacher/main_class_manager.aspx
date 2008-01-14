@@ -10,8 +10,8 @@
     <form id="form1" runat="server">
     <div>
         <asp:Label ID="Label1" runat="server" Text="Lớp:" Width="45px"></asp:Label>
-        &nbsp; &nbsp; &nbsp;<asp:TextBox ID="ClassName" runat="server" OnTextChanged="ClassName_TextChanged"
-            Width="95px"></asp:TextBox><br />
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<asp:DropDownList ID="ClassName" runat="server">
+        </asp:DropDownList><br />
         <br />
         <asp:Label ID="Label2" runat="server" Text="Năm:" Width="60px"></asp:Label>&nbsp;
         <asp:TextBox ID="ClassYear" runat="server" Width="56px"></asp:TextBox><br />
@@ -41,7 +41,8 @@
                 <asp:TableCell runat="server" HorizontalAlign="Center">Xếp loại cả năm</asp:TableCell>
             </asp:TableRow>
         </asp:Table>
-    </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/main_class_manager.aspx"
+            Target="content_teacher" Width="56px">Quay lại</asp:HyperLink></div>
     </form>
 </body>
 </html>

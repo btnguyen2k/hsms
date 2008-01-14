@@ -1,8 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Web.Caching;
 using HSMS.Db;
-using HSMS.Libs.SimpleObjectCaching;
+//using HSMS.Libs.SimpleObjectCaching;
 using NHibernate;
 
 namespace HSMS.Bo.Subject
@@ -17,7 +18,7 @@ namespace HSMS.Bo.Subject
 
         private static readonly string CACHE_KEY_ALL_SUBJECT_CATS_AS_MAP = "SUBJECT_CATS_ALL_AS_MAP";
 
-        private static void InvalidateCacheSubjectCats()
+  /*      private static void InvalidateCacheSubjectCats()
         {
             lock (typeof (SubjectManager))
             {
@@ -140,6 +141,6 @@ namespace HSMS.Bo.Subject
             {
                 InvalidateCacheSubjectCats();    
             }            
-        }
-    }
+        } */
+    } 
 }
