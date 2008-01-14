@@ -60,9 +60,6 @@
         <asp:TextBox ID="NewClassMainTeacher" runat="server" Width="81px"></asp:TextBox>
         &nbsp; &nbsp;&nbsp; &nbsp;<asp:Button ID="NewUpClass" runat="server" Text="Xác nhận"
             Width="98px" OnClick="NewUpClass_Click" /><br />
-        <br />
-        <asp:Button ID="TeacherList" runat="server" OnClick="TeacherList_Click" Text="Danh sách giáo viên"
-            Width="134px" />&nbsp;<br />
         <asp:Label ID="ResultAction" runat="server" ForeColor="Red" Width="438px"></asp:Label><br />
         <asp:Label ID="mode" runat="server"></asp:Label><br />
         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/class_manager.aspx"
