@@ -17,11 +17,12 @@
         <br />
         <asp:Label ID="Label2" runat="server" Text="Mã số giáo viên :"></asp:Label>
         &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:DropDownList ID="Teacher_FindId" runat="server">
-        </asp:DropDownList>&nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Find_Teacher" runat="server" Text="Tìm kiếm" OnClick="Find_Teacher_Click" />
-        &nbsp; &nbsp; &nbsp;
-        <asp:Button ID="TeacherList" runat="server" OnClick="TeacherList_Click" Text="Danh sách giáo viên"
-            Width="156px" Visible="False" /><br />
+        </asp:DropDownList>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+        <asp:Label ID="Label6" runat="server" Text="bộ môn" Width="52px"></asp:Label>
+        &nbsp;&nbsp;<asp:DropDownList ID="SubjectList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SubjectList_SelectedIndexChanged">
+        </asp:DropDownList>
+        &nbsp;<asp:Button ID="Find_Teacher" runat="server" Text="Tìm kiếm" OnClick="Find_Teacher_Click" />
+        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<br />
         <br />
         &nbsp;<asp:Label ID="TeacherFindResultText" runat="server" ForeColor="Red" Width="386px"></asp:Label><br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;

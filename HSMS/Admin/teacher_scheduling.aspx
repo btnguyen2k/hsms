@@ -19,7 +19,11 @@
         <asp:Label ID="Label2" runat="server" Text="Mã số giáo viên :" Width="110px"></asp:Label>
         &nbsp; &nbsp; &nbsp;&nbsp;<asp:DropDownList ID="Teacher_FindId" runat="server">
         </asp:DropDownList>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; 
+        <asp:Label ID="Label3" runat="server" Text="bộ môn"></asp:Label>
+        &nbsp; &nbsp; &nbsp;<asp:DropDownList ID="SubjectList" runat="server" AutoPostBack="True"
+            OnSelectedIndexChanged="SubjectList_SelectedIndexChanged">
+        </asp:DropDownList>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <asp:Button ID="Teacher_Finding" runat="server" OnClick="Teacher_Finding_Click" Text="Tìm"
             Width="107px" />
         &nbsp;&nbsp;&nbsp;<br />

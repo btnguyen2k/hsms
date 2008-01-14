@@ -421,6 +421,13 @@
     <Compile Include="DetailNews.aspx.designer.cs">
       <DependentUpon>DetailNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DetailSearching.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailSearching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailSearching.aspx.designer.cs">
+      <DependentUpon>DetailSearching.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EditFTB.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>EditFTB.aspx</DependentUpon>
@@ -568,6 +575,13 @@
     </Compile>
     <Compile Include="SanTruong.aspx.designer.cs">
       <DependentUpon>SanTruong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Searching.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Searching.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Searching.aspx.designer.cs">
+      <DependentUpon>Searching.aspx</DependentUpon>
     </Compile>
     <Compile Include="Teacher\AddExercise.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -758,6 +772,7 @@
     </Content>
     <Content Include="Default.aspx" />
     <Content Include="DetailNews.aspx" />
+    <Content Include="DetailSearching.aspx" />
     <Content Include="EditFTB.aspx" />
     <Content Include="file_docs\bangiamhieu.htm" />
     <Content Include="file_docs\cosovatchat.htm" />
@@ -779,6 +794,7 @@
     <Content Include="Pupil\Exercise.aspx" />
     <Content Include="Pupil\ScoreTable.aspx" />
     <Content Include="SanTruong.aspx" />
+    <Content Include="Searching.aspx" />
     <Content Include="Teacher\AddExercise.aspx" />
     <Content Include="Teacher\DetailEditExercise.aspx" />
     <Content Include="Teacher\DetailListUpload.aspx" />

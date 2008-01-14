@@ -12,12 +12,12 @@ namespace HSMS {
     
     
     /// <summary>
-    /// Tittle class.
+    /// Searching class.
     /// </summary>
     /// <remarks>
     /// Auto-generated class.
     /// </remarks>
-    public partial class Tittle {
+    public partial class Searching {
         
         /// <summary>
         /// form1 control.
@@ -29,15 +29,6 @@ namespace HSMS {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// title control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Table title;
-        
-        /// <summary>
         /// Label1 control.
         /// </summary>
         /// <remarks>
@@ -47,48 +38,39 @@ namespace HSMS {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// LoginName control.
+        /// InputText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox LoginName;
+        protected global::System.Web.UI.WebControls.TextBox InputText;
         
         /// <summary>
-        /// Label2 control.
+        /// StartSearch control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button StartSearch;
         
         /// <summary>
-        /// Password control.
+        /// Result control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.Label Result;
         
         /// <summary>
-        /// LoginProcess control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LoginProcess;
-        
-        /// <summary>
-        /// RadioButton_Choice control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList RadioButton_Choice;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

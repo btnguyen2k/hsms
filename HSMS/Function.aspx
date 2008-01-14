@@ -11,6 +11,8 @@
     <div>
         <asp:HyperLink ID="MainPage" runat="server" Font-Italic="True" Font-Names="Verdana"
             Width="154px" Target="content" NavigateUrl="content.aspx">Trang Chủ</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Searching.aspx" Target="content">Tìm kiếm</asp:HyperLink><br />
       
         <asp:HyperLink ID="Notice" runat="server" Font-Italic="True" Font-Names="Verdana"
             Width="154px" Target="content" NavigateUrl="~/Notice.aspx">Thông Báo</asp:HyperLink><br />
