@@ -7,25 +7,25 @@
     <title>Untitled Page</title>
 </head>
 <body>
-    <form id="form1" runat="server">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp; &nbsp; &nbsp;&nbsp;
+    
+    <form id="form1" runat="server"><center>
         <asp:Label ID="Label1" runat="server" Font-Names="Verdana" Font-Size="XX-Large" ForeColor="Red"
             Text="THỜI KHOÁ BIỂU"></asp:Label><br />
         <br />
         <asp:Label ID="Label2" runat="server" Text="Tên lớp:" Width="61px"></asp:Label>
-        &nbsp;&nbsp; &nbsp;<asp:DropDownList ID="Classid_Name" runat="server">
+        <asp:DropDownList ID="Classid_Name" runat="server">
         </asp:DropDownList>
-        <asp:Label ID="Label3" runat="server" Text="Năm học:" Width="65px"></asp:Label>&nbsp;
-        <asp:TextBox ID="Classid_Year" runat="server" Width="78px"></asp:TextBox>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Button ID="FindClass_Schedule" runat="server"
+        
+       </center>
+    <center>
+        
+        <asp:Button ID="FindClass_Schedule" runat="server"
             OnClick="FindClass_Schedule_Click" Text="Tìm" Width="88px" />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
+        
         <br />
         <asp:Label ID="Find_Result" runat="server" ForeColor="Red" Width="458px"></asp:Label><br />
         <br />
-    <table border="1" id="schedule" runat="server" >
+    <table border="1" id="schedule" runat="server">
 	<tr>
 		<td align = "center" nowrap="nowrap">Ti&#7871;t\Th&#7913; </td>
 		<td  align = "center">2 </td>
@@ -246,21 +246,9 @@
 		</td>		
 	</tr>
 </table>
-        &nbsp;
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="AddClass_Schedule" runat="server" Text="Thêm" Width="99px" OnClick="AddClass_Schedule_Click" Visible="False" />
-        &nbsp; &nbsp; &nbsp;<asp:Button ID="EditClass_Schedule" runat="server" Text="Sữa"
-            Width="92px" OnClick="EditClass_Schedule_Click" Visible="False" />
-        &nbsp; &nbsp;
-        <asp:Button ID="SubjectList" runat="server" OnClick="SubjectList_Click" Text="Danh sách môn học"
-            Visible="False" Width="131px" />
-        &nbsp;
-        <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Quay lại" Visible="False"
-            Width="95px" /><br />
-        <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="455px"></asp:Label>&nbsp;<br />
-        <br />
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/class_schedule.aspx"
+            Target="content_admin">Quay lại</asp:HyperLink></center>
+        </form>
     
-    </form>
 </body>
 </html>

@@ -56,24 +56,6 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.WebControls.DropDownList Classid_Name;
         
         /// <summary>
-        /// Label3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
-        
-        /// <summary>
-        /// Classid_Year control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Classid_Year;
-        
-        /// <summary>
         /// FindClass_Schedule control.
         /// </summary>
         /// <remarks>
@@ -641,48 +623,12 @@ namespace HSMS.Admin {
         protected global::System.Web.UI.HtmlControls.HtmlInputText T710;
         
         /// <summary>
-        /// AddClass_Schedule control.
+        /// HyperLink1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button AddClass_Schedule;
-        
-        /// <summary>
-        /// EditClass_Schedule control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button EditClass_Schedule;
-        
-        /// <summary>
-        /// SubjectList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SubjectList;
-        
-        /// <summary>
-        /// Back control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Back;
-        
-        /// <summary>
-        /// Result_Edit_Add control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Result_Edit_Add;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }
