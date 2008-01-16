@@ -9,8 +9,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Searching.aspx"
-            Target="content" Width="63px">Quay lại</asp:HyperLink></div>
+        <center>
+            <asp:Label ID="Label1" runat="server" ForeColor="Red" Text="THÔNG TIN CHI TIẾT"></asp:Label>&nbsp;</center>
+        <center>
+            <asp:Label ID="Result" runat="server" Width="513px"></asp:Label>&nbsp;</center>
+        <center>
+            <asp:HyperLink ID="HyperLink2" runat="server" ForeColor="Blue" NavigateUrl="javascript:history.go(-1);"
+                Target="content">Quay lại</asp:HyperLink>&nbsp;</center>
+        <center>
+        &nbsp;</center>
+    </div>
     </form>
 </body>
 </html>

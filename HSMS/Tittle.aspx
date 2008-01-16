@@ -9,10 +9,12 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <center>
         <asp:Table ID="title" runat="server" BackColor="Blue" BorderColor="Yellow" BorderStyle="Dotted"
             Caption="WEBSITE TRƯỜNG PTTH" Font-Names="Verdana" Font-Size="XX-Large" ForeColor="#FF8000"
             HorizontalAlign="Center" Width="554px">
         </asp:Table>
+        </center>
         <br />
         <asp:Label ID="Label1" runat="server" Font-Names="Verdana" Text="Tên đăng nhập:"></asp:Label>
         <asp:TextBox ID="LoginName" runat="server" BorderColor="White" Columns="4" ForeColor="Black"
@@ -22,22 +24,18 @@
         <asp:TextBox ID="Password" runat="server" TextMode="Password" Width="211px"></asp:TextBox><br />
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;
-        <asp:Button ID="LoginProcess" runat="server" OnClick="LoginProcess_Click" Text="Đăng nhập"
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<asp:Button ID="LoginProcess" runat="server" OnClick="LoginProcess_Click" Text="Đăng nhập"
             Width="110px" />
         <br />
         <asp:RadioButtonList ID="RadioButton_Choice" runat="server" BackColor="SpringGreen"
             BorderColor="Blue" Font-Names="Verdana" Height="26px" RepeatDirection="Horizontal"
-            Width="529px">
+            Width="348px">
             <asp:ListItem Selected="True">Admin</asp:ListItem>
             <asp:ListItem>Gi&#225;o vi&#234;n</asp:ListItem>
             <asp:ListItem>Học Sinh</asp:ListItem>
-            <asp:ListItem>Phụ huynh</asp:ListItem>
         </asp:RadioButtonList>
-        &nbsp;&nbsp;
-    </div>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp;&nbsp;    
+    </div>        
     </form>
 </body>
 </html>

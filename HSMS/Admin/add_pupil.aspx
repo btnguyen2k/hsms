@@ -113,9 +113,8 @@
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         &nbsp; &nbsp; &nbsp; 
-        <asp:Button ID="AddPupil" runat="server" Text="Thêm học sinh" Width="184px" OnClick="AddPupil_Click" />
-        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;<br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="445px"></asp:Label></div>
+        <asp:Button ID="AddPupil" runat="server" Text="Thêm học sinh" Width="184px" OnClick="AddPupil_Click" /><br />
+        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="475px"></asp:Label></div>
     </form>
 </body>
 </html>

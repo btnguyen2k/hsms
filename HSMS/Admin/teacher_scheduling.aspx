@@ -9,27 +9,26 @@
 <body>
     <form id="form1" runat="server">
     
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;
+       <center>
         <asp:Label ID="Label1" runat="server" Font-Names="Verdana" Font-Size="XX-Large" ForeColor="Red"
             Text="LỊCH CÔNG TÁC" Width="264px"></asp:Label><br />
         <br />
-        &nbsp; &nbsp;&nbsp;
+       
         <asp:Label ID="Label2" runat="server" Text="Mã số giáo viên :" Width="110px"></asp:Label>
-        &nbsp; &nbsp; &nbsp;&nbsp;<asp:DropDownList ID="Teacher_FindId" runat="server">
+       <asp:DropDownList ID="Teacher_FindId" runat="server">
         </asp:DropDownList>
-        &nbsp; &nbsp; &nbsp; &nbsp; 
-        <asp:Label ID="Label3" runat="server" Text="bộ môn"></asp:Label>
-        &nbsp; &nbsp; &nbsp;<asp:DropDownList ID="SubjectList" runat="server" AutoPostBack="True"
+           &nbsp;&nbsp; &nbsp;<asp:Label ID="Label3" runat="server" Text="bộ môn"></asp:Label>
+           &nbsp;&nbsp; &nbsp;<asp:DropDownList ID="SubjectList" runat="server" AutoPostBack="True"
             OnSelectedIndexChanged="SubjectList_SelectedIndexChanged">
-        </asp:DropDownList>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        </asp:DropDownList>
+        </center>
+        <center>
         <asp:Button ID="Teacher_Finding" runat="server" OnClick="Teacher_Finding_Click" Text="Tìm"
             Width="107px" />
-        &nbsp;&nbsp;&nbsp;<br />
         <br />
-        &nbsp; &nbsp; &nbsp;
-        <asp:Label ID="Finding_result" runat="server" ForeColor="Red" Width="413px"></asp:Label>
+        <br />
+        
+        <asp:Label ID="Finding_result" runat="server" ForeColor="Red" Width="453px"></asp:Label>
         <br />
         <br />       
   <table border="1" id="schedule" runat="server" >
@@ -252,16 +251,17 @@
 		   <input id="T710" type="text" name="T710" style="width:45px" runat = "server"/>		
 		</td>		
 	</tr>
-</table> &nbsp; &nbsp; &nbsp; &nbsp;<br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-  
+</table> 
    
         <asp:Button ID="Teacher_AddSchedule" runat="server" Text="Thêm" OnClick="Teacher_AddSchedule_Click" Width="86px" />
         <asp:Button ID="Teacher_EditSchedule" runat="server" Text="Sữa" Width="84px" OnClick="Teacher_EditSchedule_Click" />    
-        <asp:Button ID="Back" runat="server" OnClick="Back_Click" Text="Quay lại" Visible="False"
-            Width="94px" /><br />
-        &nbsp;&nbsp;
+        </center>
+        <center>
+            <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/teacher_scheduling.aspx"
+                Target="content_teacher" Width="66px">Quay lại</asp:HyperLink><br />
+        
         <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="446px"></asp:Label>
+        </center>
     </form>    
 </body>    
 </html>
