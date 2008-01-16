@@ -10,14 +10,15 @@
     <form id="form1" runat="server">
     <div>
         <center>
-        <asp:Label ID="Label3" runat="server" Font-Size="X-Large" ForeColor="Blue" Text="TỞNG KẾT LỚP"></asp:Label>&nbsp;</center>
+        <asp:Label ID="Label3" runat="server" Font-Size="X-Large" ForeColor="Blue" Text="TỔNG KẾT NĂM HỌC CỦA LỚP"></asp:Label>&nbsp;</center>
         <center>
             <br />
         <asp:Label ID="Label1" runat="server" Text="Lớp:" Width="45px"></asp:Label>
         &nbsp; &nbsp;&nbsp;<asp:DropDownList ID="ClassName" runat="server">
         </asp:DropDownList>
             &nbsp;
-        <asp:Label ID="Label2" runat="server" Text="Năm:" Width="60px"></asp:Label><asp:TextBox ID="ClassYear" runat="server" Width="44px"></asp:TextBox><br />
+        <asp:Label ID="Label2" runat="server" Text="Năm:" Width="60px"></asp:Label>&nbsp;
+        <asp:TextBox ID="ClassYear" runat="server" Width="44px"></asp:TextBox><br />
         <br />
         <asp:Button ID="ConfirmClassList" runat="server" OnClick="ConfirmClassList_Click"
             Text="Xác nhận" Width="121px" /><br />
@@ -41,6 +42,16 @@
                 <asp:TableCell runat="server" HorizontalAlign="Center">Xếp loại cả năm</asp:TableCell>
             </asp:TableRow>
         </asp:Table>
+        </center>
+        <center>
+            &nbsp;</center>
+        <center>
+            <asp:Label ID="Label4" runat="server" ForeColor="Red" Text="Thống kê" Width="74px"></asp:Label>&nbsp;</center>
+        <center>
+            &nbsp;</center>
+        <center>
+            <asp:Label ID="StaticTable" runat="server" Visible="False" Width="352px"></asp:Label>&nbsp;</center>
+        <center>
         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/main_class_manager.aspx"
             Target="content_teacher" Width="56px">Quay lại</asp:HyperLink>
         </center>
