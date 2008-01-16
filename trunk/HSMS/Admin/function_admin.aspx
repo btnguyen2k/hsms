@@ -41,30 +41,33 @@
         &nbsp;
         <asp:Label ID="Label7" runat="server" Text="+"></asp:Label>
         <asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Verdana" ForeColor="Blue"
-            NavigateUrl="~/Admin/teacher_scheduling.aspx" Target="content_admin" Font-Italic="True">Lịch giáo viên</asp:HyperLink><br />
+            NavigateUrl="~/Admin/teacher_scheduling.aspx" Target="content_admin" Font-Italic="False">Lịch giáo viên</asp:HyperLink><br />
         &nbsp;
         <asp:Label ID="Label14" runat="server" Text="+"></asp:Label>
         <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Verdana" ForeColor="Blue"
-            NavigateUrl="~/Admin/class_schedule.aspx" Target="content_admin" Font-Italic="True">Lịch lớp học</asp:HyperLink><br />
-        &nbsp;
-        <br />
+            NavigateUrl="~/Admin/class_schedule.aspx" Target="content_admin" Font-Italic="False">Lịch lớp học</asp:HyperLink><br />
+        <asp:Label ID="Label9" runat="server" Text="HỆ THỐNG THÔNG BÁO" Width="179px"></asp:Label><br />
         &nbsp; &nbsp;
-        <br />
-        <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Verdana" ForeColor="Blue"
-            NavigateUrl="~/Admin/subject_manager.aspx" Target="content_admin">* Quản lý môn học</asp:HyperLink><br />
-        <br />
-        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/class_manager.aspx"
-            Target="content_admin">* Quản lý lớp học</asp:HyperLink><br />
-        <asp:Label ID="Label9" runat="server" Text="* QUẢN LÝ THÔNG BÁO" Width="179px"></asp:Label><br />
-        &nbsp;<asp:Label ID="Label8" runat="server" Text="+" Width="4px"></asp:Label>&nbsp;
+        <asp:Label ID="Label8" runat="server" Text="+" Width="4px"></asp:Label>
         <asp:HyperLink
             ID="HyperLink8" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/AddNews.aspx"
             Target="content_admin" Width="140px">Thêm thông báo </asp:HyperLink><br />
         &nbsp;<asp:Label ID="Label10" runat="server" Text="+" Width="12px"></asp:Label>
         <asp:HyperLink ID="HyperLink9" runat="server" Font-Names="Verdana" ForeColor="Blue"
             NavigateUrl="~/Admin/EditNews.aspx" Target="content_admin" Width="135px">Sữa thông báo</asp:HyperLink><br />
+        <asp:Label ID="Label15" runat="server" Text="CHƯƠNG TRÌNH ĐÀO TẠO" Width="197px"></asp:Label><br />
+        &nbsp;
+        <asp:Label ID="Label16" runat="server" Text="+"></asp:Label>
+        <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Admin/subject_manager.aspx" Target="content_admin">Môn học</asp:HyperLink><br />
+        &nbsp;
+        <asp:Label ID="Label17" runat="server" Text="+"></asp:Label>
+        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Verdana" NavigateUrl="~/Admin/class_manager.aspx"
+            Target="content_admin">Lớp học</asp:HyperLink>&nbsp;
+        <br />
         <asp:HyperLink ID="HyperLink11" runat="server" Font-Names="Verdana" ForeColor="Blue"
-            NavigateUrl="~/Admin/Map.aspx" Target="content_admin">* Quản lý phòng ốc</asp:HyperLink></div>      
+            NavigateUrl="~/Admin/Map.aspx" Target="content_admin">* Quản lý phòng ốc</asp:HyperLink><br />
+    </div>      
     </form>
 </body>
 </html>

@@ -258,7 +258,7 @@
         </center>
         <center>
             <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/teacher_scheduling.aspx"
-                Target="content_teacher" Width="66px">Quay lại</asp:HyperLink><br />
+                Target="content_admin" Width="66px">Quay lại</asp:HyperLink><br />
         
         <asp:Label ID="Result_Edit_Add" runat="server" ForeColor="Red" Width="446px"></asp:Label>
         </center>

@@ -9,18 +9,18 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <center>
+        <asp:Label ID="Label3" runat="server" Font-Size="X-Large" ForeColor="Blue" Text="TỞNG KẾT LỚP"></asp:Label>&nbsp;</center>
+        <center>
+            <br />
         <asp:Label ID="Label1" runat="server" Text="Lớp:" Width="45px"></asp:Label>
-        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;<asp:DropDownList ID="ClassName" runat="server">
-        </asp:DropDownList><br />
-        <br />
-        <asp:Label ID="Label2" runat="server" Text="Năm:" Width="60px"></asp:Label>&nbsp;
-        <asp:TextBox ID="ClassYear" runat="server" Width="56px"></asp:TextBox><br />
+        &nbsp; &nbsp;&nbsp;<asp:DropDownList ID="ClassName" runat="server">
+        </asp:DropDownList>
+            &nbsp;
+        <asp:Label ID="Label2" runat="server" Text="Năm:" Width="60px"></asp:Label><asp:TextBox ID="ClassYear" runat="server" Width="44px"></asp:TextBox><br />
         <br />
         <asp:Button ID="ConfirmClassList" runat="server" OnClick="ConfirmClassList_Click"
-            Text="Xác nhận" Width="121px" />
-        &nbsp; &nbsp;
-        <asp:Button ID="ViewClassList" runat="server" OnClick="ViewClassList_Click" Text="Danh sách các lớp chủ nhiệm"
-            Width="223px" /><br />
+            Text="Xác nhận" Width="121px" /><br />
         <asp:Label ID="ResultContent" runat="server" ForeColor="Red" Width="522px"></asp:Label>
         <br />
         <br />
@@ -42,7 +42,9 @@
             </asp:TableRow>
         </asp:Table>
         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Teacher/main_class_manager.aspx"
-            Target="content_teacher" Width="56px">Quay lại</asp:HyperLink></div>
+            Target="content_teacher" Width="56px">Quay lại</asp:HyperLink>
+        </center>
+    </div>
     </form>
 </body>
 </html>
