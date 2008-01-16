@@ -9,11 +9,13 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <asp:Label ID="title" runat="server" Font-Size="X-Large" ForeColor="Blue" Width="297px"></asp:Label><br />
-        <asp:Label ID="ContentNews" runat="server" Width="619px"></asp:Label></div>
+        <center>
+        <asp:Label ID="title" runat="server" Font-Size="X-Large" ForeColor="Blue" Width="297px"></asp:Label>&nbsp;</center>
+        <center>
+            <br />
+        <asp:Label ID="ContentNews" runat="server" Width="619px"></asp:Label>
+        </center>
+    </div>        
     </form>
 </body>
 </html>

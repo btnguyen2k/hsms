@@ -9,27 +9,25 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+    <center>
+        
         <asp:Label ID="Label1" runat="server" Font-Names="Verdana" Font-Size="XX-Large" ForeColor="Red"
-            Text="THÔNG TIN GIÁO VIÊN"></asp:Label><br />
-        <br />
-        <br />
+            Text="THÔNG TIN GIÁO VIÊN"></asp:Label>&nbsp;</center>
+        <center>
+            <br />        
         <asp:Label ID="Label2" runat="server" Text="Mã số giáo viên :"></asp:Label>
-        &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<asp:DropDownList ID="Teacher_FindId" runat="server">
-        </asp:DropDownList>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
-        <asp:Label ID="Label6" runat="server" Text="bộ môn" Width="52px"></asp:Label>
-        &nbsp;&nbsp;<asp:DropDownList ID="SubjectList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SubjectList_SelectedIndexChanged">
+        <asp:DropDownList ID="Teacher_FindId" runat="server">
         </asp:DropDownList>
-        &nbsp;<asp:Button ID="Find_Teacher" runat="server" Text="Tìm kiếm" OnClick="Find_Teacher_Click" />
-        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<br />
-        <br />
-        &nbsp;<asp:Label ID="TeacherFindResultText" runat="server" ForeColor="Red" Width="386px"></asp:Label><br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp;
+        <asp:Label ID="Label6" runat="server" Text="bộ môn" Width="52px"></asp:Label>
+        <asp:DropDownList ID="SubjectList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="SubjectList_SelectedIndexChanged">
+        </asp:DropDownList>
+            &nbsp; &nbsp;<asp:Button ID="Find_Teacher" runat="server" Text="Tìm kiếm" OnClick="Find_Teacher_Click" />
+        <asp:Label ID="TeacherFindResultText" runat="server" ForeColor="Red" Width="386px"></asp:Label><br />
+        
         <asp:Label ID="Label4" runat="server" ForeColor="Blue" Text="THÔNG TIN CHUNG" Visible="False"></asp:Label><br />
  
- <table border="1" id="Information" align="left" runat="server" style="width: 435px">
+ <table border="1" id="Information" align=center runat="server" style="width: 435px">
 	<tr>
 		<td style="width: 180px" >&nbsp;Họ và tên :</td>
 		<td style="width: 74px" >		
@@ -95,23 +93,10 @@
 		</td>
 	</tr>
 </table>   
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp;
+        </center>
+        <center>
+            &nbsp;</center>
+        <center>
         <asp:Label ID="Label5" runat="server" ForeColor="Blue" Text="THÔNG TIN THÊM" Visible="False"
             Width="229px"></asp:Label><br />
         <asp:Label ID="Label3" runat="server" Text="Chức vụ:" Width="69px" Visible="False"></asp:Label>
@@ -119,14 +104,15 @@
         <asp:Label ID="Label15" runat="server" Text="Tiểu sử công tác:" Width="110px" Visible="False"></asp:Label><br />
         <asp:TextBox ID="HistoryTeacher" runat="server" Height="126px" TextMode="MultiLine"
             Width="445px" Visible="False"></asp:TextBox><br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;<asp:Button ID="Teacher_DelInf" runat="server"
+        <asp:Button ID="Teacher_DelInf" runat="server"
             OnClick="Teacher_DelInf_Click" Text="Xoá" Width="90px" />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <asp:Button
+        <asp:Button
             ID="Teacher_EditInf" runat="server" Text="Cập nhật mới" OnClick="Teacher_EditInf_Click" /><br />
         <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/edit_del_teacher.aspx"
             Target="content_admin" Visible="False" Width="68px">Quay lại</asp:HyperLink><br />
-        <asp:Label ID="Teacher_EditResult" runat="server" ForeColor="Red" Width="491px"></asp:Label></div>
+        <asp:Label ID="Teacher_EditResult" runat="server" ForeColor="Red" Width="491px"></asp:Label>
+        </center>
+    </div>
     </form>
 </body>
 </html>

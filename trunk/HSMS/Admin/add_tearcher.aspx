@@ -9,37 +9,23 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <center>
+        
         <asp:Label ID="Label1" runat="server" Font-Names="Verdana" Font-Size="XX-Large" ForeColor="Red"
             Text="THÊM GIÁO VIÊN MỚI"></asp:Label><br />
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;&nbsp; 
-        <asp:Label ID="Label2" runat="server" ForeColor="Blue" Text="THÔNG TIN CHUNG" Width="152px"></asp:Label>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <br />        
+        <asp:Label ID="Label2" runat="server" ForeColor="Blue" Text="THÔNG TIN CHUNG" Width="152px"></asp:Label>        
   
-  <table border="1" id="Information" align="left" runat="server" >
+  <table align=center border="1" id="Information" runat="server" style="width: 418px" >
 	<tr>
-		<td style="width: 180px" >&nbsp;Họ và tên :</td>
+		<td style="width: 180px" >Họ và tên :</td>
 		<td style="width: 74px" >		
 			<input type="text" runat="server" name="T1" id="Teacher_name" style="width: 185px"/>		
 		</td>
 	</tr>
 	<tr>
 		<td style="width: 180px" >&nbsp;Ngày tháng năm sinh :</td>
-		<td style="width: 74px" >
+		<td style="width: 74px" >		    
 		    <table border="1" width="100%" id="table2" runat="server">
 			    <tr>
 				    <td>
@@ -97,11 +83,13 @@
 				    </td>
 			    </tr>
 		    </table>
+		    
         </td>
-	</tr>
+	</tr>	
 	<tr>
 		<td style="width: 180px">
             Năm băt đầu giảng dạy :</td>
+		
 		<td style="width: 74px">
             &nbsp;<asp:DropDownList ID="Teacher_YearStart" runat="server">
             </asp:DropDownList></td>
@@ -119,7 +107,7 @@
             &nbsp;<asp:DropDownList ID="Teacher_MainClass" runat="server" AutoPostBack="True"
                 OnSelectedIndexChanged="Teacher_MainClass_SelectedIndexChanged">
             </asp:DropDownList></td>
-	</tr>
+	</tr>		
 	<tr>
 		<td style="width: 180px">Năm học:</td>
 		<td style="width: 74px">
@@ -140,50 +128,31 @@
 			<input type="text" name="T5" size="20" runat="server" id="Teacher_Email"/>
 		</td>
 	</tr>
-</table>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br />
-        &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;
-        <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp;
+</table>        
+            </center>
+        <center>
+            &nbsp;</center>
+        <center>
         <asp:Label ID="Label3" runat="server" ForeColor="Blue" Text="THÔNG TIN THÊM"
             Width="155px"></asp:Label><br />
         <asp:Label ID="Label4" runat="server" Text="Chức vụ:" Width="64px"></asp:Label>
         <asp:TextBox ID="Position" runat="server" Width="313px"></asp:TextBox><br />
-        &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        
         <br />
         <asp:Label ID="Label15" runat="server" Text="Tiểu sử công tác:" Width="110px"></asp:Label><br />
         <asp:TextBox ID="HistoryTeacher" runat="server" Height="126px" TextMode="MultiLine" Width="445px"></asp:TextBox><br />
         <br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp;&nbsp;
-        <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" />&nbsp;
-        <asp:Button ID="ViewClassList" runat="server" OnClick="ViewClassList_Click" Text="Danh sách lớp"
-            Width="103px" Visible="False" />&nbsp;<asp:Button ID="ViewSubjectList" runat="server" OnClick="ViewSubjectList_Click"
-                Text="Danh sách môn hoc" Visible="False" /><br />
-        &nbsp;&nbsp;<br />
-        &nbsp;<asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label></div>
+        
+        <asp:Button ID="Add_Teacher" runat="server" OnClick="Add_Teacher_Click" Text="Thêm giáo viên mới" />&nbsp;&nbsp;&nbsp;<br />
+        </center>
+        <center>
+            &nbsp;</center>
+        <center>
+        <asp:Label ID="Add_Result" runat="server" ForeColor="Red" Width="455px"></asp:Label><br />
+        <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Blue" NavigateUrl="~/Admin/add_tearcher.aspx"
+            Target="content_admin">thêm giáo viên khác</asp:HyperLink>
+        </center>
+            </div>
     </form>
 </body>
 </html>

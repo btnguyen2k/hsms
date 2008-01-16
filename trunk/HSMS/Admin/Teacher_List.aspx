@@ -9,18 +9,16 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <center>
         <asp:Label ID="Label1" runat="server" ForeColor="Blue" Text="DANH SÁCH GIÁO VIÊN CỦA TRƯỜNG"
             Width="297px"></asp:Label><br />
-        <asp:Label ID="TeacherTable" runat="server" Width="638px"></asp:Label><br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br />
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+        <asp:Label ID="TeacherTable" runat="server" Width="638px"></asp:Label>&nbsp;</center>
+        <center>
+            <br />        
         <asp:Label ID="Label2" runat="server" ForeColor="Blue" Text="CHI TIẾT" Width="83px"></asp:Label><br />
-        <asp:Label ID="SubjectDetail" runat="server" Width="335px"></asp:Label></div>
+        <asp:Label ID="SubjectDetail" runat="server" Width="335px"></asp:Label>
+        </center>
+    </div>
     </form>
 </body>
 </html>

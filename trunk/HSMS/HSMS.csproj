@@ -414,6 +414,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DetailListPupil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailListPupil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailListPupil.aspx.designer.cs">
+      <DependentUpon>DetailListPupil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DetailNews.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>DetailNews.aspx</DependentUpon>
@@ -505,7 +512,21 @@
     <Compile Include="Notice.aspx.designer.cs">
       <DependentUpon>Notice.aspx</DependentUpon>
     </Compile>
+    <Compile Include="People.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="People.aspx.designer.cs">
+      <DependentUpon>People.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PupilInformation.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PupilInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PupilInformation.aspx.designer.cs">
+      <DependentUpon>PupilInformation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pupil\changepass_pupil.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>changepass_pupil.aspx</DependentUpon>
@@ -702,13 +723,6 @@
     <Compile Include="Teacher\Track_learning.aspx.designer.cs">
       <DependentUpon>Track_learning.aspx</DependentUpon>
     </Compile>
-    <Compile Include="temp.aspx.cs">
-      <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>temp.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="temp.aspx.designer.cs">
-      <DependentUpon>temp.aspx</DependentUpon>
-    </Compile>
     <Compile Include="testFTB.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>testFTB.aspx</DependentUpon>
@@ -771,6 +785,7 @@
       <DependentUpon>hsms.mdf</DependentUpon>
     </Content>
     <Content Include="Default.aspx" />
+    <Content Include="DetailListPupil.aspx" />
     <Content Include="DetailNews.aspx" />
     <Content Include="DetailSearching.aspx" />
     <Content Include="EditFTB.aspx" />
@@ -790,6 +805,8 @@
     <Content Include="MyProfile\Default.aspx" />
     <Content Include="MyProfile\Inc_LeftMenu.ascx" />
     <Content Include="Notice.aspx" />
+    <Content Include="People.aspx" />
+    <Content Include="PupilInformation.aspx" />
     <Content Include="Pupil\DetailExercise.aspx" />
     <Content Include="Pupil\Exercise.aspx" />
     <Content Include="Pupil\ScoreTable.aspx" />
@@ -805,7 +822,6 @@
     <Content Include="Teacher\MainClassFinalScore.aspx" />
     <Content Include="Teacher\main_class_manager.aspx" />
     <Content Include="Teacher\Track_learning.aspx" />
-    <Content Include="temp.aspx" />
     <Content Include="testFTB.aspx" />
     <Content Include="TEST\showthongtin.aspx" />
     <Content Include="TEST\upload.aspx" />

@@ -116,12 +116,7 @@ namespace HSMS
                             LoginName.Text = "";
                             break;
                         }
-                    case 3:
-                        {
-                            LoginName.Text = "";
-                            break;
-                        }
-                }
+              }
             }
             else
             {
