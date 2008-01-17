@@ -274,6 +274,13 @@
     <Compile Include="Admin\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\DetailFAQ.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>DetailFAQ.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DetailFAQ.aspx.designer.cs">
+      <DependentUpon>DetailFAQ.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\DetailNews.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>DetailNews.aspx</DependentUpon>
@@ -281,12 +288,26 @@
     <Compile Include="Admin\DetailNews.aspx.designer.cs">
       <DependentUpon>DetailNews.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\detalclassscore.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>detalclassscore.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\detalclassscore.aspx.designer.cs">
+      <DependentUpon>detalclassscore.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\EditNews.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>EditNews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\EditNews.aspx.designer.cs">
       <DependentUpon>EditNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FAQs_admin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>FAQs_admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FAQs_admin.aspx.designer.cs">
+      <DependentUpon>FAQs_admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Map.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -315,6 +336,13 @@
     </Compile>
     <Compile Include="Admin\Notice.aspx.designer.cs">
       <DependentUpon>Notice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Report.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\subject_manager.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -448,6 +476,13 @@
     </Compile>
     <Compile Include="enroll.aspx.designer.cs">
       <DependentUpon>enroll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQs.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>FAQs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQs.aspx.designer.cs">
+      <DependentUpon>FAQs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Function.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -767,9 +802,12 @@
     <EmbeddedResource Include="Bo\User\HSMSUser.hbm.xml" />
     <Content Include="Admin\AddNews.aspx" />
     <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\DetailFAQ.aspx" />
     <Content Include="Admin\DetailNews.aspx" />
+    <Content Include="Admin\detalclassscore.aspx" />
     <Content Include="Admin\EditNews.aspx" />
     <Content Include="Admin\EditNews.aspx" />
+    <Content Include="Admin\FAQs_admin.aspx" />
     <Content Include="Admin\Inc_LeftMenu.ascx" />
     <Content Include="Admin\Map.aspx" />
     <Content Include="Admin\MapDetail.aspx" />
@@ -778,6 +816,7 @@
     <Content Include="Admin\Notice.aspx" />
     <EmbeddedResource Include="Bo\Subject\HSMSSubjectCat.hbm.xml" />
     <EmbeddedResource Include="Properties\licenses.licx" />
+    <Content Include="Admin\Report.aspx" />
     <Content Include="Admin\Teacher_List.aspx" />
     <Content Include="App_Data\hsms.mdf">
     </Content>
@@ -789,6 +828,7 @@
     <Content Include="DetailNews.aspx" />
     <Content Include="DetailSearching.aspx" />
     <Content Include="EditFTB.aspx" />
+    <Content Include="FAQs.aspx" />
     <Content Include="file_docs\bangiamhieu.htm" />
     <Content Include="file_docs\cosovatchat.htm" />
     <Content Include="file_docs\lichsuphattrien.htm" />
