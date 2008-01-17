@@ -67,7 +67,10 @@
         <br />
         <asp:HyperLink ID="HyperLink11" runat="server" Font-Names="Verdana" ForeColor="Blue"
             NavigateUrl="~/Admin/Map.aspx" Target="content_admin">* Quản lý phòng ốc</asp:HyperLink><br />
-    </div>      
+        <asp:HyperLink ID="HyperLink13" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Admin/FAQs_admin.aspx" Target="content_admin">FAQs</asp:HyperLink><br />
+        <asp:HyperLink ID="HyperLink12" runat="server" Font-Names="Verdana" ForeColor="Blue"
+            NavigateUrl="~/Admin/Report.aspx" Target="content_admin">Tổng kết</asp:HyperLink></div>      
     </form>
 </body>
 </html>

@@ -35,7 +35,7 @@
         <asp:HyperLink ID="Enroll" runat="server" Font-Italic="True" Font-Names="Verdana"
             Width="154px" Target="content" NavigateUrl="file_docs/Nhap_hoc.html">Thủ Tục Nhập Học</asp:HyperLink><br />
         <asp:HyperLink ID="HyperLink4" runat="server" Font-Italic="True" Font-Names="Verdana"
-            ForeColor="Blue" NavigateUrl="http://google.com.vn" Target="content" Width="150px">FQAs</asp:HyperLink><br />
+            ForeColor="Blue" NavigateUrl="~/FAQs.aspx" Target="content" Width="150px">FQAs</asp:HyperLink><br />
       
         <asp:HyperLink ID="News" runat="server" Font-Italic="True" Font-Names="Verdana"
             Width="154px" Target="content" NavigateUrl="http://www.cand.com.vn">Tin Tức</asp:HyperLink><br />
